@@ -7,7 +7,7 @@ description: The Intelligent Data Engineering Lab (INDE Lab) at the University o
 footer_text:
 
 url: # the base hostname & protocol for your site
-baseurl: /INDElab # the subpath of your site, e.g. /blog/
+baseurl:  # the subpath of your site, e.g. /blog/
 last_updated: # leave blank if you don't want to display last updated
 
 # -----------------------------------------------------------------------------
