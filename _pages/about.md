@@ -2,7 +2,7 @@
 layout: about
 permalink: /
 news: true
-social: false
+social: true
 ---
 
 <img style="width:300px; max-width:100%" src="{{ site.baseurl }}/assets/INDELab_Logo_BlackRedD.png">
