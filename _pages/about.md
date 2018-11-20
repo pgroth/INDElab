@@ -12,3 +12,5 @@ The INtelligent Data Engineering Lab is part of the [Informatics Institute](http
 We perform both applied and fundamental research informed by empirical insights into data science practice. Recent topics of interest include: data supply chains, data provenance, transparency, information integration, automated knowledge base / knowledge graph construction, and data semantics.
 
 The lab is led by [Paul Groth](http://pgroth.com).
+
+<a href="http://ivi.uva.nl"><img style="width:170px; max-width:100%" src="{{ site.baseurl }}/assets/uvalogo_regular_p_en.jpg"></a>
