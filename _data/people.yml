@@ -1,0 +1,27 @@
+- name: Prof. Paul Groth
+  url: http://pgroth.com
+  img: /assets/people/groth.png
+
+- name: Dr. Jacobijn Sandberg
+  url: https://www.uva.nl/profiel/s/a/j.a.c.sandberg/j.a.c.sandberg.html
+  img: /assets/people/sandberg.png
+
+- name: Dr. Frank Nack
+  url: https://fnack.wordpress.com/about/
+  img: /assets/people/nack.png
+
+- name: Dr. Peter Bloem
+  url: http://www.peterbloem.nl
+  img: /assets/people/peterbloem.jpg
+
+- name: Stian Soiland-Reyes
+  url: http://soiland-reyes.com/stian/about/
+  img: /assets/people/stian.jpg
+
+- name: Thiviyan Thanapalasingam
+  url: https://thiviyansingam.com
+  img: /assets/people/thiviyan.png
+
+- name: Dr. Hannes Muhlhusen
+  url: https://hannes.muehleisen.org
+  img: /assets/people/hannes.png
