@@ -14,13 +14,17 @@
   url: http://www.peterbloem.nl
   img: /assets/people/peterbloem.jpg
 
+- name: Thiviyan Thanapalasingam
+  url: https://thiviyansingam.com
+  img: /assets/people/thiviyan.png
+
 - name: Stian Soiland-Reyes
   url: http://soiland-reyes.com/stian/about/
   img: /assets/people/stian.jpg
 
-- name: Thiviyan Thanapalasingam
-  url: https://thiviyansingam.com
-  img: /assets/people/thiviyan.png
+- name: Valentin Vogelmann
+  url: https://www.linkedin.com/in/valentin-vogelmann-a77b03198/
+  img: /assets/people/valentin.png
 
 - name: Dr. Hannes Mühleisen
   url: https://hannes.muehleisen.org
