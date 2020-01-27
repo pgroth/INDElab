@@ -10,6 +10,10 @@
   url: https://fnack.wordpress.com/about/
   img: /assets/people/nack.png
 
+- name: Dr. Hannes Mühleisen
+  url: https://hannes.muehleisen.org
+  img: /assets/people/hannes.png
+
 - name: Dr. Peter Bloem
   url: http://www.peterbloem.nl
   img: /assets/people/peterbloem.jpg
@@ -22,10 +26,10 @@
   url: http://soiland-reyes.com/stian/about/
   img: /assets/people/stian.jpg
 
+- name: Daniel Daza
+  url: https://dfdazac.github.io
+  img: /assets/people/daza.png
+
 - name: Valentin Vogelmann
   url: https://www.linkedin.com/in/valentin-vogelmann-a77b03198/
   img: /assets/people/valentin.png
-
-- name: Dr. Hannes Mühleisen
-  url: https://hannes.muehleisen.org
-  img: /assets/people/hannes.png
