@@ -15,8 +15,7 @@ description: lab members
 </tr>
     <tr style="border: none; background: none;">
         <td style="border: none; background: none;">
-            <img style="padding-top: 5px; padding-bottom: 5px;
-            " src="../assets/people/groth.png"/><br>
+            <img style="padding-top: 5px; padding-bottom: 5px;" src="../assets/people/groth.png"/><br>
             <a class="caption" href="http://pgroth.com">Prof. Paul Groth</a>
         </td>
         <td style="border: none; background: none;">
@@ -51,11 +50,6 @@ description: lab members
         height: auto;" src="../assets/people/valentin.png"/><br>
         <a class="caption" href="https://www.linkedin.com/in/valentin-vogelmann-a77b03198/">Valentin Vogelmann</a>
         </td>
-        <td style="border: none; background: none;">
-        <img style="padding-top: 5px; padding-bottom: 5px;
-        height: auto;" src="../assets/people/peterbloem.jpg"/><br>
-        <a class="caption" href="http://www.peterbloem.nl">Dr. Peter Bloem</a>
-        </td>
     </tr>
     <tr style="border: none; background: none;">
         <td style="border: none; background: none;">
@@ -86,6 +80,29 @@ description: lab members
         <a class="caption" href="http://soiland-reyes.com/stian/about/">Stian Soiland-Reyes</a>
         </td>
     </tr>
+    <tr style="border: none; background: none;">
+        <td style="border: none; background: none;">
+        Guest Researchers
+        </td>
+    </tr>
+    <tr style="border: none; background: none;">
+        <td style="border: none; background: none;">
+            <img style="padding-top: 5px; padding-bottom: 5px;
+            height: auto;" src="../assets/people/peterbloem.jpg"/><br>
+            <a class="caption" href="http://www.peterbloem.nl">Dr. Peter Bloem</a>
+        </td>
+        <td style="border: none; background: none;">
+            <img style="padding-top: 5px; padding-bottom: 5px;
+            height: auto;" src="../assets/people/hartmut.jpg"/><br>
+            <a class="caption" href="http://hartmutkoenitz.com">Prof. Hartmut Koenitz</a>
+        </td>
+        <td style="border: none; background: none;">
+            <img style="padding-top: 5px; padding-bottom: 5px;
+            height: auto;" src="../assets/people/schlobach.jpg"/><br>
+            <a class="caption" href="http://www.few.vu.nl/~schlobac/">Dr. Stefan Schlobach</a>
+        </td>
+    </tr>
+
 
 
  </table>
