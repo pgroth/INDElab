@@ -94,7 +94,7 @@ description: lab members
         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px;
             height: auto;" src="../assets/people/hartmut.jpg"/><br>
-            <a class="caption" href="http://hartmutkoenitz.com">Prof. Hartmut Koenitz</a>
+            <a class="caption" href="http://hartmutkoenitz.com">Dr. Hartmut Koenitz</a>
         </td>
         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px;
