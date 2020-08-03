@@ -102,7 +102,13 @@ description: lab members
             <a class="caption" href="http://www.few.vu.nl/~schlobac/">Dr. Stefan Schlobach</a>
         </td>
     </tr>
-
+    <tr style="border: none; background: none;">
+        <td style="border: none; background: none;">
+            <img style="padding-top: 5px; padding-bottom: 5px;
+            height: auto;" src="../assets/people/jizhang.png"/><br>
+            <a class="caption" href="http://jizhang.pro">Dr. Ji Zhang</a>
+        </td>
+    </tr>
 
 
  </table>
