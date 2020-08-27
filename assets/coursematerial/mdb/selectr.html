@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<!-- DISCLAIMER: this code is not supposed to make Web dev hipsters from 2017 happy -->
+<!-- code from Hannes Mühleisen https://hannes.muehleisen.org -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <title>UvA DB Course - SQL -</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/docs.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/codemirror.css">
+    <!--<link rel="stylesheet" href="css/show-hint.css" /> -->
+    <style>
+      .bs-docs-sidebar .nav>.active:focus>a, .bs-docs-sidebar .nav>.active:hover>a, .bs-docs-sidebar .nav>.active>a {
+      padding-left: 18px;
+      font-weight: 700;
+      color: #337ab7;
+      background-color: transparent;
+      border-left: 2px solid #337ab7;
+      }
+      .CodeMirror {
+      height: 6em;
+      display: block;
+      }
+      .alert {
+      margin-top: 10px;
+      }
+      h2, h3 {
+      margin-top: 50px;
+      }
+      #offline-warning {
+      position: fixed;
+      bottom: 10px;
+      z-index: 100;
+      }
+      #loginstatus {
+      margin-top: 50px;
+      font-size: 13px;
+      color: #767676;
+      padding-left: 20px;
+      }
+    </style>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/docs.min.js"></script>
+    <script src="js/sql-asm.js"></script>
+    <script src="js/codemirror.js"></script>
+    <script src="js/codemirror-sql.js"></script>
+    <script src="js/vocdata.js"></script>
+    <script>
+      var db;
+       initSqlJs({}).then(function(SQL){
+        db = new SQL.Database();
+        db.run(vocdata);
+
+      });
+
+      var logged_in = false;
+
+      window.onload = function() {
+        $('.sql-challenge').each(function(i, e) {
+          var id = "sql-challenge-"+$.attr(e, 'data-id');
+          var ele = $.parseHTML(`<div class="panel panel-default" id="${id}">
+            <div class="panel-body">
+              <button type="button" class="btn" style="float: left; margin-top: 4px" onclick='query("${id}", ${$.attr(e, 'data-expres')})'><span class="glyphicon glyphicon-play" aria-hidden="true"></span></button>
+              <textarea class="CodeMirror">${$.attr(e, 'data-query')}</textarea>
+              <div class="alert" role="alert" style="display: none"><span class="message"></span></div>
+              <div class="tables" style="display:none">
+              </div>
+            </div>
+          </div>`)[0];
+
+          $(e).replaceWith(ele);
+
+          ele.editor = CodeMirror.fromTextArea($(ele).find("textarea")[0], {
+            mode: 'text/x-sql',
+            indentWithTabs: true,
+            smartIndent: true,
+            lineNumbers: true,
+            matchBrackets : true,
+            lineWrapping: true
+          });
+        });
+
+        // $.ajax({
+        //   dataType: 'jsonp',
+        //   jsonp: 'callback',
+        //   url: './result?callback=?',
+        //   success: function(data) {
+        //   // FIXME uuugly
+        //   if (data.status == 'ok') {
+        //     logged_in = true;
+        //     $('#loginstatus').text("Logged in as " + data.user);
+        //     for (var key in data.results) {
+        //       if (data.results.hasOwnProperty(key)) {
+        //         var ele = $("#" + key)[0];
+        //         if (!ele) continue;
+        //         ele.editor.setValue(data.results[key])
+        //         $("#" + key + " button").css('background-color', '#D0F0C0');
+        //         }
+        //       }
+        //     }
+        //   }
+        // });
+      }
+
+      function renderresult(res, title) {
+        if (res.length < 1) {
+          return "<div>(Empty Query Result)</div>";
+        }
+        var tdata = "<table class=\"table table-condensed table-striped\"><caption>"+title+"</caption><thead><tr><th>#</th>";
+        for (c = 0; c < res[0].columns.length; c++) {
+          tdata += "<th>" + res[0].columns[c] + "</th>";
+        }
+        tdata += "</tr></thead><tbody>";
+        for (r = 0; r < res[0].values.length; r++) {
+         tdata += "<tr>";
+         if (res[0].values.length > 12 && r == 10) {
+          tdata += "<th></th><td colspan='"+res[0].columns.length+"'>...</td>"
+          r = res[0].values.length-2;
+          continue;
+        }
+        tdata += "<th>"+(r+1)+"</th>";
+        for (c = 0; c < res[0].columns.length; c++) {
+          if (res[0].values[r][c] == null) {
+            res[0].values[r][c] = "<span style='color: gray'>NULL</span>"
+          }
+          tdata += "<td>" + res[0].values[r][c] + "</td>";
+        }
+        tdata += "</tr>";
+      }
+      tdata += "</tbody></table";
+      return tdata;
+      }
+
+    function query(id, expres) {
+      var editorEle = $("#"+id)[0]
+      // uuugly
+      var tables = $($(editorEle).find(".tables")[0]);
+      var message = $($(editorEle).find(".alert")[0]);
+      var messageCntnt = $(message.find(".message")[0]);
+
+
+      message.hide();
+      tables.empty().hide();
+      var query = editorEle.editor.getValue().trim();
+
+      if (query == "") {
+        message.removeClass('alert-success').addClass('alert-warning').show();
+        messageCntnt.text("No query was entered in the text box above.")
+        return;
+      }
+
+      try {
+        var res = db.exec(query);
+
+        console.log(JSON.stringify(res));
+        if (!expres) {
+          tables.append(renderresult(res, "Query Result")).show();
+          return;
+        }
+
+        if(JSON.stringify(res) === JSON.stringify(expres)) {
+          message.removeClass('alert-warning').addClass('alert-success').show();
+          messageCntnt.text("Query is correct, " + great[Math.floor(Math.random()*great.length)]);
+          $("#" + id + " button").css('background-color', '#D0F0C0');
+          if (logged_in){
+           $.ajax({
+            dataType: 'jsonp',
+            data: {"id" : id, "query":query},
+            jsonp: 'callback',
+            timeout: 1000,
+            error: function() {
+              $('#offline-warning').show();
+            },
+            url: './result?callback=?',
+            success: function(data) {
+              $('#offline-warning').hide();
+
+                //console.log(data)
+              }
+              // TODO: deal with errors here!
+              // TODO: what to do if user is not logged in?
+            });
+         }
+         tables.append(renderresult(res, "Query Result")).show();
+       } else {
+        message.removeClass('alert-success').addClass('alert-warning').show();
+        messageCntnt.text("Query result is not as expected. Modify your query and try again.")
+        tables.append(renderresult(res, "Your Query Result")).append(renderresult(expres, "Expected Query Result")).show();
+      }
+      }
+      catch(err) {
+        message.removeClass('alert-success').addClass('alert-warning').show();
+        messageCntnt.text("Query failed: " + err.message)
+      }
+    }
+    </script>
+    </head>
+  <body>
+    <div class="container bs-docs-container">
+      <div class="row">
+        <div class="col-md-9" role="main">
+          <div class="bs-docs-section">
+            <h1>SQL (Structured Query Language) Querying</h1>
+
+
+
+            <h2 id="intro">Introduction</h2>
+            <div id="offline-warning" class="alert alert-warning" role="alert" style="display: none">
+              <span class="message">You may have lost Internet connectivity.</span>
+            </div>
+            <p>
+              SQL is a declarative data manipulation language. Simple <code>SELECT</code> queries follow the general form of
+              <code>
+                SELECT [projection] FROM [tables] WHERE [selection] <!--[output modifiers];-->
+              </code>
+              .
+            </p>
+            <ul>
+              <li><code>[projection]</code> can be column names from the tables, constants or comutations between them. A <code>*</code> stands for "all columns".</li>
+              <li><code>[tables]</code> can be one or multiple table names.</li>
+              <li><code>[selection]</code> is a set of logical data filter conditions combined with <code>AND</code> or <code>OR</code></li>
+              <!--   <li><code>[output modifiers]</code> change the result structure. Popular output modifiers are <code>ORDER BY</code> or <code>LIMIT</code>.</li> -->
+            </ul>
+            <p>
+              Most of the query parts are optional. A very simple query is <code>SELECT 42</code>, which results in a single-row single-column result set containing the value <code>42</code>. A more common simple query is <code>SELECT * FROM sometable</code>, which retrieves all row from <code>sometable</code>. In the following, we will slowly expand from these simple queries.
+            </p>
+            <p>For the more formally inclined, you can look at <a href="https://sqlite.org/lang_select.html">SQLite's formal grammar for <code>SELECT</code> queries</a></p>
+            <p>
+              The sample data used below is the top 100 players in the <a href="https://github.com/JeffSackmann/tennis_atp">mens professional tennis tour (ATP) rankings put together by Jeff Sackmann</a>. The main table is the list of the <b>top 100 players</b>: <code>atp_players</code>:
+            </p>
+            <div id="data1">
+              <script>
+                $("#data1").append(renderresult(db.exec("SELECT * from atp_players"), ""));
+              </script>
+            </div>
+            <p>The exercises here will work as follows: For every task, you write a SQL query into the text box and press the "play" button left of it. This will execute the query and check the result. The following query is already given, so you can directly run it. Try it, you will see the query result. If you get the result right, the task box turns green.
+            </p>
+            <div class='sql-challenge' data-id='intro-example' data-expres='false' data-query="select first_name, last_name, player_id from atp_players"></div>
+
+
+
+            <h2 id="basic-select">Basic Queries</h2>
+
+
+            <h3 id="basic-select-project">Projections</h3>
+            <p>
+              Projections determine the <b>columns</b> that are retrieved from the database. Columns are usually data, but can also be the the result of computation on the data or constants. Several columns can be specified in the query separated by <code>,</code>. For example, <code>SELECT first_name, hand FROM atp_players</code> retrieves the two columns <code>first_name</code> and <code>hand</code> from the table <code>atp_players</code>.
+            </p>
+            <div class="well">
+              For the first task, write a query below that retrieves the last name and country for each player from <code>atp_players</code>.
+            </div>
+            <div class='sql-challenge' data-id='intro-select-project1' data-expres='[{"columns":["last_name","country"],"values":[
+            ["Zverev","GER"],["Karlovic","CRO"],["Federer","SUI"],["Lopez","ESP"],["Kohlschreiber","GER"],["Verdasco","ESP"],["Jaziri","TUN"],["Seppi","ITA"],["Simon","FRA"],["Wawrinka","SUI"],["Isner","USA"],["Berdych","CZE"],["Cuevas","URU"],["Andujar","ESP"],["Anderson","RSA"],["Nadal","ESP"],["Gasquet","FRA"],["Monfils","FRA"],["Istomin","UZB"],["Chardy","FRA"],["Haase","NED"],["Mayer","ARG"],["Djokovic","SRB"],["Fognini","ITA"],["Zverev","GER"],["Querrey","USA"],["Ebden","AUS"],["Kukushkin","KAZ"],["Ramos","ESP"],["Bautista Agut","ESP"],["Mannarino","FRA"],["Gulbis","LAT"],["Del Potro","ARG"],["Cilic","CRO"],["Sousa","POR"],["Paire","FRA"],["Fabbiano","ITA"],["Millman","AUS"],["Klizan","SVK"],["Gojowczyk","GER"],["Bedene","SLO"],["Albot","MDA"],["Gunneswaran","IND"],["Johnson","USA"],["Nishikori","JPN"],["Struff","GER"],["Pella","ARG"],["Lajovic","SRB"],["Klahn","USA"],["Delbonis","ARG"],["Copil","ROU"],["Goffin","BEL"],["Raonic","CAN"],["Herbert","FRA"],["Dimitrov","BUL"],["Carreno Busta","ESP"],["Sandgren","USA"],["Andreozzi","ARG"],["Fucsovics","HUN"],["Basilashvili","RUS"],["Krajinovic","SRB"],["Harrison","USA"],["Dzumhur","BIH"],["Schwartzman","ARG"],["Kudla","USA"],["Cecchinato","ITA"],["Tomic","AUS"],["Daniel","JPN"],["Dellien","BOL"],["Vesely","CZE"],["Londero","ARG"],["Thiem","AUT"],["Pouille","FRA"],["Edmund","GBR"],["Kyrgios","AUS"],["Nishioka","JPN"],["Medvedev","RUS"],["Garin","CHI"],["Coric","CRO"],["Marterer","GER"],["Chung","KOR"],["Thompson","AUS"],["Mcdonald","USA"],["Djere","SRB"],["Khachanov","RUS"],["Jarry","CHI"],["Norrie","GBR"],["Opelka","USA"],["Ivashka","BLR"],["Fritz","USA"],["Tiafoe","USA"],["Berrettini","ITA"],["Tsitsipas","GRE"],["Hurkacz","POL"],["Shapovalov","CAN"],["Munar","ESP"],["Harris","RSA"],["Auger Aliassime","CAN"],["Humbert","FRA"],["De Minaur","AUS"]]}]' data-query="SELECT 1"></div>
+            <p>
+              We can also modify the data we retrieve. For example, the (pointless) query <code>SELECT player_id, player_id + 1 FROM atp_players</code> will add <code>1</code> to every value in the <code>player_id</code> column. A quite large amount of computation is possible here, comparable to common programming languages.
+            </p>
+            <div class="well">
+              Write a query below that retrieves the player_id and age of the player based on the year they were born from the table <code>atp_players</code>.
+            </div>
+            <div class='sql-challenge' data-id='intro-select-project2' data-expres='[{"columns":["player_id","2019-birthyear"],"values":[[100644,22],[103333,40],[103819,38],[103852,38],[104259,36],[104269,36],[104291,35],[104312,35],[104468,35],[104527,34],[104545,34],[104607,34],[104655,33],[104665,33],[104731,33],[104745,33],[104755,33],[104792,33],[104797,33],[104871,32],[104898,32],[104919,32],[104925,32],[104926,32],[104999,32],[105023,32],[105051,32],[105062,32],[105077,31],[105138,31],[105173,31],[105208,31],[105223,31],[105227,31],[105311,30],[105332,30],[105341,30],[105357,30],[105373,30],[105376,30],[105379,30],[105430,30],[105432,30],[105449,30],[105453,30],[105526,29],[105550,29],[105583,29],[105614,29],[105643,29],[105657,29],[105676,29],[105683,29],[105732,28],[105777,28],[105807,28],[105815,28],[105819,28],[105916,27],[105932,27],[105936,27],[105992,27],[106000,27],[106043,27],[106045,27],[106065,27],[106071,27],[106121,26],[106198,26],[106210,26],[106228,26],[106233,26],[106298,25],[106378,24],[106401,24],[106415,24],[106421,23],[106426,23],[106432,23],[109739,24],[111202,23],[111442,25],[111456,24],[111513,24],[111575,23],[111797,24],[111815,24],[124187,22],[125802,25],[126203,22],[126207,21],[126610,23],[126774,21],[128034,22],[133430,20],[144719,22],[144750,22],[200000,19],[200005,21],[200282,20]]}]' data-query="SELECT 1"></div>
+            <p>
+              In the previous task, you can see that the column name of the result of the computation on the <code>birthyear</code> column is <code>2019-birthyear</code>. This is sometimes quite unhandy, especially when continuing to use that column in some computation. For this reason, columns and computation results can be renamed using the <code>AS</code> keyword. For example, <code>SELECT hand AS playing_hand FROM atp_players</code> will retrieve the hand column, but name it <code>playing_hand</code>.
+            </p>
+            <div class="well">
+              Write a query below that retrieves the player_id and the age of the player <b>renamed to</b> <code>age</code> from the table <code>atp_players</code>.
+            </div>
+            <div class='sql-challenge' data-id='intro-select-project3' data-expres='[{"columns":["player_id","age"],"values":[[100644,22],[103333,40],[103819,38],[103852,38],[104259,36],[104269,36],[104291,35],[104312,35],[104468,35],[104527,34],[104545,34],[104607,34],[104655,33],[104665,33],[104731,33],[104745,33],[104755,33],[104792,33],[104797,33],[104871,32],[104898,32],[104919,32],[104925,32],[104926,32],[104999,32],[105023,32],[105051,32],[105062,32],[105077,31],[105138,31],[105173,31],[105208,31],[105223,31],[105227,31],[105311,30],[105332,30],[105341,30],[105357,30],[105373,30],[105376,30],[105379,30],[105430,30],[105432,30],[105449,30],[105453,30],[105526,29],[105550,29],[105583,29],[105614,29],[105643,29],[105657,29],[105676,29],[105683,29],[105732,28],[105777,28],[105807,28],[105815,28],[105819,28],[105916,27],[105932,27],[105936,27],[105992,27],[106000,27],[106043,27],[106045,27],[106065,27],[106071,27],[106121,26],[106198,26],[106210,26],[106228,26],[106233,26],[106298,25],[106378,24],[106401,24],[106415,24],[106421,23],[106426,23],[106432,23],[109739,24],[111202,23],[111442,25],[111456,24],[111513,24],[111575,23],[111797,24],[111815,24],[124187,22],[125802,25],[126203,22],[126207,21],[126610,23],[126774,21],[128034,22],[133430,20],[144719,22],[144750,22],[200000,19],[200005,21],[200282,20]]}]' data-query="SELECT 1"></div>
+
+
+            <h3 id="basic-select-select">Selections</h3>
+            <p>
+              To determine which <b>rows</b> are retrieved, we can filter the table with some criteria in the <code>WHERE</code> clause. For example, the query <code>SELECT first_name FROM atp_players WHERE birthyear > 1996</code> will only retrieve players who are 25 years old or younger. Note that the <code>birthyear</code> column is not mentioned in the projection list, this is common.
+            </p>
+            <div class="well">
+              Write a query below that retrieves the first and last name of players who are 40 years old from the table <code>atp_players</code>.
+            </div>
+            <div class='sql-challenge' data-id='intro-select-select1' data-expres='[{"columns":["first_name","last_name"],"values":[["Ivo","Karlovic"]]}]' data-query="SELECT 1"></div>
+            <p>You can specify multiple such filter criteria and connect them with Boolean logic using <code>AND</code> and <code>OR</code>. For example, the query <code>SELECT first_name FROM atp_players WHERE birthyear > 1996 and country = 'FRA'</code> will only retrieve rows where both conditions are met.
+            </p>
+            <div class="well">
+              Write a query below that retrieves the first names of players in france, <code>FRA</code>, <b>and who are right handed</b> from the table <code>atp_players</code>. Note that string constant need to be quoted with single quotes in SQL,
+            </div>
+            <div class='sql-challenge' data-id='intro-select-select2' data-expres='[{"columns":["first_name"],"values":[["Gilles"],["Richard"],["Gael"],["Jeremy"],["Benoit"],["Pierre Hugues"],["Lucas"]]}]' data-query="SELECT 1"></div>
+            <p>One special case for selections are <code>NULL</code> values. Those typically cannot be filtered out with (non-)equality checks (because <code>NULL != NULL</code>, but have special syntax. In particular, <code>WHERE hand IS NULL</code> selects rows where <code>hand</code> has the value <code>NULL</code>, <code>WHERE hand IS NOT NULL</code> does the opposite.
+            </p>
+            <p>Another special case is string pattern matching. Sometimes, we want not to compare exact equality of strings, but use pattern matching instead (much like regular expressions). SQL uses the <code>LIKE</code> keyword for this. Patterns can contain two special "magic" characters, <code>%</code> and <code>_</code>. <code>%</code> matches an arbitrary number (zero or more) characters, <code>_</code> matches a single arbitrary character. For example, if one wanted to retrieve all player first names from the <code>atp_players</code> table where the player name starts with <code>A</code>, the query would be <code>SELECT first_name FROM atp_players WHERE first_name LIKE 'A%'</code>. If we wanted to retrieve all five-character names starting with <code>A</code>, we would use <code>LIKE 'A____'</code>. There is also the <code>ILIKE</code> variant, which is case-insensitive.
+            </p>
+            <div class="well">
+              Write a query below that retrieves the first_name and last_name only for players whose name beings with R and the last name consists of seven-characters ending with <code>R</code>.
+            </div>
+            <div class='sql-challenge' data-id='intro-select-selec3' data-expres='[{"columns":["first_name","last_name"],"values":[
+            ["Roger", "Federer"]]}]' data-query="SELECT 1"></div>
+
+
+            <h3 id="basic-select-outputmod">Output Modifiers</h3>
+            <p>
+              Sometimes we want to change the result set independent from the query. Two common tasks are limiting the amount of rows that are retrieved (keyword <code>LIMIT</code>) and changing the ordering of the result set (keyword <code>ORDER BY</code>. Using <code>LIMIT</code> is generally a good idea since databases can grow to billions of records and they will duly output all of them if so instructed.
+            </p>
+            <p>
+              Note that the relational model does not specify an explicit order of rows, hence it is important to specify an order when using <code>LIMIT</code>. For example, to retrieve the first five player names in alphabetical order, we can use the query <code>SELECT first_name FROM atp_players ORDER BY first_name LIMIT 5;</code>. We can order by multiple columns and use the <code>DESC</code> keyword to invert the order.
+            </p>
+            <div class="well">
+              Write a query below that retrieves the ids and first_name of the top six players ordered by birth year.
+            </div>
+            <div class='sql-challenge' data-id='intro-select-outputmod' data-expres='[{"columns":["player_id","first_name"],"values":[
+            [103333,"Ivo"],[103819,"Roger"],[103852,"Feliciano"],[104259,"Philipp"],[104269,"Fernando"],[104291,"Malek"]]}]' data-query="SELECT 1"></div>
+
+
+            <h3 id="basic-select-combined">All Combined</h3>
+            <p>Now, let's combine all of the above in a single query.</p>
+            <div class="well">
+              Write a query below that retrieves the first name, last name and computed age of the player renamed to <code>age</code> from the table <code>atp_players</code> for players older than <code>30</code> and who are left handed, code: <code>L</code>. The result should be ordered by age (youngest to oldest) and only include the top 3 results.
+            </div>
+            <div class='sql-challenge' data-id='intro-select-combined' data-expres='[{"columns":["first_name","last_name","age"],"values":[["Albert","Ramos",31],["Adrian","Mannarino",31],["Mischa","Zverev",32]]}]' data-query="SELECT 1"></div>
+
+
+
+            <h2 id="basic-aggregate">Aggregation Queries</h2>
+            <p>Often, we are not interested in "raw" data, but aggregates like averages or counts. These can be expressed in SQL by adding an additional <code>GROUP BY</code> clause after the <code>WHERE</code> clause of the query. In addition, the projection list is modified by adding aggregation functions and groups. The commonly supported aggregate functions are <code>COUNT</code>, <code>MIN</code>, <code>MAX</code> and <code>AVG</code>.
+            </p>
+
+
+            <h3 id="basic-aggregate-ungrouped">Ungrouped Aggregation</h3>
+            <p>
+              The easiest case of aggregating values is aggregating without a <code>GROUP BY</code> clause. In this case, the grouping is implicit and all rows fall into a single group. For example, the query <code>SELECT MIN(birthyear) FROM atp_players</code> will compute the smallest value for the column <code>birthyear
+              </code>.
+            </p>
+            <div class="well">
+              Write a query below that retrieves the oldest age of all players as the column <code>max_age</code> from the <code>atp_players</code> table.
+            </div>
+            <div class='sql-challenge' data-id='intro-aggregate-ungrouped' data-expres='[{"columns":["max_age"],"values":[[40]]}]' data-query="SELECT 1"></div>
+
+
+            <h3 id="basic-aggregate-single">Single-Column Groups</h3>
+            <p>
+              The next step of aggregation is the aggregation by a group determined by the values in the data. For example, the query <code>SELECT country, COUNT() AS n FROM atp_players GROUP BY country</code> generates the aggregate <code>COUNT</code> for each distinct value of <code>country</code>. Its important to know that the projection of the query (the part behind the <code>SELECT</code>) can only contain column names of columns that are used in the <code>GROUP BY</code> part of the query as well. All other columns need to be wrapped in an aggregation function.
+            </p>
+            <div class="well">
+              Find the country with the youngest cohort of players. Write a query below that retrieves the <code>country</code> and the maximum age for each distinct value of <code>country</code> as the column <code>max_age</code> from the <code>atp_players</code> table grouped by <code>country</code>. Order the result by the age and return the top 3.
+            </div>
+            <div class='sql-challenge' data-id='intro-aggregate-group1' data-expres='[{"columns":["country","max_age"],"values":[["GRE",21],["POL",22],["KOR",23]]}]' data-query="SELECT 1"></div>
+
+
+            <h3 id="basic-aggregate-multi">Multi-Column Groups</h3>
+            <p>
+              We can also group by multiple columns. In this case, all combinations of values between the two columns that occur in the data are grouping values. The query will simply list all grouping columns separated by <code>,</code> after the <code>GROUP BY</code> keyword.
+            </p>
+            <div class="well">
+              Write a query below that retrieves the playing hand, country, and the number of tuples in each group as the column <code>n</code> from the <code>atp_players</code> table grouped by the playing hand and country.
+            </div>
+            <div class='sql-challenge' data-id='intro-aggregate-group2' data-expres='[{"columns":["hand","country","n"],"values":[[,"URU",1],["L","ARG",2],["L","CAN",1],["L","CZE",1],["L","ESP",4],["L","FRA",2],["L","GBR",1],["L","GER",2],["L","IND",1],["L","JPN",1],["L","SVK",1],["L","USA",1],["R","ARG",5],["R","AUS",6],["R","AUT",1],["R","BEL",1],["R","BIH",1],["R","BLR",1],["R","BOL",1],["R","BUL",1],["R","CAN",2],["R","CHI",2],["R","CRO",3],["R","CZE",1],["R","ESP",3],["R","FRA",7],["R","GBR",1],["R","GER",4],["R","GRE",1],["R","HUN",1],["R","ITA",4],["R","JPN",2],["R","KAZ",1],["R","KOR",1],["R","LAT",1],["R","MDA",1],["R","NED",1],["R","POL",1],["R","POR",1],["R","ROU",1],["R","RSA",2],["R","RUS",3],["R","SLO",1],["R","SRB",4],["R","SUI",2],["R","TUN",1],["R","USA",9],["R","UZB",1],["U","ESP",1],["U","ITA",1],["U","USA",1]]}]' data-query="SELECT 1"></div>
+
+
+            <h3 id="basic-aggregate-filter">Filtering Values and Groups</h3>
+            <p>In one of the previous exercises, we have seen how we can select (<code>WHERE ...</code>) only part of the table to be relevant to the query. This also applies to groups. For example, before grouping, we might decide to filter out values. We can also filter out groups based on their aggregation values using the <code>HAVING</code> keyword.
+            </p>
+            <p>
+              For example, we could aggregate the handness of the players from Germany using a query like <code>SELECT hand COUNT() AS n FROM atp_players WHERE country = 'GER' GROUP BY hand</code>. The logic here tells the database to conceptually first compute the result of the <code>WHERE</code> clause and then run the aggregation according to the <code>GROUP BY</code> column. The result of this query is:
+            </p>
+            <div id="example1">
+              <script>
+                $("#example1").append(renderresult(db.exec("select hand, count() as n from atp_players where country = 'GER' group by hand"), ""));
+              </script>
+            </div>
+            <div class="well">
+              Write a query that retrieves the number of players born after 1990 and before 2000 for each country.
+            </div>
+            <div class='sql-challenge' data-id='intro-aggregate-group3' data-expres='[{"columns":["country","n"],"values":[["ARG",3],["AUS",4],["AUT",1],["BIH",1],["BLR",1],["BOL",1],["BUL",1],["CAN",1],["CHI",2],["CRO",1],["CZE",1],["ESP",2],["FRA",3],["GBR",2],["GER",2],["GRE",1],["HUN",1],["ITA",2],["JPN",2],["KOR",1],["POL",1],["RSA",1],["RUS",3],["SRB",2],["USA",7]]}]' data-query="SELECT 1"></div>
+            <p>
+              From the previous result, we have seen some groups with low values for <code>n</code>. Let's say we want to remove those. For this we can use the <code>HAVING</code> clause, which operates on the result of aggregation functions. All expressions that can used following the <code>SELECT</code> in a grouped query are acceptable in the <code>HAVING</code> clause to filter the groups.
+            </p>
+            <div class="well">
+              Write a query that retrieves the number of players born after 1990 and before 2000 for each country. Only return answers where the number of players is above 2.
+            </div>
+            <div class='sql-challenge' data-id='intro-aggregate-group4' data-expres='[{"columns":["country","n"],"values":[["ARG",3],["AUS",4],["FRA",3],["RUS",3],["USA",7]]}]' data-query="SELECT 1"></div>
+
+            <h3 id="basic-aggregate-distinct">Distinct Values</h3>
+            <p>A special case of grouping is the <code>DISTINCT</code> keyword. It retrieves the set of unique values from a set of columns.
+            </p>
+            <div class="well">
+              Write a query below that retrieves all the unique values for country from the <code>atp_players</code> table and sorts them alphabetically.
+            </div>
+            <div class='sql-challenge' data-id='intro-aggregate-distinct' data-expres='[{"columns":["country"],"values":[["ARG"],["AUS"],["AUT"],["BEL"],["BIH"],["BLR"],["BOL"],["BUL"],["CAN"],["CHI"],["CRO"],["CZE"],["ESP"],["FRA"],["GBR"],["GER"],["GRE"],["HUN"],["IND"],["ITA"],["JPN"],["KAZ"],["KOR"],["LAT"],["MDA"],["NED"],["POL"],["POR"],["ROU"],["RSA"],["RUS"],["SLO"],["SRB"],["SUI"],["SVK"],["TUN"],["URU"],["USA"],["UZB"]]}]' data-query="SELECT 1"></div>
+
+
+            <h3 id="basic-aggregate-combined">All Combined</h3>
+            <p>Now let's try to combine a lot of what we have learned so far about grouping (and before).</p>
+            <div class="well">
+              Write a query that reports the number of players per country (<code>player_count</code>) as well as the age of the oldest (<code>max_age</code>) and youngest player (<code>min_age</code>). Only return results for countries that have at least 7 players. Use the <code>atp_players</code> table.
+            </div>
+            <div class='sql-challenge' data-id='intro-aggregate-group6' data-expres='[{"columns":["country","player_count","max_age","min_age"],"values":[["ARG",7,32,26],["ESP",8,38,22],["FRA",9,35,21],["USA",11,34,21]]}]' data-query="SELECT 1"></div>
+
+
+
+
+            <h2 id="basic-join">Join</h2>
+            <p>One of the most powerful features of relational databases is the <code>JOIN</code>, the horizontal combination of two tables according to the data. For example, if one table contains information about players and another table contains information about the their rankings, the <code>JOIN</code> operator can be used to combine the two.
+            </p>
+            <p>
+              To extend the example, we use an additional table, <code>atp_rankings_current</code>, which contains the current rankings of the players and the points they've accumulated up to a date:
+            </p>
+            <div id="data2">
+              <script>
+                $("#data2").append(renderresult(db.exec("SELECT * from atp_rankings_current"), ""));
+              </script>
+            </div>
+            <p>
+                Finally, we have a third table that contains the matches played in 2019: <code>atp_matches_2019</code>
+            </p>
+            <div id="data3">
+              <script>
+                $("#data3").append(renderresult(db.exec("SELECT tourney_name, winner_id, winner_name, winner_ioc, loser_id, loser_name, loser_ioc, score, round from atp_matches_2019"), ""));
+              </script>
+            </div>
+
+
+            <h3 id="basic-join-equi">Equi-Join</h3>
+            <p>The basic form of <code>JOIN</code> is the "Equi-Join". "Equi" stands for "Equality" and means that values have to be equal to create a match for the join. In SQL, there are various syntaxes for this, but generally we need to name the two tables in the <code>FROM</code> clause and then either immediately or later in the <code>WHERE</code> specify the columns that should be considered.
+            </p>
+            <p>
+              For example, we can join the <code>atp_players</code> table and the <code>atp_rankings_current</code> table using an Equi-Join on the respective <code>player_id</code> columns to add the actual ranking to the output with <code>SELECT player_id, first_name,	last_name, rank, points FROM atp_players join atp_rankings_current USING (player_id) LIMIT 5;</code>. The result of this query is:
+            </p>
+            <div id="data4">
+              <script>
+                $("#data4").append(renderresult(db.exec("SELECT player_id	,first_name,last_name, rank, points FROM atp_players join atp_rankings_current USING (player_id) LIMIT 5"), ""));
+              </script>
+            </div>
+            <p>
+              Note the list of tables in the <code>FROM</code> clause and the <code>USING</code> keyword, which specifies that values from the column <code>player_id</code>, which exists in both tables, should be compared to generate the join result. There are at least two equivalent ways to formulate this query. First, the join condition can also be more verbose: <code>SELECT atp_players.player_id	,first_name, last_name, rank, points FROM atp_players JOIN atp_rankings_current ON atp_players.player_id = atp_rankings_current.player_id LIMIT 5;</code>. Here, we use the <code>ON</code> keyword to specify a more precise and expressive join condition. We explicitly name the tables from which the join columns are coming using the <code>tablename.columname</code> syntax. We also explicitly use the <code>=</code> comparision operator. Both of these definitions are implicit when using <code>USING</code>. The <code>USING</code> keyword also adds an implicit projection which removes one of the <code>atp_rankings_current</code> results from the result set. The <code>ON</code> version does not, this is why we need to explicitly name one of them in the <code>SELECT</code> part of the query. Second, the join condition can also be in the <code>WHERE</code> clause of the query: <code>SELECT atp_players.player_id	, first_name, last_name, rank, points FROM atp_players JOIN atp_rankings_current WHERE atp_players.player_id = atp_rankings_current.player_id = LIMIT 5; </code>  This method of specifying a join condition is widespread, but confusing and thus discouraged. <!--Finally, the <code>JOIN</code> keyword can also be replaced by a comma <code>,</code>, which is also widespread.-->
+            </p>
+            <!-- <p>In the result above, also note how several rows from <code>voyages</code> (# 1, 3 and 5) are joined up with the same row from <code>chambers</code>. This is normal and expected behavior, rows are re-used if they match multiple rows in the join partner.
+            </p>-->
+            <p>Now try to write a JOIN query yourself!</p>
+            <div class="well">
+              Join the <code>atp_players</code> and <code>atp_rankings_current</code> on the player_id. Project only the first name, country and rank columns. Only return the top 5 players.
+            </div>
+            <div class='sql-challenge' data-id='intro-join1' data-expres='[{"columns":["first_name","country","rank"],"values":[["Novak","SRB",1],["Rafael","ESP",2],["Alexander","GER",3],["Juan Martin","ARG",4],["Kevin","RSA",5]]}]' data-query="SELECT 1"></div>
+            <p>Joins can (of course) use more than one pair of columns to determine that a match is present. For example, the query <code>SELECT winner_name, loser_name, score FROM atp_players JOIN atp_matches_2019 ON atp_players.player_id = winner_id OR atp_players.player_id = loser_id </code> joins the two tables by checking equality wheter the <code>player_id</code> matches the winner or loser column in <code>atp_matches_2019</code>
+            </p>
+
+
+            <h3 id="basic-join-natural">Natural Join</h3>
+            <p>
+              A special case of the Equi-join is the <code>NATURAL JOIN</code>. What it does is perform a join between two tables while using <b>all</b> columns from both tables with matching names as join criteria. The following two queries are equivalent: <code>SELECT first_name, rank from atp_players JOIN atp_rankings_current USING(player_id)</code> and <code>SELECT first_name, rank from atp_players NATURAL JOIN atp_rankings_current</code>, because the column <code>player_id</code> is the only column name the two tables have in common. Think of natural joins as syntactic sugar, which often reduces readability of your query due to its implicit nature.
+            </p>
+            <h3 id="basic-join-outer">Outer Join</h3>
+            <p>The previous section used (by default) what is called an <code>INNER JOIN</code>. Here, only rows where a match in the other table is found for are candidates for the result. There is also an opposite version, the <code>LEFT OUTER JOIN</code> (The <code>OUTER</code> keyword is optional). Here, all rows from the left side of the join (the table named first) are included in the result. If a matching row from the right side is found, it is joined. If none is found, the left row is still returned with the missing fields from the right side set to <code>NULL</code>
+            </p>
+            <div class="well">
+              Not all the winners of matches are in the top 100 players. (Note the table <code>atp_rankings_current</code> only has the top 100) players. Use a <code>LEFT OUTER JOIN</code> on <code>winner_id</code> and <code>player_id</code> and a filter for <code>rank</code> equal to <code>NULL</code> to only retrieve rows where no match was found. Only return the results for the <code>Australian Open</code>. Retrieve only the <code>winner_name</code> attribute.
+            </div>
+            <div class='sql-challenge' data-id='intro-join2' data-expres='[{"columns":["winner_name"],"values":[["Jo Wilfried Tsonga"],["Alex Bolt"],["Evgeny Donskoy"],["Alexei Popyrin"],["Viktor Troicki"],["Stefano Travaglia"],["Daniel Evans"],["Henri Laaksonen"],["Alex Bolt"],["Alexei Popyrin"]]}]' data-query="SELECT 1"></div>
+
+
+            <h3 id="basic-join-self">Self-Join</h3>
+            <p>A powerful use case of joins in SQL is the self-join. Here, we combine the table with itself, which can for example be used to express queries about relationships between rows in the same table. In our dataset, we have such a between the winners and losers of each match. Since both table have the same name in a self-join, it is required to rename them using the <code>AS</code> statement to unique temporary table names. For example, <code>SELECT t.tourney_name FROM atp_matches_2019 AS t where t.tourney_name='Rotterdam'</code> demonstrates such a renaming.
+            <div class="well">
+                Construct a query to find the player that the winner of a tournament played in the quarter finals (<code>QF</code>). The final round is denoted with <code>F</code>. Be sure to limit your join to connect a single tournament. Report the winner's name, the losers name and the tournament name. Report results for the Australian Open.
+            </div>
+            <div class='sql-challenge' data-id='intro-join3' data-expres='[{"columns":["winner_name","loser_name","tourney_name"],"values":[["Novak Djokovic","Kei Nishikori","Australian Open"]]}]' data-query="SELECT 1"></div>
+
+
+            <h3 id="basic-join-multi">More Tables</h3>
+            <p>We can join over more than two tables by chaining <code>JOIN</code> keywords. We also use multiple <code>ON</code> or <code>USING</code> statements to define the join criteria.
+
+           <div class="well">
+              Join all three tables <code>atp_players</code>, <code>atp_rankings_current</code> and <code>atp_matches_2019</code>. Join <code>atp_players</code> and <code>atp_rankings_current</code> on <code>player_id</code> and the resulting table with <code>atp_matches_2019</code> using the <code>winner_id</code> column. Retrieve the rank, handness and name of the winner. Filter on the tournament Rotterdam. Limit the result set to 3 rows ordered by the rank of the winner and remove duplicate rows.
+            </div>
+            <div class='sql-challenge' data-id='intro-join4' data-expres='[{"columns":["rank","hand","winner_name"],"values":[[6,"R",
+            "Kei Nishikori"],[14,"R","Milos Raonic"],[15,"R","Daniil Medvedev"]]}]' data-query="SELECT 1"></div>
+
+
+            <h2 id="basic-subqueries">Subqueries</h2>
+            <p>SQL supports nested queries, the so-called subqueries. They can be used in all parts of the query and often simplify query expression as opposed to a <code>JOIN</code>. Other uses are creation of more convenient join partners or computation of projection results. These queries mostly differ in the allowed cardinality of their results. In projections, they can only return a single value whiled in the <code>FROM</code>clause, entire tables may be produced.</p>
+
+
+            <h3 id="basic-subqueries-where">Filters</h3>
+            <p>Subqueries in a <code>WHERE</code> clause are typically comparing an attribute, either against a single value (e.g. using <code>=</code>) or against a set of values (e.g. with <code>IN</code> or <code>EXISTS</code>). In both cases, it is possible to refer to tuple variables from the enclosing query but not the other way around. Subqueries are enclosed in brackets <code>()</code> and are otherwise complete queries on their own. For example, the rather over-complicated query <code>select winner_name from atp_matches_2019 where score = (SELECT "6-1 6-1")</code> uses a subquery to retrieve all matches with a score <code>6-1 6-1</code>.</p>
+
+          <div class="well">
+            Find the top 100 player who didn't play in the Australian Open.
+            Use a subquery in the <code>WHERE</code> clause to retrieve the first name, last name and player_id from the <code>atp_players</code> table where the player did not play in the Australian Open using the <code>atp_matches_2019</code> table. Use a subquery with either <code>NOT IN</code> or <code>NOT EXISTS</code> (with a reference to the outer query). Remember a player plays when they both win and lose.
+            </div>
+            <div class='sql-challenge' data-id='intro-subquery1' data-expres='[{"columns":["first_name", "last_name", "player_id"],"values":[["Richard","Gasquet", 104755]]}]' data-query="SELECT 1"></div>
+
+            <h3 id="basic-subqueries-from">Tables</h3>
+
+            <p>The result of a subquery is also a table, hence they can also be used to use a subquery result where a table could be used, i.e. the <code>FROM</code> clause. For example, the (again) over-complicated query <code>select first_name from (SELECT * from atp_players) as players</code> uses a table-creating subquery. Note how we have to use the <code>AS</code> clause to give the table created by the subquery a name. We often use subqueries to avoid complex filter conditions after joining tables.</p>
+
+           <div class="well">
+           Use a subquery to select all the matches from the <code>Rotterdam</code> tournament. Join the table to <code>atp_players</code> to find the first name, last name, handness and country of the winner of the tournament. Note, the last match in a tournament is the final round (<code>F</code>).
+            </div>
+            <div class='sql-challenge' data-id='intro-subquery2' data-expres='[{"columns":["first_name","last_name","hand","country"],"values":[["Gael","Monfils","R","FRA"]]}]' data-query="SELECT 1"></div>
+
+            <h2 id="basic-sets">Set Operations</h3>
+            <p>SQL is grounded in the set semantics of the relational model. Hence, result sets can be interpreted as sets of tuples and we can use set operations to modify them. The most common set operation is the <code>UNION</code>, but intersections and set differences are also possible. These operators are often used to combine tuples from different relations.</p>
+
+            <h3 id="basic-sets-union">Unions</h3>
+            <p>The <code>UNION</code> keyword combines two result sets while eliminating duplicates, the <code>UNION ALL</code> keyword does the same while keeping duplicates. Often, constants are also selected to denote the source of the respective tables.
+            </p>
+                <div class="well">
+                Use the <code>UNION</code> keyword to produce a set of all the player names who particpated in the Rotterdam tournament. Again using the <code>atp_matches_2019</code> table. Return the top three names ordered alphabetical. Use the attribute name <code>name</code> in your result.
+            </div>
+            <div class='sql-challenge' data-id='intro-set1' data-expres='[{"columns":["name"],"values":[["Andreas Seppi"],["Benoit Paire"],["Damir Dzumhur"]]}]' data-query="SELECT 1"></div>
+
+<br><br>
+            <p><small>You made it to the end, congratulations.</small></p>
+
+          </div>
+          <!-- /bs-docs-section -->
+        </div>
+        <!-- /col -->
+        <div class="col-md-3" role="complementary">
+          <nav class="bs-docs-sidebar hidden-print hidden-sm hidden-xs affix-top">
+            <ul class="nav bs-docs-sidenav">
+              <li class="">
+                <a href="#intro">Introduction</a>
+              </li>
+              <li class="">
+                <a href="#basic-select">Basic Queries</a>
+                <ul class="nav">
+                  <li class=""><a href="#basic-select-project">Projections</a></li>
+                  <li class=""><a href="#basic-select-select">Selections</a></li>
+                  <li class=""><a href="#basic-select-outputmod">Output Modifiers</a></li>
+                  <li class=""><a href="#basic-select-combined">All Combined</a></li>
+                </ul>
+              </li>
+              <li class="">
+                <a href="#basic-aggregate">Aggregation</a>
+                <ul class="nav">
+                  <li class=""><a href="#basic-aggregate-ungrouped">Ungrouped Aggregation</a></li>
+                  <li class=""><a href="#basic-aggregate-single">Single-Column Groups</a></li>
+                  <li class=""><a href="#basic-aggregate-multi">Multi-Column Groups</a></li>
+                  <li class=""><a href="#basic-aggregate-filter">Filtering Values and Groups</a></li>
+                  <li class=""><a href="#basic-aggregate-distinct">Distinct Values</a></li>
+                  <li class=""><a href="#basic-aggregate-combined">All Combined</a></li>
+                  <li class=""><a href="#basic-aggregate-ct">More Practise</a></li>
+
+                </ul>
+              </li>
+              <li class="">
+                <a href="#basic-join">Join</a>
+                <ul class="nav">
+                  <li class=""><a href="#basic-join-equi">Equi-Join</a></li>
+                  <li class=""><a href="#basic-join-natural">Natural Join</a></li>
+                  <li class=""><a href="#basic-join-outer">Outer Join</a></li>
+                  <li class=""><a href="#basic-join-self">Self-Join</a></li>
+                  <li class=""><a href="#basic-join-multi">More Tables</a></li>
+                </ul>
+              </li>
+
+              <li class="">
+                <a href="#basic-subqueries">Subqueries</a>
+                <ul class="nav">
+                  <li class=""><a href="#basic-subqueries-where">Filters</a></li>
+                  <li class=""><a href="#basic-subqueries-from">Tables</a></li>
+                </ul>
+              </li>
+
+   <li class="">
+                <a href="#basic-sets">Set Operations</a>
+                <ul class="nav">
+                  <li class=""><a href="#basic-sets-union">Unions</a></li>
+                </ul>
+              </li>
+
+
+
+
+              <!-- <div id="loginstatus">Not logged in.</div> -->
+            </ul>
+          </nav>
+        </div>
+        <!-- /col -->
+      </div>
+      <!-- /row -->
+    </div>
+    <!-- /bs-docs-container -->
+  </body>
+</html>
