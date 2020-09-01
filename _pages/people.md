@@ -67,6 +67,11 @@ description: lab members
         height: auto;" src="../assets/people/daza.png"/><br>
         <a class="caption" href="https://dfdazac.github.io">Daniel Daza</a>
         </td>
+        <td style="border: none; background: none;">
+            <img style="padding-top: 5px; padding-bottom: 5px;
+        height: auto;" src="../assets/people/madelon.jpg"/><br>
+        <a class="caption" href="https://madelonhulsebos.github.io">Madelon Hulsebos</a>
+        </td>
     </tr>
     <tr style="border: none; background: none;">
         <td style="border: none; background: none;">
