@@ -84,6 +84,11 @@ description: lab members
         height: auto;" src="../assets/people/stian.jpg"/><br>
         <a class="caption" href="http://soiland-reyes.com/stian/about/">Stian Soiland-Reyes</a>
         </td>
+        <td style="border: none; background: none;">
+            <img style="padding-top: 5px; padding-bottom: 5px;
+        height: auto;" src="../assets/people/james.jpg"/><br>
+        <a class="caption" href="https://www.linkedin.com/in/james-nevin-4b844b153/">James Nevin</a>
+        </td>
     </tr>
     <tr style="border: none; background: none;">
         <td style="border: none; background: none;">
