@@ -85,6 +85,11 @@ description: lab members
         height: auto;" src="../assets/people/melika.jpg"/><br>
         <a class="caption" href="https://twitter.com/melikaayoughi">Melika Ayoughi</a>
         </td>
+        <td style="border: none; background: none;">
+            <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
+        height: auto;" src="../assets/people/effy.jpg"/><br>
+        <a class="caption" href="https://effyli.github.io">Effy Xue Li</a>
+        </td>
     </tr>
     <tr style="border: none; background: none;">
         <td style="border: none; background: none;">
