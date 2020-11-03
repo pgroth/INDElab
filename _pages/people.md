@@ -27,9 +27,15 @@ description: lab members
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px" src="../assets/people/sandberg.png"/><br>
             <a class="caption" href="https://www.uva.nl/profiel/s/a/j.a.c.sandberg/j.a.c.sandberg.html">Dr. Jacobijn Sandberg</a>
         </td>
+        </tr>
+        <tr style="border: none; background: none;">
         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px; height: auto;" src="../assets/people/sebastian.jpg"/><br>
         <a class="caption" href="https://ssc.io">Dr. Sebastian Schelter</a>
+        </td>
+        <td style="border: none; background: none;">
+            <img style="padding-top: 5px; padding-bottom: 5px; width: 100px" src="../assets/people/sara.jpg"/><br>
+        <a class="caption" href="https://smaglia.wordpress.com">Dr. Sara Magliacane</a>
         </td>
         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px" src="../assets/people/hannes.png"/><br>
