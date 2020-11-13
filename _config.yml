@@ -62,7 +62,7 @@ scholar:
   style: apa
   locale: en
 
-  sort_by: year
+  sort_by: year,month_numeric
   order: descending
 
   source: /_bibliography/
