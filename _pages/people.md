@@ -43,10 +43,6 @@ description: lab members
         </td>
 
     </tr>
-    <tr style="border: none; background: none;">
-
-    </tr>
-
 
     <tr style="border: none; background: none;">
         <td style="border: none; background: none;">
@@ -98,19 +94,11 @@ description: lab members
         </td>
     </tr>
     <tr style="border: none; background: none;">
-        <td style="border: none; background: none;">
-        Researchers
-        </td>
         <td colspan="3" style="border: none; background: none;">
         Guest Researchers
         </td>
     </tr>
     <tr style="border: none; background: none;">
-        <td style="border: none; background: none;">
-        <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
-        height: auto;" src="../assets/people/valentin.png"/><br>
-        <a class="caption" href="https://www.linkedin.com/in/valentin-vogelmann-a77b03198/">Valentin Vogelmann</a>
-        </td>
         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
             height: auto;" src="../assets/people/peterbloem.jpg"/><br>
@@ -135,4 +123,12 @@ description: lab members
 
  </table>
 
+
 </div>
+
+<br>
+<br>
+ Previous Members
+<ul>
+<li><a href="https://www.linkedin.com/in/valentin-vogelmann-a77b03198/">Valentin Vogelmann</a> (now at the <a href="https://dhlab.nl">DHLab</a>)</li>
+</ul>
