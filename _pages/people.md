@@ -65,10 +65,23 @@ description: lab members
         height: auto;" src="../assets/people/madelon.jpg"/><br>
         <a class="caption" href="https://madelonhulsebos.github.io">Madelon Hulsebos</a>
         </td>
+         
+    </tr>
+    <tr style="border: none; background: none;">
         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
         height: auto;" src="../assets/people/corey.jpg"/><br>
         <a class="caption" href="https://twitter.com/chrpr">Corey Harper</a>
+        </td>  
+        <td style="border: none; background: none;">
+            <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
+        height: auto;" src="../assets/people/melika.jpg"/><br>
+        <a class="caption" href="https://twitter.com/melikaayoughi">Melika Ayoughi</a>
+        </td>
+        <td style="border: none; background: none;">
+            <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
+        height: auto;" src="../assets/people/effy.jpg"/><br>
+        <a class="caption" href="https://effyli.github.io">Effy Xue Li</a>
         </td>
     </tr>
     <tr style="border: none; background: none;">
@@ -84,13 +97,8 @@ description: lab members
         </td>
         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
-        height: auto;" src="../assets/people/melika.jpg"/><br>
-        <a class="caption" href="https://twitter.com/melikaayoughi">Melika Ayoughi</a>
-        </td>
-        <td style="border: none; background: none;">
-            <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
-        height: auto;" src="../assets/people/effy.jpg"/><br>
-        <a class="caption" href="https://effyli.github.io">Effy Xue Li</a>
+        height: auto;" src="../assets/people/stefan.jpg"/><br>
+        <a class="caption" href="https://twitter.com/sgrafberger">Stefan Grafberger</a>
         </td>
     </tr>
     <tr style="border: none; background: none;">
