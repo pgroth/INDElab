@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2021-03-23 9:00:00 +0100
+date: 2021-03-02 9:00:00 +0100
 inline: true
 ---
 
-INDElab at [EDBT 2021](https://edbticdt2021.cs.ucy.ac.cy). [Sebastian and colleagues](https://twitter.com/sscdotopen/status/1374990398628696069) presented their work on automated data quality validation and Paul served as vice-chair for DB for data science track. 
+Congratulations [Dr. Kathleen Gregory](https://kathleen-gregory.com)! She graduated with her [PhD cum laude](https://doi.org/10.26481/dis.20210302kg) from Maastricht University on data discovery practices in research. Paul was one of Kathleen's promotors.
