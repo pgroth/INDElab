@@ -122,12 +122,21 @@ description: lab members
             height: auto;" src="../assets/people/schlobach.jpg"/><br>
             <a class="caption" href="http://www.few.vu.nl/~schlobac/">Dr. Stefan Schlobach</a>
         </td>
+        <td style="border: none; background: none; width:100px">
+        </td>
+    </tr>
+    <tr style="border: none; background: none;">
         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
             height: auto;" src="../assets/people/jizhang.png"/><br>
             <a class="caption" href="http://jizhang.pro">Dr. Ji Zhang</a>
         </td>
-        </tr>
+        <td style="border: none; background: none;">
+            <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
+            height: auto;" src="../assets/people/fanfeng.jpg"/><br>
+            <a class="caption" href="https://www.linkedin.com/in/fan-feng-473b9120b/">Fan Feng</a>
+        </td>
+    </tr>
 
  </table>
 
