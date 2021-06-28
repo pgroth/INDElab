@@ -1,6 +1,43 @@
 ---
 ---
 
+@inproceedings{10.1145/3448016.3457239,
+author = {Schelter, Sebastian and Grafberger, Stefan and Dunning, Ted},
+title = {HedgeCut: Maintaining Randomised Trees for Low-Latency Machine Unlearning},
+year = {2021},
+isbn = {9781450383431},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3448016.3457239},
+doi = {10.1145/3448016.3457239},
+abstract = {Software systems that learn from user data with machine learning (ML) have become ubiquitous over the last years. Recent law such as the "General Data Protection Regulation" (GDPR) requires organisations that process personal data to delete user data upon request (enacting the "right to be forgotten"). However, this regulation does not only require the deletion of user data from databases, but also applies to ML models that have been learned from the stored data. We therefore argue that ML applications should offer users to unlearn their data from trained models in a timely manner. We explore how fast this unlearning can be done under the constraints imposed by real world deployments, and introduce the problem of low-latency machine unlearning: maintaining a deployed ML model in-place under the removal of a small fraction of training samples without retraining.We propose HedgeCut, a classification model based on an ensemble of randomised decision trees, which is designed to answer unlearning requests with low latency. We detail how to efficiently implement HedgeCut with vectorised operators for decision tree learning. We conduct an experimental evaluation on five privacy-sensitive datasets, where we find that HedgeCut can unlearn training samples with a latency of around 100 microseconds and answers up to 36,000 prediction requests per second, while providing a training time and predictive accuracy similar to widely used implementations of tree-based ML models such as Random Forests.},
+booktitle = {Proceedings of the 2021 International Conference on Management of Data},
+pages = {1545–1557},
+numpages = {13},
+keywords = {machine unlearning, decision trees, serving systems},
+location = {Virtual Event, China},
+series = {SIGMOD/PODS '21}
+}
+
+@inproceedings{10.1145/3448016.3452759,
+author = {Grafberger, Stefan and Guha, Shubha and Stoyanovich, Julia and Schelter, Sebastian},
+title = {MLINSPECT: A Data Distribution Debugger for Machine Learning Pipelines},
+year = {2021},
+isbn = {9781450383431},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3448016.3452759},
+doi = {10.1145/3448016.3452759},
+abstract = {Machine Learning (ML) is increasingly used to automate impactful decisions, and the risks arising from this wide-spread use are garnering attention from policymakers, scientists, and the media. ML applications are often very brittle with respect to their input data, which leads to concerns about their reliability, accountability, and fairness. While bias detection cannot be fully automated, computational tools can help pinpoint particular types of data issues.We recently proposed mlinspect, a library that enables lightweight lineage-based inspection of ML preprocessing pipelines. In this demonstration, we show how mlinspect can be used to detect data distribution bugs in a representative pipeline. In contrast to existing work, mlinspect operates on declarative abstractions of popular data science libraries like estimator/transformer pipelines, can handle both relational and matrix data, and does not require manual code instrumentation. The library is publicly available at https://github.com/stefan-grafberger/mlinspect.},
+booktitle = {Proceedings of the 2021 International Conference on Management of Data},
+pages = {2736–2739},
+numpages = {4},
+keywords = {technical bias, machine learning pipelines, responsible data science, data distribution debugging},
+location = {Virtual Event, China},
+series = {SIGMOD/PODS '21}
+}
+
+
 @article{schelterspecialissue,
   title={Letter from the Special Issue Editor},
   author={Sebastian Schelter},
@@ -33,16 +70,22 @@ month={February},
 year={2021}
 }
 
-
-@inproceedings{
-kersbergen2021,
-title={Learnings from a Retail Recommendation System on Billions of Interactions at bol.com},
-author={Barrie Kersbergen and Sebastian Schelter},
-booktitle={{International Conference on Data Engineering (ICDE)}},
-month={February},
-year={2021},
-url={https://ssc.io/pdf/bol-reco.pdf}
+@INPROCEEDINGS {Kersbergen2021,
+author = {B. Kersbergen and S. Schelter},
+booktitle = {2021 IEEE 37th International Conference on Data Engineering (ICDE)},
+title = {Learnings from a Retail Recommendation System on Billions of Interactions at bol.com},
+year = {2021},
+volume = {},
+issn = {},
+pages = {2447-2452},
+keywords = {measurement;scalability;conferences;europe;prediction algorithms;data engineering;recommender systems},
+doi = {10.1109/ICDE51399.2021.00277},
+url={https://ssc.io/pdf/bol-reco.pdf},
+publisher = {IEEE Computer Society},
+address = {Los Alamitos, CA, USA},
+month = {apr}
 }
+
 
 
 
