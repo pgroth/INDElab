@@ -14,3 +14,4 @@ _Software_
 * [mlinspect](https://github.com/stefan-grafberger/mlinspect) - analyze and inspect python machine learning pipelines to check for common issues.
 * [Torch-RGCN](https://github.com/thiviyanT/torch-RGCN) - a pytorch implementation of relational graph convolutional networks.
 * [BLP](https://github.com/dfdazac/blp) - a model for performing inductive link prediction and entity classification for knowledge graphs where entites have textual descriptions.
+* [conversationkg](https://github.com/INDElab/conversationkg) - package for turning email lists into knowledge graphs. 
