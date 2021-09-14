@@ -128,13 +128,13 @@ description: lab members
     <tr style="border: none; background: none;">
         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
-            height: auto;" src="../assets/people/jizhang.png"/><br>
-            <a class="caption" href="http://jizhang.pro">Dr. Ji Zhang</a>
+            height: auto;" src="../assets/people/fanfeng.jpg"/><br>
+            <a class="caption" href="https://www.linkedin.com/in/fan-feng-473b9120b/">Fan Feng</a>
         </td>
         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
-            height: auto;" src="../assets/people/fanfeng.jpg"/><br>
-            <a class="caption" href="https://www.linkedin.com/in/fan-feng-473b9120b/">Fan Feng</a>
+            height: auto;" src="../assets/people/valentina_c.jpg"/><br>
+            <a class="caption" href="https://twitter.com/vale_carriero">Valentina Carriero</a>
         </td>
     </tr>
 
@@ -145,7 +145,8 @@ description: lab members
 
 <br>
 <br>
- Previous Members
+ Previous Members & Guests
 <ul>
+<li><a href="http://jizhang.pro">Dr. Ji Zhang</a></li>
 <li><a href="https://www.linkedin.com/in/valentin-vogelmann-a77b03198/">Valentin Vogelmann</a> (now at the <a href="https://dhlab.nl">DHLab</a>)</li>
 </ul>
