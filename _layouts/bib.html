@@ -91,6 +91,9 @@
   {% if entry.code %}
     [<a href="{{ entry.code }}" target="_blank">Code</a>]
   {% endif %}
+  {% if entry.award %}
+    [<a href="{{ entry.awardurl }} " target="_blank"> :tada: {{ entry.award }} </a>]
+  {% endif %}
   </span>
 
   <!-- Hidden abstract block -->
