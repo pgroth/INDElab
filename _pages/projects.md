@@ -16,7 +16,9 @@ _Current_
     * Roles: co-PI, PhD Student, research programmer
 * EU COST: [INDCOR (Interactive Narrative Design for Complexity Representations)](https://indcor.eu) Cost Action A18230 (2019 - 2023)
     * Roles: grant holder scientific representative, chair
-*  AFRL: Knowledge Graph Construction from Situated Multimodal Dialogue (2019-2021)
+* AFRL: Knowledge Graph Construction from Situated Multimodal Dialogue (2019-2021)
     * Roles: PI, researcher
 * UvA Human(e) AI RPA - [Ethical MInDS: Mapping Interventions for Data use in Squads](https://humane-ai.nl/launch-event/ethical-minds/) (2019-2021)
     * Roles: co-PI 
+* UvA Global Digital Cultures RPA [Global Cultural Interference: The Case of 5G Data Infrastructures](https://globaldigitalcultures.uva.nl/projects/maxigas.html) (2021-2022)
+    * Roles: co-PI
