@@ -1,5 +1,94 @@
 ---
 ---
+
+@article{Nevin2021,
+  doi = {10.1016/j.patter.2021.100397},
+  url = {https://doi.org/10.1016/j.patter.2021.100397},
+  year = {2021},
+  month = nov,
+  publisher = {Elsevier {BV}},
+  pages = {100397},
+  author = {James Nevin and Michael Lees and Paul Groth},
+  title = {The non-linear impact of data handling on network diffusion models},
+  journal = {Patterns}
+}
+
+@inproceedings{10.1145/3460210.3493573,
+author = {Li, Xue and Magliacane, Sara and Groth, Paul},
+title = {The Challenges of Cross-Document Coreference Resolution for Email},
+year = {2021},
+isbn = {9781450384575},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3460210.3493573},
+doi = {10.1145/3460210.3493573},
+abstract = {Long-form conversations such as email are an important source of information for knowledge capture. For tasks such as knowledge graph construction, conversational search, and entity linking, being able to resolve entities from across documents is important. Building on recent work on within document coreference resolution for email, we study for the first time a cross-document formulation of the problem. Our results show that the current state-of-the-art deep learning models for general cross-document coreference resolution are insufficient for email conversations. Our experiments show that the general task is challenging and, importantly for knowledge intensive tasks, coreference resolution models that only treat entity mentions perform worse. Based on these results, we outline the work needed to address this challenging task.},
+booktitle = {Proceedings of the 11th on Knowledge Capture Conference},
+pages = {273–276},
+numpages = {4},
+keywords = {cross-document coreference resolution, challenges, email conversations, entity resolution, conversational data},
+location = {Virtual Event, USA},
+series = {K-CAP '21}
+}
+
+@inproceedings{DBLP:conf/esws/ShroffVMG21,
+  author    = {Natasha Shroff and
+               Pierre{-}Yves Vandenbussche and
+               V{\'{e}}ronique Moore and
+               Paul Groth},
+  editor    = {Sarra Ben Abb{\`{e}}s and
+               Rim Hantach and
+               Philippe Calvez and
+               Davide Buscaldi and
+               Danilo Dess{\`{\i}} and
+               Mauro Dragoni and
+               Diego Reforgiato Recupero and
+               Harald Sack},
+  title     = {Supporting Ontology Maintenance with Contextual Word Embeddings and
+               Maximum Mean Discrepancy},
+  booktitle = {Joint Proceedings of the 2nd International Workshop on Deep Learning
+               meets Ontologies and Natural Language Processing (DeepOntoNLP 2021)
+               {\&} 6th International Workshop on Explainable Sentiment Mining
+               and Emotion Detection {(X-SENTIMENT} 2021) co-located with co-located
+               with 18th Extended Semantic Web Conference 2021, Hersonissos, Greece,
+               June 6th - 7th, 2021 (moved online)},
+  series    = {{CEUR} Workshop Proceedings},
+  volume    = {2918},
+  pages     = {11--19},
+  publisher = {CEUR-WS.org},
+  year      = {2021},
+  url       = {http://ceur-ws.org/Vol-2918/paper2.pdf},
+  timestamp = {Tue, 10 Aug 2021 16:26:49 +0200},
+  biburl    = {https://dblp.org/rec/conf/esws/ShroffVMG21.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@proceedings{DBLP:conf/pkdd/2021mlsmkg,
+  editor    = {Mehwish Alam and
+               Mehdi Ali and
+               Paul Groth and
+               Pascal Hitzler and
+               Jens Lehmann and
+               Heiko Paulheim and
+               Achim Rettinger and
+               Harald Sack and
+               Afshin Sadeghi and
+               Volker Tresp},
+  title     = {Machine Learning with Symbolic Methods and Knowledge Graphs co-located
+               with European Conference on Machine Learning and Principles and Practice
+               of Knowledge Discovery in Databases {(ECML} {PKDD} 2021), Virtual,
+               September 17, 2021},
+  series    = {{CEUR} Workshop Proceedings},
+  volume    = {2997},
+  publisher = {CEUR-WS.org},
+  year      = {2021},
+  url       = {http://ceur-ws.org/Vol-2997},
+  urn       = {urn:nbn:de:0074-2997-0},
+  timestamp = {Mon, 15 Nov 2021 14:58:09 +0100},
+  biburl    = {https://dblp.org/rec/conf/pkdd/2021mlsmkg.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
 @inproceedings{harper-etal-2021-semeval,
     title = "{S}em{E}val-2021 Task 8: {M}eas{E}val {--} Extracting Counts and Measurements and their Related Contexts",
     author = "Harper, Corey  and
@@ -19,7 +108,7 @@
     abstract = "We describe MeasEval, a SemEval task of extracting counts, measurements, and related context from scientific documents, which is of significant importance to the creation of Knowledge Graphs that distill information from the scientific literature. This is a new task in 2021, for which over 75 submissions from 25 participants were received. We expect the data developed for this task and the findings reported to be valuable to the scientific knowledge extraction, metrology, and automated knowledge base construction communities.",
 }
 
-@inbook{10.1145/3447928.3456653,
+@inproceedings{10.1145/3447928.3456653,
 author = {Hunt, Nathan and Fulton, Nathan and Magliacane, Sara and Hoang, Trong Nghia and Das, Subhro and Solar-Lezama, Armando},
 title = {Verifiably Safe Exploration for End-to-End Reinforcement Learning},
 year = {2021},
@@ -27,30 +116,32 @@ isbn = {9781450383394},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
 url = {https://doi.org/10.1145/3447928.3456653},
-abstract = {Deploying deep reinforcement learning in safety-critical settings requires developing
-algorithms that obey hard constraints during exploration. This paper contributes a
-first approach toward enforcing formal safety constraints on end-to-end policies with
-visual inputs. Our approach draws on recent advances in object detection and automated
-reasoning for hybrid dynamical systems. The approach is evaluated on a novel benchmark
-that emphasizes the challenge of safely exploring in the presence of hard constraints.
-Our benchmark draws from several proposed problem sets for safe learning and includes
-problems that emphasize challenges such as reward signals that are not aligned with
-safety constraints. On each of these benchmark problems, our algorithm completely
-avoids unsafe behavior while remaining competitive at optimizing for as much reward
-as is safe. We characterize safety constraints in terms of a refinement relation on
-Markov decision processes - rather than directly constraining the reinforcement learning
-algorithm so that it only takes safe actions, we instead refine the environment so
-that only safe actions are defined in the environment's transition structure. This
-has pragmatic system design benefits and, more importantly, provides a clean conceptual
-setting in which we are able to prove important safety and efficiency properties.
-These allow us to transform the constrained optimization problem of acting safely
-in the original environment into an unconstrained optimization in a refined environment.},
+doi = {10.1145/3447928.3456653},
+abstract = {Deploying deep reinforcement learning in safety-critical settings requires developing algorithms that obey hard constraints during exploration. This paper contributes a first approach toward enforcing formal safety constraints on end-to-end policies with visual inputs. Our approach draws on recent advances in object detection and automated reasoning for hybrid dynamical systems. The approach is evaluated on a novel benchmark that emphasizes the challenge of safely exploring in the presence of hard constraints. Our benchmark draws from several proposed problem sets for safe learning and includes problems that emphasize challenges such as reward signals that are not aligned with safety constraints. On each of these benchmark problems, our algorithm completely avoids unsafe behavior while remaining competitive at optimizing for as much reward as is safe. We characterize safety constraints in terms of a refinement relation on Markov decision processes - rather than directly constraining the reinforcement learning algorithm so that it only takes safe actions, we instead refine the environment so that only safe actions are defined in the environment's transition structure. This has pragmatic system design benefits and, more importantly, provides a clean conceptual setting in which we are able to prove important safety and efficiency properties. These allow us to transform the constrained optimization problem of acting safely in the original environment into an unconstrained optimization in a refined environment.},
 booktitle = {Proceedings of the 24th International Conference on Hybrid Systems: Computation and Control},
 articleno = {14},
-numpages = {11}
+numpages = {11},
+keywords = {safe artificial intelligence, reinforcement learning, neural networks, differential dynamic logic, hybrid systems, formal verification},
+location = {Nashville, Tennessee},
+series = {HSCC '21}
 }
 
-@inbook{10.1145/3442442.3453701, author = {West, Robert and Bhagat, Smriti and Groth, Paul and Zitnik, Marinka and Couto, Francisco M. and Lisena, Pasquale and Mero\~{n}o-Pe\~{n}uela, Albert and Zhao, Xiangyu and Fan, Wenqi and Yin, Dawei and Tang, Jiliang and Shou, Linjun and Gong, Ming and Pei, Jian and Geng, Xiubo and Zhou, Xingjie and Jiang, Daxin and Ricaud, Benjamin and Aspert, Nicolas and Miz, Volodymyr and Dy, Jennifer and Ioannidis, Stratis and Y\i{}ld\i{}z, undefinedlkay and Rezapour, Rezvaneh and Aref, Samin and Dinh, Ly and Diesner, Jana and Drutsa, Alexey and Ustalov, Dmitry and Popov, Nikita and Baidakova, Daria and Mishra, Shubhanshu and Gopalan, Arjun and Juan, Da-Cheng and Ilharco Magalhaes, Cesar and Ferng, Chun-Sung and Heydon, Allan and Lu, Chun-Ta and Pham, Philip and Yu, George and Fan, Yicheng and Wang, Yueqi and Laurent, Florian and Schraner, Yanick and Scheller, Christian and Mohanty, Sharada and Chen, Jiawei and Wang, Xiang and Feng, Fuli and He, Xiangnan and Teinemaa, Irene and Albert, Javier and Goldenberg, Dmitri and Vasile, Flavian and Rohde, David and Jeunen, Olivier and Benhalloum, Amine and Sakhi, Otmane and Rong, Yu and Huang, Wenbing and Xu, Tingyang and Bian, Yatao and Cheng, Hong and Sun, Fuchun and Huang, Junzhou and Fakhraei, Shobeir and Faloutsos, Christos and \c{C}elebi, Onur and M\"{u}ller, Martin and Schneider, Manuel and Altunina, Olesia and Wingerath, Wolfram and Wollmer, Benjamin and Gessert, Felix and Succo, Stephan and Ritter, Norbert and Courdier, Evann and Avram, Tudor Mihai and Cvetinovic, Dragan and Tsinadze, Levan and Jose, Johny and Howell, Rose and Koenig, Mario and Defferrard, Micha\"{e}l and Kenthapadi, Krishnaram and Packer, Ben and Sameki, Mehrnoosh and Sephus, Nashlie}, title = {Summary of Tutorials at The Web Conference 2021}, year = {2021}, isbn = {9781450383134}, publisher = {Association for Computing Machinery}, address = {New York, NY, USA}, url = {https://doi.org/10.1145/3442442.3453701}, abstract = {This report summarizes the 23 tutorials hosted at The Web Conference 2021: nine lecture-style tutorials and 14 hands-on tutorials.}, booktitle = {Companion Proceedings of the Web Conference 2021}, pages = {727–733}, numpages = {7} }
+@inproceedings{10.1145/3442442.3453701,
+author = {West, Robert and Bhagat, Smriti and Groth, Paul and Zitnik, Marinka and Couto, Francisco M. and Lisena, Pasquale and Mero\~{n}o-Pe\~{n}uela, Albert and Zhao, Xiangyu and Fan, Wenqi and Yin, Dawei and Tang, Jiliang and Shou, Linjun and Gong, Ming and Pei, Jian and Geng, Xiubo and Zhou, Xingjie and Jiang, Daxin and Ricaud, Benjamin and Aspert, Nicolas and Miz, Volodymyr and Dy, Jennifer and Ioannidis, Stratis and Y\i{}ld\i{}z, undefinedlkay and Rezapour, Rezvaneh and Aref, Samin and Dinh, Ly and Diesner, Jana and Drutsa, Alexey and Ustalov, Dmitry and Popov, Nikita and Baidakova, Daria and Mishra, Shubhanshu and Gopalan, Arjun and Juan, Da-Cheng and Ilharco Magalhaes, Cesar and Ferng, Chun-Sung and Heydon, Allan and Lu, Chun-Ta and Pham, Philip and Yu, George and Fan, Yicheng and Wang, Yueqi and Laurent, Florian and Schraner, Yanick and Scheller, Christian and Mohanty, Sharada and Chen, Jiawei and Wang, Xiang and Feng, Fuli and He, Xiangnan and Teinemaa, Irene and Albert, Javier and Goldenberg, Dmitri and Vasile, Flavian and Rohde, David and Jeunen, Olivier and Benhalloum, Amine and Sakhi, Otmane and Rong, Yu and Huang, Wenbing and Xu, Tingyang and Bian, Yatao and Cheng, Hong and Sun, Fuchun and Huang, Junzhou and Fakhraei, Shobeir and Faloutsos, Christos and \c{C}elebi, Onur and M\"{u}ller, Martin and Schneider, Manuel and Altunina, Olesia and Wingerath, Wolfram and Wollmer, Benjamin and Gessert, Felix and Succo, Stephan and Ritter, Norbert and Courdier, Evann and Avram, Tudor Mihai and Cvetinovic, Dragan and Tsinadze, Levan and Jose, Johny and Howell, Rose and Koenig, Mario and Defferrard, Micha\"{e}l and Kenthapadi, Krishnaram and Packer, Ben and Sameki, Mehrnoosh and Sephus, Nashlie},
+title = {Summary of Tutorials at The Web Conference 2021},
+year = {2021},
+isbn = {9781450383134},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3442442.3453701},
+doi = {10.1145/3442442.3453701},
+abstract = {This report summarizes the 23 tutorials hosted at The Web Conference 2021: nine lecture-style tutorials and 14 hands-on tutorials.},
+booktitle = {Companion Proceedings of the Web Conference 2021},
+pages = {727–733},
+numpages = {7},
+location = {Ljubljana, Slovenia},
+series = {WWW '21}
+}
 
 @article{Lamprecht2021,
   doi = {10.12688/f1000research.54159.1},
@@ -225,7 +316,7 @@ arxiv={2011.03459}
   url={http://sites.computer.org/debull/A20dec/p39.pdf}
 }
 
-}
+% 2020
 
 @proceedings{DBLP:conf/i-semantics/2020,
   author    = {Eva Blomqvist and
@@ -251,6 +342,27 @@ arxiv={2011.03459}
   timestamp = {Tue, 27 Oct 2020 16:52:33 +0100},
   biburl    = {https://dblp.org/rec/conf/i-semantics/2020.bib},
   bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+@article{10.1145/3446428,
+author = {Zeng, Weixin and Zhao, Xiang and Tang, Jiuyang and Lin, Xuemin and Groth, Paul},
+title = {Reinforcement Learning–Based Collective Entity Alignment with Adaptive Features},
+year = {2021},
+issue_date = {July 2021},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {39},
+number = {3},
+issn = {1046-8188},
+url = {https://doi.org/10.1145/3446428},
+doi = {10.1145/3446428},
+abstract = {Entity alignment (EA) is the task of identifying the entities that refer to the same real-world object but are located in different knowledge graphs (KGs). For entities to be aligned, existing EA solutions treat them separately and generate alignment results as ranked lists of entities on the other side. Nevertheless, this decision-making paradigm fails to take into account the interdependence among entities. Although some recent efforts mitigate this issue by imposing the 1-to-1 constraint on the alignment process, they still cannot adequately model the underlying interdependence and the results tend to be sub-optimal.To fill in this gap, in this work, we delve into the dynamics of the decision-making process, and offer a reinforcement learning (RL)–based model to align entities collectively. Under the RL framework, we devise the coherence and exclusiveness constraints to characterize the interdependence and restrict collective alignment. Additionally, to generate more precise inputs to the RL framework, we employ representative features to capture different aspects of the similarity between entities in heterogeneous KGs, which are integrated by an adaptive feature fusion strategy. Our proposal is evaluated on both cross-lingual and mono-lingual EA benchmarks and compared against state-of-the-art solutions. The empirical results verify its effectiveness and superiority.},
+journal = {ACM Trans. Inf. Syst.},
+month = {may},
+articleno = {26},
+numpages = {31},
+keywords = {adaptive feature fusion, Entity alignment, reinforcement learning}
 }
 
 @inproceedings{brate-etal-2020-towards,
