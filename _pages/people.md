@@ -37,11 +37,6 @@ description: lab members
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px" src="../assets/people/sara.jpg"/><br>
         <a class="caption" href="https://smaglia.wordpress.com">Dr. Sara Magliacane</a>
         </td>
-        <td style="border: none; background: none;">
-            <img style="padding-top: 5px; padding-bottom: 5px; width: 100px" src="../assets/people/hannes.png"/><br>
-        <a class="caption" href="https://hannes.muehleisen.org">Dr. Hannes Mühleisen</a>
-        </td>
-
     </tr>
 
     <tr style="border: none; background: none;">
@@ -101,13 +96,6 @@ description: lab members
         <a class="caption" href="https://twitter.com/sgrafberger">Stefan Grafberger</a>
         </td>
     </tr>
-     <tr style="border: none; background: none;">
-        <td style="border: none; background: none;">
-            <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
-        height: auto;" src="../assets/people/alexander.jpg"/><br>
-        <a class="caption" href="https://github.com/Scriddie">Alexander Reisach</a>
-        </td>
-    </tr>
     <tr style="border: none; background: none;">
         <td colspan="3" style="border: none; background: none;">
         Guest Researchers
@@ -154,6 +142,7 @@ description: lab members
 <br>
  Previous Members & Guests
 <ul>
+<li><a href="https://hannes.muehleisen.org">Dr. Hannes Mühleisen</a> (CWI & DuckDB labs)</li>
 <li><a href="http://jizhang.pro">Dr. Ji Zhang</a></li>
 <li><a href="https://www.linkedin.com/in/valentin-vogelmann-a77b03198/">Valentin Vogelmann</a> (now at the <a href="https://dhlab.nl">DHLab</a>)</li>
 </ul>
