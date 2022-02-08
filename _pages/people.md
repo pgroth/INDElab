@@ -128,8 +128,8 @@ description: lab members
         </td>
         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
-            height: auto;" src="../assets/people/valentina_c.jpg"/><br>
-            <a class="caption" href="https://twitter.com/vale_carriero">Valentina Carriero</a>
+            height: auto;" src="../assets/people/anca_s.png"/><br>
+            <a class="caption" href="http://www.ancaserbanescu.com/about/">Anca Serbanescu</a>
         </td>
     </tr>
 
@@ -142,7 +142,8 @@ description: lab members
 <br>
  Previous Members & Guests
 <ul>
+<li><a href="https://twitter.com/vale_carriero">Valentina Carriero</a> (University of Bologna)</li>
 <li><a href="https://hannes.muehleisen.org">Dr. Hannes Mühleisen</a> (CWI & DuckDB labs)</li>
-<li><a href="http://jizhang.pro">Dr. Ji Zhang</a></li>
-<li><a href="https://www.linkedin.com/in/valentin-vogelmann-a77b03198/">Valentin Vogelmann</a> (now at the <a href="https://dhlab.nl">DHLab</a>)</li>
+<li><a href="http://jizhang.pro">Dr. Ji Zhang</a> (Huawei) </li>
+<li><a href="https://www.linkedin.com/in/valentin-vogelmann-a77b03198/">Valentin Vogelmann</a> (<a href="https://dhlab.nl">DHLab</a>)</li>
 </ul>
