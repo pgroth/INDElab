@@ -10,7 +10,7 @@ description: lab members
 <table style="border: none; background: none; margin-top: 0;">
 <tr style="border: none; background: none;">
     <td style="border: none; background: none;">
-    Faculty
+    Faculty & Staff
     </td>
 </tr>
     <tr style="border: none; background: none;">
@@ -36,6 +36,10 @@ description: lab members
         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px" src="../assets/people/sara.jpg"/><br>
         <a class="caption" href="https://smaglia.wordpress.com">Dr. Sara Magliacane</a>
+        </td>
+        <td style="border: none; background: none;">
+            <img style="padding-top: 5px; padding-bottom: 5px; width: 100px" src="../assets/people/shuba.jpeg"/><br>
+        <a class="caption" href="https://www.linkedin.com/in/shubhaguha/">Shuba Guha</a>
         </td>
     </tr>
 
