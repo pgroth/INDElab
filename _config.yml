@@ -35,7 +35,7 @@ collections:
     output: true
     permalink: /news/:path/
 
-news_limit: 6
+news_limit: 8
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
