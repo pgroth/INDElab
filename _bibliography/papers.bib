@@ -2,6 +2,42 @@
 ---
 % 2022
 
+@inproceedings{10.1145/3514221.3517901,
+author = {Kersbergen, Barrie and Sprangers, Olivier and Schelter, Sebastian},
+title = {Serenade - Low-Latency Session-Based Recommendation in e-Commerce at Scale},
+year = {2022},
+isbn = {9781450392495},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://ssc.io/pdf/modds003.pdf},
+doi = {10.1145/3514221.3517901},
+abstract = {Session-based recommendation predicts the next item with which a user will interact, given a sequence of her past interactions with other items. This machine learning problem targets a core scenario in e-commerce platforms, which aim to recommend interesting items to buy to users browsing the site. Session-based recommenders are difficult to scale due to their exponentially large input space of potential sessions. This impedes offline precomputation of the recommendations, and implies the necessity to maintain state during the online computation of next-item recommendations.We propose VMIS-kNN, an adaptation of a state-of-the-art nearest neighbor approach to session-based recommendation, which leverages a prebuilt index to compute next-item recommendations with low latency in scenarios with hundreds of millions of clicks to search through. Based on this approach, we design and implement the scalable session-based recommender system Serenade, which is in production usage at bol.com, a large European e-commerce platform.We evaluate the predictive performance of VMIS-kNN, and show that Serenade can answer a thousand recommendation requests per second with a 90th percentile latency of less than seven milliseconds in scenarios with millions of items to recommend. Furthermore, we present results from a three week long online A/B test with up to 600 requests per second for 6.5 million distinct items on more than 45 million user sessions from our e-commerce platform. To the best of our knowledge, we provide the first empirical evidence that the superior predictive performance of nearest neighbor approaches to session-based recommendation in offline evaluations translates to superior performance in a real world e-commerce setting.},
+booktitle = {Proceedings of the 2022 International Conference on Management of Data},
+pages = {150–159},
+numpages = {10},
+location = {Philadelphia, PA, USA},
+series = {SIGMOD/PODS '22},
+month = {june}
+}
+
+@inproceedings{10.1145/3533028.3533303,
+author = {Grafberger, Stefan and Groth, Paul and Schelter, Sebastian},
+title = {Towards Data-Centric What-If Analysis for Native Machine Learning Pipelines},
+year = {2022},
+isbn = {9781450393751},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://stefan-grafberger.com/mlwhatif-deem.pdf},
+doi = {10.1145/3533028.3533303},
+abstract = {An important task of data scientists is to understand the sensitivity of their models to changes in the data that the models are trained and tested upon. Currently, conducting such data-centric what-if analyses requires significant and costly manual development and testing with the corresponding chance for the introduction of bugs. We discuss the problem of data-centric what-if analysis over whole ML pipelines (including data preparation and feature encoding), propose optimisations that reuse trained models and intermediate data to reduce the runtime of such analysis, and finally conduct preliminary experiments on three complex example pipelines, where our approach reduces the runtime by a factor of up to six.},
+booktitle = {Proceedings of the Sixth Workshop on Data Management for End-To-End Machine Learning},
+articleno = {3},
+numpages = {5},
+location = {Philadelphia, Pennsylvania},
+month = {june},
+series = {DEEM '22}
+}
+
 @article{10.1145/3488717,
 author = {Stoyanovich, Julia and Abiteboul, Serge and Howe, Bill and Jagadish, H. V. and Schelter, Sebastian},
 title = {Responsible Data Management},
@@ -45,7 +81,8 @@ numpages = {10}
     author       = {Lippe, Phillip and Magliacane, Sara and L{\"o}we, Sindy and Asano, Yuki M. and Cohen, Taco and Gavves, Efstratios},
     year         = 2022,
     booktitle    = {Proceedings of the 39th International Conference on Machine Learning, {ICML}},
-    arxiv         = {2202.03169}
+    arxiv         = {2202.03169},
+    month = {may}
 }
 
 
@@ -61,6 +98,7 @@ numpages = {10}
     address = "Dublin, Ireland",
     publisher = "Association for Computational Linguistics",
     url = "https://aclanthology.org/2022.spnlp-1.4",
+    doi = "10.18653/v1/2022.spnlp-1.4",
     pages = "32--39",
     abstract = "We present SlotGAN, a framework for training a mention detection model that only requires unlabeled text and a gazetteer. It consists of a generator trained to extract spans from an input sentence, and a discriminator trained to determine whether a span comes from the generator, or from the gazetteer.We evaluate the method on English newswire data and compare it against supervised, weakly-supervised, and unsupervised methods. We find that the performance of the method is lower than these baselines, because it tends to generate more and longer spans, and in some cases it relies only on capitalization. In other cases, it generates spans that are valid but differ from the benchmark. When evaluated with metrics based on overlap, we find that SlotGAN performs within 95{\%} of the precision of a supervised method, and 84{\%} of its recall. Our results suggest that the model can generate spans that overlap well, but an additional filtering mechanism is required.",
 }
