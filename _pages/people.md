@@ -38,6 +38,12 @@ description: lab members
         <a class="caption" href="https://smaglia.wordpress.com">Dr. Sara Magliacane</a>
         </td>
         <td style="border: none; background: none;">
+            <img style="padding-top: 5px; padding-bottom: 5px; width: 100px" src="../assets/people/viktoriya.jpg"/><br>
+        <a class="caption" href="https://vdegeler.com">Dr. Viktoriya Degeler</a>
+        </td>
+    </tr>
+    <tr style="border: none; background: none;">
+        <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px" src="../assets/people/shuba.jpeg"/><br>
         <a class="caption" href="https://www.linkedin.com/in/shubhaguha/">Shuba Guha</a>
         </td>
@@ -130,11 +136,6 @@ description: lab members
             height: auto;" src="../assets/people/fanfeng.jpg"/><br>
             <a class="caption" href="https://www.linkedin.com/in/fan-feng-473b9120b/">Fan Feng</a>
         </td>
-        <td style="border: none; background: none;">
-            <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
-            height: auto;" src="../assets/people/anca_s.png"/><br>
-            <a class="caption" href="http://www.ancaserbanescu.com/about/">Anca Serbanescu</a>
-        </td>
     </tr>
 
  </table>
@@ -146,6 +147,7 @@ description: lab members
 <br>
  Previous Members & Guests
 <ul>
+<li><a href="http://www.ancaserbanescu.com/about/">Anca Serbanescu</a> (Politecnico di Milano)</li>
 <li><a href="https://twitter.com/vale_carriero">Valentina Carriero</a> (University of Bologna)</li>
 <li><a href="https://hannes.muehleisen.org">Dr. Hannes Mühleisen</a> (CWI & DuckDB labs)</li>
 <li><a href="http://jizhang.pro">Dr. Ji Zhang</a> (Huawei) </li>
