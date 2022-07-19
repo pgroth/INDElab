@@ -44,8 +44,8 @@ description: lab members
     </tr>
     <tr style="border: none; background: none;">
         <td style="border: none; background: none;">
-            <img style="padding-top: 5px; padding-bottom: 5px; width: 100px" src="../assets/people/shuba.jpeg"/><br>
-        <a class="caption" href="https://www.linkedin.com/in/shubhaguha/">Shuba Guha</a>
+            <img style="padding-top: 5px; padding-bottom: 5px; width: 100px" src="../assets/people/shubha.jpeg"/><br>
+        <a class="caption" href="https://www.linkedin.com/in/shubhaguha/">Shubha Guha</a>
         </td>
     </tr>
 
