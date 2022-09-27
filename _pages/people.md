@@ -107,6 +107,13 @@ description: lab members
         </td>
     </tr>
     <tr style="border: none; background: none;">
+    <td style="border: none; background: none;">
+            <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
+        height: auto;" src="../assets/people/pengyu.jpg"/><br>
+        <a class="caption" href="https://www.linkedin.com/in/pengyuzhang03/">Pengyu Zhang</a>
+        </td>
+    </tr>
+    <tr style="border: none; background: none;">
         <td colspan="3" style="border: none; background: none;">
         Guest Researchers
         </td>
