@@ -112,6 +112,11 @@ description: lab members
         height: auto;" src="../assets/people/pengyu.jpg"/><br>
         <a class="caption" href="https://www.linkedin.com/in/pengyuzhang03/">Pengyu Zhang</a>
         </td>
+    <td style="border: none; background: none;">
+            <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
+        height: auto;" src="../assets/people/zeyu.png"/><br>
+        <a class="caption" href="http://linkedin.com/in/zeyu-zhang-8b2416204">Zeyu Zhang</a>
+        </td>
     </tr>
     <tr style="border: none; background: none;">
         <td colspan="3" style="border: none; background: none;">
