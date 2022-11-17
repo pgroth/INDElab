@@ -34,18 +34,12 @@ description: lab members
         <a class="caption" href="https://ssc.io">Dr. Sebastian Schelter</a>
         </td>
         <td style="border: none; background: none;">
-            <img style="padding-top: 5px; padding-bottom: 5px; width: 100px" src="../assets/people/sara.jpg"/><br>
-        <a class="caption" href="https://smaglia.wordpress.com">Dr. Sara Magliacane</a>
-        </td>
-        <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px" src="../assets/people/viktoriya.jpg"/><br>
         <a class="caption" href="https://vdegeler.com">Dr. Viktoriya Degeler</a>
-        </td>
-    </tr>
-    <tr style="border: none; background: none;">
         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px" src="../assets/people/shubha.jpeg"/><br>
         <a class="caption" href="https://www.linkedin.com/in/shubhaguha/">Shubha Guha</a>
+        </td>
         </td>
     </tr>
 
@@ -159,6 +153,7 @@ description: lab members
 <br>
  Previous Members & Guests
 <ul>
+<li><a href="https://saramagliacane.github.io">Dr. Sara Magliacane</a> (<a href="https://saramagliacane.github.io">Amsterdam Machine Learning Lab - UvA</a>)</li>
 <li><a href="http://www.ancaserbanescu.com/about/">Anca Serbanescu</a> (Politecnico di Milano)</li>
 <li><a href="https://twitter.com/vale_carriero">Valentina Carriero</a> (University of Bologna)</li>
 <li><a href="https://hannes.muehleisen.org">Dr. Hannes Mühleisen</a> (CWI & DuckDB labs)</li>
