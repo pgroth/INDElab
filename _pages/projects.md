@@ -8,6 +8,10 @@ Projects that INDELab is involved with.
 
 _Current_
 
+* EU Hoizon Europe: [Efficient Explainable Learning on Knowledge Graphs (ENEXA)](http://enexa.eu) (2022-2025)
+    * Roles: co-PI, PhD Student
+* NWO: [DITEC: Digital Twin for Evolutionary Changes in water networks](https://www.nwo.nl/en/projects/19454) (2022-2026)
+    * Roles: PI, PhD Student
 * Ahold Delhaize: [AI for Retail Lab](https://icai.ai/airlab/) (2019-2024)
     * Roles: co-scientific director, lab manager, PhD student
 * Elsevier: [Discovery Lab](https://discoverylab.ai) (2019-2024) 
