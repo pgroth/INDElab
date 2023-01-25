@@ -158,6 +158,11 @@ description: lab members
             height: auto;" src="../assets/people/till.jpg"/><br>
             <a class="caption" href="https://tdoehmen.github.io" >Till Döhmen</a>
         </td>
+        <td style="border: none; background: none;">
+            <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
+            height: auto;" src="../assets/people/davide.jpg"/><br>
+            <a class="caption" href="https://davidetalon.github.io/" >Davide Talon</a>
+        </td>
     </tr>
 
  </table>
