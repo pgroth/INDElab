@@ -64,7 +64,6 @@ description: lab members
         height: auto;" src="../assets/people/madelon.jpg"/><br>
         <a class="caption" href="https://madelonhulsebos.github.io">Madelon Hulsebos</a>
         </td>
-         
     </tr>
     <tr style="border: none; background: none;">
         <td style="border: none; background: none;">
@@ -75,7 +74,7 @@ description: lab members
         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
         height: auto;" src="../assets/people/melika.jpg"/><br>
-        <a class="caption" href="https://twitter.com/melikaayoughi">Melika Ayoughi</a>
+        <a class="caption" href="https://melika.xyz/">Melika Ayoughi</a>
         </td>
         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
@@ -97,24 +96,31 @@ description: lab members
         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
         height: auto;" src="../assets/people/stefan.jpg"/><br>
-        <a class="caption" href="https://twitter.com/sgrafberger">Stefan Grafberger</a>
+        <a class="caption" href="https://stefan-grafberger.com/">Stefan Grafberger</a>
         </td>
     </tr>
     <tr style="border: none; background: none;">
-    <td style="border: none; background: none;">
+        <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
-        height: auto;" src="../assets/people/pengyu.jpg"/><br>
-        <a class="caption" href="https://www.linkedin.com/in/pengyuzhang03/">Pengyu Zhang</a>
+            height: auto;" src="../assets/people/pengyu.jpg"/><br>
+            <a class="caption" href="https://www.linkedin.com/in/pengyuzhang03/">Pengyu Zhang</a>
         </td>
-    <td style="border: none; background: none;">
+        <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
-        height: auto;" src="../assets/people/zeyu.png"/><br>
-        <a class="caption" href="http://linkedin.com/in/zeyu-zhang-8b2416204">Zeyu Zhang</a>
+            height: auto;" src="../assets/people/zeyu.png"/><br>
+            <a class="caption" href="http://linkedin.com/in/zeyu-zhang-8b2416204">Zeyu Zhang</a>
         </td>
-    <td style="border: none; background: none;">
+        <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
-        height: auto;" src="../assets/people/fina.png"/><br>
-        <a class="caption" href="https://www.linkedin.com/in/finapolat/ ">Fina Polat</a>
+            height: auto;" src="../assets/people/fina.png"/><br>
+            <a class="caption" href="https://www.linkedin.com/in/finapolat/ ">Fina Polat</a>
+        </td>
+    </tr>
+    <tr style="border: none; background: none;">
+        <td style="border: none; background: none;">
+            <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
+            height: auto;" src="../assets/people/erkan.jpeg"/><br>
+            <a class="caption" href="https://www.researchgate.net/profile/Erkan-Karabulut-2">Erkan Karabulut</a>
         </td>
     </tr>
     <tr style="border: none; background: none;">
