@@ -176,7 +176,7 @@ description: lab members
         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
             height: auto;" src="../assets/people/brad.jpg"/><br>
-            <a class="caption" href="https://bradleypallen.org" >Bradley Allen</a>
+            <a class="caption" href="https://www.bradleypallen.org" >Bradley Allen</a>
         </td>
     </tr>
 </table>
