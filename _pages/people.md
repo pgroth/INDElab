@@ -42,7 +42,6 @@ description: lab members
         </td>
         </td>
     </tr>
-
     <tr style="border: none; background: none;">
         <td style="border: none; background: none;">
         PhD Students
@@ -167,6 +166,17 @@ description: lab members
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
             height: auto;" src="../assets/people/davide.jpg"/><br>
             <a class="caption" href="https://davidetalon.github.io/" >Davide Talon</a>
+        </td><br>
+    <tr style="border: none; background: none;">
+        <td style="border: none; background: none;">
+            <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
+            height: auto;" src="../assets/people/flavio.jpeg"/><br>
+            <a class="caption" href="https://profiles.uts.edu.au/SalvatoreFlavio.Pileggi" >Flavio Pileggi</a>
+        </td>
+        <td style="border: none; background: none;">
+            <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
+            height: auto;" src="../assets/people/brad.jpg"/><br>
+            <a class="caption" href="https://bradleypallen.org" >Bradley Allen</a>
         </td>
     </tr>
 
