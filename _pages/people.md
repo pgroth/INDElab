@@ -171,7 +171,7 @@ description: lab members
         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
             height: auto;" src="../assets/people/flavio.jpeg"/><br>
-            <a class="caption" href="https://profiles.uts.edu.au/SalvatoreFlavio.Pileggi" >Flavio Pileggi</a>
+            <a class="caption" href="https://profiles.uts.edu.au/SalvatoreFlavio.Pileggi" >Dr. Flavio Pileggi</a>
         </td>
         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
