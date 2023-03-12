@@ -8,11 +8,11 @@ description: lab members
 <div class="post-content clearfix">
 
 <table style="border: none; background: none; margin-top: 0;">
-<tr style="border: none; background: none;">
-    <td style="border: none; background: none;">
-    Faculty & Staff
-    </td>
-</tr>
+    <tr style="border: none; background: none;">
+        <td style="border: none; background: none;">
+        Faculty & Staff
+        </td>
+    </tr>
     <tr style="border: none; background: none;">
         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px" src="../assets/people/groth.png"/><br>
@@ -148,8 +148,7 @@ description: lab members
             height: auto;" src="../assets/people/schlobach.jpg"/><br>
             <a class="caption" href="http://www.few.vu.nl/~schlobac/">Dr. Stefan Schlobach</a>
         </td>
-        <td style="border: none; background: none; width:100px">
-        </td>
+        <td style="border: none; background: none; width:100px"></td>
     </tr>
     <tr style="border: none; background: none;">
         <td style="border: none; background: none;">
@@ -166,7 +165,8 @@ description: lab members
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
             height: auto;" src="../assets/people/davide.jpg"/><br>
             <a class="caption" href="https://davidetalon.github.io/" >Davide Talon</a>
-        </td><br>
+        </td><td style="border: none; background: none; width:100px"></td>
+    </tr>
     <tr style="border: none; background: none;">
         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
@@ -179,9 +179,7 @@ description: lab members
             <a class="caption" href="https://bradleypallen.org" >Bradley Allen</a>
         </td>
     </tr>
-
- </table>
-
+</table>
 
 </div>
 
