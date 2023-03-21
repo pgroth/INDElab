@@ -119,7 +119,7 @@ description: lab members
         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
             height: auto;" src="../assets/people/erkan.jpeg"/><br>
-            <a class="caption" href="https://www.researchgate.net/profile/Erkan-Karabulut-2">Erkan Karabulut</a>
+            <a class="caption" href="https://erkankarabulut.github.io/">Erkan Karabulut</a>
         </td>
         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
