@@ -3,6 +3,61 @@
 
 % 2023
 
+@article{10.1145/3588710,
+author = {Hulsebos, Madelon and Demiralp, \c{C}agatay and Groth, Paul},
+title = {GitTables: A Large-Scale Corpus of Relational Tables},
+year = {2023},
+issue_date = {May 2023},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {1},
+number = {1},
+url = {https://doi.org/10.1145/3588710},
+doi = {10.1145/3588710},
+abstract = {The success of deep learning has sparked interest in improving relational table tasks, like data preparation and search, with table representation models trained on large table corpora. Existing table corpora primarily contain tables extracted from HTML pages, limiting the capability to represent offline database tables. To train and evaluate high-capacity models for applications beyond the Web, we need resources with tables that resemble relational database tables. Here we introduce GitTables, a corpus of 1M relational tables extracted from GitHub. Our continuing curation aims at growing the corpus to at least 10M tables. Analyses of GitTables show that its structure, content, and topical coverage differ significantly from existing table corpora. We annotate table columns in GitTables with semantic types, hierarchical relations and descriptions from Schema.org and DBpedia. The evaluation of our annotation pipeline on the T2Dv2 benchmark illustrates that our approach provides results on par with human annotations. We present three applications of GitTables, demonstrating its value for learned semantic type detection models, schema completion methods, and benchmarks for table-to-KG matching, data search, and preparation. We make the corpus and code available at https://gittables.github.io.},
+journal = {Proc. ACM Manag. Data},
+month = {may},
+articleno = {30},
+numpages = {17},
+keywords = {datasets, relational tables, deep learning, data management}
+}
+
+@inproceedings{10.1145/3555041.3590819,
+author = {Boehm, Matthias and Hulsebos, Madelon and Shankar, Shreya and Varma, Paroma},
+title = {Seventh Workshop on Data Management for End-to-End Machine Learning (DEEM)},
+year = {2023},
+isbn = {9781450395076},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3555041.3590819},
+doi = {10.1145/3555041.3590819},
+abstract = {The DEEM'23 workshop (Data Management for End-to-End Machine Learning) is held on Sunday June 18th, in conjunction with SIGMOD/PODS 2023. DEEM brings together researchers and practitioners at the intersection of applied machine learning, data management and systems research, with the goal to discuss the arising data management issues in ML application scenarios. The workshop solicits regular research papers (10 pages) describing preliminary and ongoing research results, including industrial experience reports of end-to-end ML deployments, related to DEEM topics. In addition, DEEM 2023 has a category for short papers (4 pages) as a forum for sharing interesting use cases, problems, datasets, benchmarks, visionary ideas, system designs, preliminary results, and descriptions of system components and tools related to end-to-end ML pipelines. The workshop received 13 high-quality submissions on diverse topics relevant to DEEM, of which 6 regular papers and 7 short papers.},
+booktitle = {Companion of the 2023 International Conference on Management of Data},
+pages = {305–306},
+numpages = {2},
+keywords = {machine learning, data management},
+location = {Seattle, WA, USA},
+series = {SIGMOD/PODS '23}
+}
+
+@inproceedings{10.1145/3555041.3589411,
+author = {Hulsebos, Madelon and Deng, Xiang and Sun, Huan and Papotti, Paolo},
+title = {Models and Practice of Neural Table Representations},
+year = {2023},
+isbn = {9781450395076},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3555041.3589411},
+doi = {10.1145/3555041.3589411},
+abstract = {In the last few years, the natural language processing community witnessed advances in neural representations of free-form text with transformer-based language models (LMs). Given the importance of knowledge available in relational tables, recent research efforts extend LMs by developing neural representations for tabular data. In this tutorial, we present these proposals with three main goals. First, we aim at introducing the potentials and limitations of current models to a database audience. Second, we want the attendees to see the benefit of such line of work in a large variety of data applications. Third, we would like to empower the audience with a new set of tools and to inspire them to tackle some of the important directions for neural table representations, including model and system design, evaluation, application and deployment. To achieve these goals, the tutorial is organized in two parts. The first part covers the background for neural table representations, including a survey of the most important systems. The second part is designed as a hands-on session, where attendees will use their laptop to explore this new framework and test neural models involving text and tabular data.},
+booktitle = {Companion of the 2023 International Conference on Management of Data},
+pages = {83–89},
+numpages = {7},
+keywords = {tables, data management, representation learning},
+location = {Seattle, WA, USA},
+series = {SIGMOD/PODS '23}
+}
+
 
 @inproceedings{10.1145/3543873.3587557,
 author = {Grafberger, Stefan and Groth, Paul and Schelter, Sebastian},
