@@ -3,6 +3,62 @@
 
 % 2023
 
+@InProceedings{10.1007/978-3-031-35995-8_35,
+author="Nevin, James
+and Groth, Paul
+and Lees, Michael",
+editor="Miky{\v{s}}ka, Ji{\v{r}}{\'i}
+and de Mulatier, Cl{\'e}lia
+and Paszynski, Maciej
+and Krzhizhanovskaya, Valeria V.
+and Dongarra, Jack J.
+and Sloot, Peter M.A.",
+title="Data Integration Landscapes: The Case for Non-optimal Solutions in Network Diffusion Models",
+booktitle="Computational Science -- ICCS 2023",
+year="2023",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="494--508",
+abstract="The successful application of computational models presupposes access to accurate, relevant, and representative datasets. The growth of public data, and the increasing practice of data sharing and reuse, emphasises the importance of data provenance and increases the need for modellers to understand how data processing decisions might impact model output. One key step in the data processing pipeline is that of data integration and entity resolution, where entities are matched across disparate datasets. In this paper, we present a new formulation of data integration in complex networks that incorporates integration uncertainty. We define an approach for understanding how different data integration setups can impact the results of network diffusion models under this uncertainty, allowing one to systematically characterise potential model outputs in order to create an output distribution that provides a more comprehensive picture.",
+isbn="978-3-031-35995-8",
+doi="10.1007/978-3-031-35995-8_35"
+}
+
+
+
+@article{Daga2023,
+  doi = {10.3233/sw-233407},
+  url = {https://doi.org/10.3233/sw-233407},
+  year = {2023},
+  month = jun,
+  publisher = {{IOS} Press},
+  pages = {1--27},
+  author = {Enrico Daga and Paul Groth},
+  editor = {Roberto Confalonieri and Oliver Kutz and Diego Calvanese and Jose M. Alonso and Shang-Ming Zhou},
+  title = {Data journeys: Explaining {AI} workflows through abstraction},
+  journal = {Semantic Web},
+  abstract = {"Artificial intelligence systems are not simply built on a single dataset or trained model. Instead, they are made by complex data science workflows involving multiple datasets, models, preparation scripts, and algorithms. Given this complexity, in order to understand these AI systems, we need to provide explanations of their functioning at higher levels of abstraction. To tackle this problem, we focus on the extraction and representation of data journeys from these workflows. A data journey is a multi-layered semantic representation of data processing activity linked to data science code and assets. We propose an ontology to capture the essential elements of a data journey and an approach to extract such data journeys. Using a corpus of Python notebooks from Kaggle, we show that we are able to capture high-level semantic data flow that is more compact than using the code structure itself. Furthermore, we show that introducing an intermediate knowledge graph representation outperforms models that rely only on the code itself. Finally, we report on a user survey to reflect on the challenges and opportunities presented by computational data journeys for explainable AI."}
+}
+
+@article{10.1145/3589273,
+author = {Grafberger, Stefan and Groth, Paul and Schelter, Sebastian},
+title = {Automating and Optimizing Data-Centric What-If Analyses on Native Machine Learning Pipelines},
+year = {2023},
+issue_date = {June 2023},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {1},
+number = {2},
+url = {https://doi.org/10.1145/3589273},
+doi = {10.1145/3589273},
+abstract = {Software systems that learn from data with machine learning (ML) are used in critical decision-making processes. Unfortunately, real-world experience shows that the pipelines for data preparation, feature encoding and model training in ML systems are often brittle with respect to their input data. As a consequence, data scientists have to run different kinds of data centric what-if analyses to evaluate the robustness and reliability of such pipelines, e.g., with respect to data errors or preprocessing techniques. These what-if analyses follow a common pattern: they take an existing ML pipeline, create a pipeline variant by introducing a small change, and execute this pipeline variant to see how the change impacts the pipeline's output score. The application of existing analysis techniques to ML pipelines is technically challenging as they are hard to integrate into existing pipeline code and their execution introduces large overheads due to repeated work.We propose mlwhatif to address these integration and efficiency challenges for data-centric what-if analyses on ML pipelines. mlwhatif enables data scientists to declaratively specify what-if analyses for an ML pipeline, and to automatically generate, optimize and execute the required pipeline variants. Our approach employs pipeline patches to specify changes to the data, operators and models of a pipeline. Based on these patches, we define a multi-query optimizer for efficiently executing the resulting pipeline variants jointly, with four subsumption-based optimization rules. Subsequently, we detail how to implement the pipeline variant generation and optimizer of mlwhatif. For that, we instrument native ML pipelines written in Python to extract dataflow plans with re-executable operators.We experimentally evaluate mlwhatif, and find that its speedup scales linearly with the number of pipeline variants in applicable cases, and is invariant to the input data size. In end-to-end experiments with four analyses on more than 60 pipelines, we show speedups of up to 13x compared to sequential execution, and find that the speedup is invariant to the model and featurization in the pipeline. Furthermore, we confirm the low instrumentation overhead of mlwhatif.},
+journal = {Proc. ACM Manag. Data},
+month = {jun},
+articleno = {128},
+numpages = {26},
+keywords = {data preparation for machine learning, data-centric ai, machine learning pipelines}
+}
+
 @inproceedings{10.1145/3555041.3589682,
 author = {Schelter, Sebastian and Grafberger, Stefan and Guha, Shubha and Karlas, Bojan and Zhang, Ce},
 title = {Proactively Screening Machine Learning Pipelines with ARGUSEYES},
@@ -18,7 +74,8 @@ pages = {91–94},
 numpages = {4},
 keywords = {machine learning pipelines, provenance tracking, data validation},
 location = {Seattle, WA, USA},
-series = {SIGMOD/PODS '23}
+series = {SIGMOD/PODS '23},
+award = {{2nd Place Demo}}
 }
 
 @article{10.1145/3588710,
@@ -196,21 +253,21 @@ doi="10.1007/978-3-031-11108-2_11",
 url="https://doi.org/10.1007/978-3-031-11108-2_11"
 }
 
-@article{10.1145/3583138,
-author = {Ayoughi, Melika and Mettes, Pascal and Groth, Paul},
-title = {Self-Contained Entity Discovery from Captioned Videos},
-year = {2023},
-publisher = {Association for Computing Machinery},
-address = {New York, NY, USA},
-issn = {1551-6857},
-url = {https://doi.org/10.1145/3583138},
+@article{10.1145/3583138, 
+author = {Ayoughi, Melika and Mettes, Pascal and Groth, Paul}, 
+title = {Self-Contained Entity Discovery from Captioned Videos}, 
+year = {2023}, issue_date = {October 2023}, 
+publisher = {Association for Computing Machinery}, 
+address = {New York, NY, USA}, 
+volume = {19}, number = {5s}, issn = {1551-6857}, 
+url = {https://doi.org/10.1145/3583138}, 
 doi = {10.1145/3583138},
-abstract = {This paper introduces the task of visual named entity discovery in videos without the need for task-specific supervision or task-specific external knowledge sources. Assigning specific names to entities (e.g. faces, scenes, or objects) in video frames is a long-standing challenge. Commonly, this problem is addressed as a supervised learning objective by manually annotating entities with labels. To bypass the annotation burden of this setup, several works have investigated the problem by utilizing external knowledge sources such as movie databases. While effective, such approaches do not work when task-specific knowledge sources are not provided and can only be applied to movies and TV series. In this work, we take the problem a step further and propose to discover entities in videos from videos and corresponding captions or subtitles. We introduce a three-stage method where we (i) create bipartite entity-name graphs from frame-caption pairs, (ii) find visual entity agreements, and (iii) refine the entity assignment through entity-level prototype construction. To tackle this new problem, we outline two new benchmarks SC-Friends and SC-BBT based on the Friends and Big Bang Theory TV series. Experiments on the benchmarks demonstrate the ability of our approach to discover which named entity belongs to which face or scene, with an accuracy close to a supervised oracle, just from the multimodal information present in videos. Additionally, our qualitative examples show the potential challenges of self-contained discovery of any visual entity for future work. The code and the data are available on GitHub.},
-note = {Just Accepted},
-journal = {ACM Trans. Multimedia Comput. Commun. Appl.},
-month = {feb},
-keywords = {Multimodal video understanding, Self-contained video recognition, Entity discovery}
-}
+abstract = {This article introduces the task of visual named entity discovery in videos without the need for task-specific supervision or task-specific external knowledge sources. Assigning specific names to entities (e.g., faces, scenes, or objects) in video frames is a long-standing challenge. Commonly, this problem is addressed as a supervised learning objective by manually annotating entities with labels. To bypass the annotation burden of this setup, several works have investigated the problem by utilizing external knowledge sources such as movie databases. While effective, such approaches do not work when task-specific knowledge sources are not provided and can only be applied to movies and TV series. In this work, we take the problem a step further and propose to discover entities in videos from videos and corresponding captions or subtitles. We introduce a three-stage method where we (i) create bipartite entity-name graphs from frame–caption pairs, (ii) find visual entity agreements, and (iii) refine the entity assignment through entity-level prototype construction. To tackle this new problem, we outline two new benchmarks, SC-Friends and SC-BBT, based on the Friends and Big Bang Theory TV series. Experiments on the benchmarks demonstrate the ability of our approach to discover which named entity belongs to which face or scene, with an accuracy close to a supervised oracle, just from the multimodal information present in videos. Additionally, our qualitative examples show the potential challenges of self-contained discovery of any visual entity for future work. The code and the data are available on GitHub.1}, 
+journal = {ACM Trans. Multimedia Comput. Commun. Appl.}, 
+month = {jun}, 
+articleno = {177}, 
+numpages = {21},
+keywords = {multimodal video understanding, Entity discovery, self-contained video recognition} }
 
 @proceedings{DBLP:conf/semweb/2022semtab,
   editor    = {Vasilis Efthymiou and
