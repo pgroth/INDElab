@@ -3,6 +3,41 @@
 
 % 2023
 
+
+@article{10.1093/comnet/cnad025,
+    author = {Nevin, James and Groth, Paul and Lees, Michael},
+    title = "{An approach for analysing the impact of data integration on complex network diffusion models}",
+    journal = {Journal of Complex Networks},
+    volume = {11},
+    number = {4},
+    pages = {cnad025},
+    year = {2023},
+    month = {07},
+    issn = {2051-1329},
+    doi = {10.1093/comnet/cnad025},
+    url = {https://doi.org/10.1093/comnet/cnad025},
+    eprint = {https://academic.oup.com/comnet/article-pdf/11/4/cnad025/50951706/cnad025.pdf},
+}
+
+
+@inproceedings{10.1145/3539618.3591989,
+author = {Schelter, Sebastian and Ariannezhad, Mozhdeh and de Rijke, Maarten},
+title = {Forget Me Now: Fast and Exact Unlearning in Neighborhood-Based Recommendation},
+year = {2023},
+isbn = {9781450394086},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3539618.3591989},
+doi = {10.1145/3539618.3591989},
+abstract = {Modern search and recommendation systems are optimized using logged interaction data. There is increasing societal pressure to enable users of such systems to have some of their data deleted from those systems. This paper focuses on "unlearning" such user data from neighborhood-based recommendation models on sparse, high-dimensional datasets. We present caboose, a custom top-k index for such models, which enables fast and exact deletion of user interactions. We experimentally find that caboose provides competitive index building times, makes sub-second unlearning possible (even for a large index built from one million users and 256 million interactions), and, when integrated into three state-of-the-art next-basket recommendation models, allows users to effectively adjust their predictions to remove sensitive items.},
+booktitle = {Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval},
+pages = {2011–2015},
+numpages = {5},
+keywords = {right-to-be-forgotten, machine unlearning, nearest neighbors},
+location = {Taipei, Taiwan},
+series = {SIGIR '23}
+}
+
 @InProceedings{10.1007/978-3-031-35995-8_35,
 author="Nevin, James
 and Groth, Paul
@@ -52,7 +87,7 @@ number = {2},
 url = {https://doi.org/10.1145/3589273},
 doi = {10.1145/3589273},
 abstract = {Software systems that learn from data with machine learning (ML) are used in critical decision-making processes. Unfortunately, real-world experience shows that the pipelines for data preparation, feature encoding and model training in ML systems are often brittle with respect to their input data. As a consequence, data scientists have to run different kinds of data centric what-if analyses to evaluate the robustness and reliability of such pipelines, e.g., with respect to data errors or preprocessing techniques. These what-if analyses follow a common pattern: they take an existing ML pipeline, create a pipeline variant by introducing a small change, and execute this pipeline variant to see how the change impacts the pipeline's output score. The application of existing analysis techniques to ML pipelines is technically challenging as they are hard to integrate into existing pipeline code and their execution introduces large overheads due to repeated work.We propose mlwhatif to address these integration and efficiency challenges for data-centric what-if analyses on ML pipelines. mlwhatif enables data scientists to declaratively specify what-if analyses for an ML pipeline, and to automatically generate, optimize and execute the required pipeline variants. Our approach employs pipeline patches to specify changes to the data, operators and models of a pipeline. Based on these patches, we define a multi-query optimizer for efficiently executing the resulting pipeline variants jointly, with four subsumption-based optimization rules. Subsequently, we detail how to implement the pipeline variant generation and optimizer of mlwhatif. For that, we instrument native ML pipelines written in Python to extract dataflow plans with re-executable operators.We experimentally evaluate mlwhatif, and find that its speedup scales linearly with the number of pipeline variants in applicable cases, and is invariant to the input data size. In end-to-end experiments with four analyses on more than 60 pipelines, we show speedups of up to 13x compared to sequential execution, and find that the speedup is invariant to the model and featurization in the pipeline. Furthermore, we confirm the low instrumentation overhead of mlwhatif.},
-journal = {Proc. ACM Manag. Data},
+journal = {Proc. ACM Manag. of Data},
 month = {jun},
 articleno = {128},
 numpages = {26},
