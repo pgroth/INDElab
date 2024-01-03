@@ -68,10 +68,10 @@ description: lab members
         height: auto;" src="../assets/people/daza.png"/><br>
         <a class="caption" href="https://dfdazac.github.io">Daniel Daza</a>
         </td>
-        <td style="border: none; background: none;">
+         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
-        height: auto;" src="../assets/people/madelon.jpg"/><br>
-        <a class="caption" href="https://madelonhulsebos.github.io">Madelon Hulsebos</a>
+        height: auto;" src="../assets/people/stian.jpg"/><br>
+        <a class="caption" href="http://soiland-reyes.com/stian/about/">Stian Soiland-Reyes</a>
         </td>
     </tr>
     <tr style="border: none; background: none;">
@@ -92,11 +92,7 @@ description: lab members
         </td>
     </tr>
     <tr style="border: none; background: none;">
-        <td style="border: none; background: none;">
-            <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
-        height: auto;" src="../assets/people/stian.jpg"/><br>
-        <a class="caption" href="http://soiland-reyes.com/stian/about/">Stian Soiland-Reyes</a>
-        </td>
+       
         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
         height: auto;" src="../assets/people/james.jpg"/><br>
@@ -107,13 +103,13 @@ description: lab members
         height: auto;" src="../assets/people/stefan.jpg"/><br>
         <a class="caption" href="https://stefan-grafberger.com/">Stefan Grafberger</a>
         </td>
-    </tr>
-    <tr style="border: none; background: none;">
         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
             height: auto;" src="../assets/people/pengyu.jpg"/><br>
             <a class="caption" href="https://www.linkedin.com/in/pengyuzhang03/">Pengyu Zhang</a>
         </td>
+    </tr>
+    <tr style="border: none; background: none;">
         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
             height: auto;" src="../assets/people/zeyu.png"/><br>
@@ -124,13 +120,14 @@ description: lab members
             height: auto;" src="../assets/people/fina.png"/><br>
             <a class="caption" href="https://www.linkedin.com/in/finapolat/ ">Fina Polat</a>
         </td>
-    </tr>
-    <tr style="border: none; background: none;">
         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
             height: auto;" src="../assets/people/erkan.jpeg"/><br>
             <a class="caption" href="https://erkankarabulut.github.io/">Erkan Karabulut</a>
         </td>
+    </tr>
+    <tr style="border: none; background: none;">
+        
         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
             height: 100px;" src="../assets/people/danru.jpg"/><br>
@@ -185,6 +182,7 @@ description: lab members
 <br>
  Previous Members & Guests
 <ul>
+<li><a href="https://madelonhulsebos.github.io">Madelon Hulsebos</a> (Postdoctoral fellow at UC Berkeley) </li>
 <li><a href="https://davidetalon.github.io/" >Davide Talon</a> (Italian Institute of Technology) </li>
 <li><a href="https://profiles.uts.edu.au/SalvatoreFlavio.Pileggi" >Dr. Flavio Pileggi</a> (University of Technology Sydney) </li>
 <li><a href="https://saramagliacane.github.io">Dr. Sara Magliacane</a> (Amsterdam Machine Learning Lab - UvA)</li>
