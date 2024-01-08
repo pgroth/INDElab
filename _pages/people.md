@@ -133,6 +133,11 @@ description: lab members
             height: 100px;" src="../assets/people/danru.jpg"/><br>
             <a class="caption" href="https://danruxu.wordpress.com/danru-xu">Danru Xu</a>
         </td>
+         <td style="border: none; background: none;">
+            <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
+            height: 100px;" src="../assets/people/teresa.jpeg"/><br>
+            <a class="caption" href="https://www.linkedin.com/in/teresa-liberatore-306755231/">Teresa Liberatore</a>
+        </td>
     </tr>
     <tr style="border: none; background: none;">
         <td colspan="3" style="border: none; background: none;">
