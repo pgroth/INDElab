@@ -138,7 +138,7 @@ description: lab members
         </td>
         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px; 
-            height: 100px;" src="../assets/people/yichun.png/"><br>
+            height: 100px;" src="../assets/people/yichun.png"/><br>
             <a class="caption" href="https://www.linkedin.com/in/yichun-wang-astrid/">Yichun Wang</a>
         </td>
     </tr>
