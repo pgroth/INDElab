@@ -92,7 +92,6 @@ description: lab members
         </td>
     </tr>
     <tr style="border: none; background: none;">
-       
         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
         height: auto;" src="../assets/people/james.jpg"/><br>
@@ -127,7 +126,6 @@ description: lab members
         </td>
     </tr>
     <tr style="border: none; background: none;">
-        
         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
             height: 100px;" src="../assets/people/danru.jpg"/><br>
@@ -137,6 +135,11 @@ description: lab members
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
             height: 100px;" src="../assets/people/teresa.jpeg"/><br>
             <a class="caption" href="https://www.linkedin.com/in/teresa-liberatore-306755231/">Teresa Liberatore</a>
+        </td>
+        <td style="border: none; background: none;">
+            <img style="padding-top: 5px; padding-bottom: 5px; width: 100px; 
+            height: 100px;" src="../assets/people/yichun.png/"><br>
+            <a class="caption" href="https://www.linkedin.com/in/yichun-wang-astrid/">Yichun Wang</a>
         </td>
     </tr>
     <tr style="border: none; background: none;">
