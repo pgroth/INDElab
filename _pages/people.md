@@ -35,7 +35,7 @@ description: lab members
         </td>
         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px" src="../assets/people/viktoriya.jpg"/><br>
-        <a class="caption" href="https://vdegeler.com">Dr. Viktoriya Degeler  <br> Assistant Professor</a>
+        <a class="caption" href="https://vdegeler.com">Dr. Victoria Degeler  <br> Assistant Professor</a>
         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px" src="../assets/people/shubha.jpeg"/><br>
         <a class="caption" href="https://www.linkedin.com/in/shubhaguha/">Shubha Guha <br> Research Engineer <br> & Data Steward </a>
