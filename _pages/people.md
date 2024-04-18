@@ -182,6 +182,13 @@ description: lab members
             <a class="caption" href="https://www.bradleypallen.org" >Bradley Allen</a>
         </td>
     </tr>
+    <tr style="border: none; background: none;">
+        <td style="border: none; background: none;">
+            <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
+            height: auto;" src="../assets/people/majid.png"/><br>
+            <a class="caption" href="https://bit.ly/MajidLotfianDelouee">Majid Lotfian Delouee</a>
+        </td>
+    </tr>
 </table>
 
 </div>
