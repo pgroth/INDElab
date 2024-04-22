@@ -188,6 +188,11 @@ description: lab members
             height: auto;" src="../assets/people/majid.png"/><br>
             <a class="caption" href="https://bit.ly/MajidLotfianDelouee">Majid Lotfian Delouee</a>
         </td>
+         <td style="border: none; background: none;">
+            <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
+            height: auto;" src="../assets/people/klim.jpg"/><br>
+            <a class="caption" href="https://klimzaporojets.github.io/ ">Klim Zaporojets</a>
+        </td>
     </tr>
 </table>
 
