@@ -2,6 +2,31 @@
 ---
 
 % 2024
+
+@INPROCEEDINGS{10503465,
+  author={Tello, Andrés and Degeler, Victoria and Lazovik, Alexander},
+  booktitle={2024 IEEE International Conference on Pervasive Computing and Communications Workshops and other Affiliated Events (PerCom Workshops)}, 
+  title={Too Good To Be True: accuracy overestimation in (re)current practices for Human Activity Recognition}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={511-517},
+  keywords={Pervasive computing;Conferences;Computational modeling;Pipelines;Feature extraction;Data models;Human activity recognition;Performance Overestimation;Biased Accuracy;Human Activity Recognition;Random K-Fold Cross-Validation},
+  doi={10.1109/PerComWorkshops59983.2024.10503465}}
+
+
+@article{Redyuk2024,
+  title = {Assisted design of data science pipelines},
+  ISSN = {0949-877X},
+  url = {http://dx.doi.org/10.1007/s00778-024-00835-2},
+  DOI = {10.1007/s00778-024-00835-2},
+  journal = {The VLDB Journal},
+  publisher = {Springer Science and Business Media LLC},
+  author = {Redyuk,  Sergey and Kaoudi,  Zoi and Schelter,  Sebastian and Markl,  Volker},
+  year = {2024},
+  month = feb 
+}
+
 @phdthesis{hulsebos_table_2024,
     title = {Table {Representation} {Learning}},
     isbn = {9789464837438},
@@ -13,6 +38,24 @@
     year = {2024},
     month={February},
     type={PhD thesis}
+}
+
+@article{10.7717/peerj-cs.1781,
+ title = {Evaluating FAIR Digital Object and Linked Data as distributed object systems},
+ author = {Soiland-Reyes, Stian and Goble, Carole and Groth, Paul},
+ year = 2024,
+ month = apr,
+ keywords = {FAIR, FDO, Digital object, Linked data, EOSC, Distributed objects, Frameworks, Interoperability, Middleware},
+ abstract = {
+FAIR Digital Object (FDO) is an emerging concept that is highlighted by European Open Science Cloud (EOSC) as a potential candidate for building an ecosystem of machine-actionable research outputs. In this work we systematically evaluate FDO and its implementations as a global distributed object system, by using five different conceptual frameworks that cover interoperability, middleware, FAIR principles, EOSC requirements and FDO guidelines themself. We compare the FDO approach with established Linked Data practices and the existing Web architecture, and provide a brief history of the Semantic Web while discussing why these technologies may have been difficult to adopt for FDO purposes. We conclude with recommendations for both Linked Data and FDO communities to further their adaptation and alignment.
+},
+ volume = 10,
+ pages = {e1781},
+ journal = {PeerJ Computer Science},
+ issn = {2376-5992},
+ url = {https://doi.org/10.7717/peerj-cs.1781},
+ doi = {10.7717/peerj-cs.1781},
+ data = {https://zenodo.org/doi/10.5281/zenodo.8075229}
 }
 
 @ARTICLE{10433778,
@@ -62,13 +105,51 @@ keywords = {Time series forecasting, Domain generalization, Regularization}
 @article{grafberger2024red,
     title={Red Onions, Soft Cheese and Data: From Food Safety to Data Traceability for Responsible AI},
     author={Grafberger, Stefan and Zhang, Zeyu and Schelter, Sebastian and Zhang, Ce},
-    journal={Data Engineering},
-    pages={63},
+    journal={IEEE Data Engineering Bulletin},
+    volume = {48},
+    issue = {1},
     year={2024},
     url = {http://sites.computer.org/debull/A24mar/p63.pdf},
 }
 
 % 2023
+@Article{pan_et_al:TGDK.1.1.2,
+  author =	{Pan, Jeff Z. and Razniewski, Simon and Kalo, Jan-Christoph and Singhania, Sneha and Chen, Jiaoyan and Dietze, Stefan and Jabeen, Hajira and Omeliyanenko, Janna and Zhang, Wen and Lissandrini, Matteo and Biswas, Russa and de Melo, Gerard and Bonifati, Angela and Vakaj, Edlira and Dragoni, Mauro and Graux, Damien},
+  title =	{{Large Language Models and Knowledge Graphs: Opportunities and Challenges}},
+  journal =	{Transactions on Graph Data and Knowledge},
+  pages =	{2:1--2:38},
+  year =	{2023},
+  volume =	{1},
+  number =	{1},
+  publisher =	{Schloss Dagstuhl -- Leibniz-Zentrum f{\"u}r Informatik},
+  address =	{Dagstuhl, Germany},
+  URL =		{https://drops.dagstuhl.de/entities/document/10.4230/TGDK.1.1.2},
+  URN =		{urn:nbn:de:0030-drops-194766},
+  doi =		{10.4230/TGDK.1.1.2},
+  month = {dec},
+  annote =	{Keywords: Large Language Models, Pre-trained Language Models, Knowledge Graphs, Ontology, Retrieval Augmented Language Models}
+}
+
+@inproceedings{veseli-etal-2023-evaluating,
+    title = "Evaluating the Knowledge Base Completion Potential of {GPT}",
+    author = "Veseli, Blerta  and
+      Razniewski, Simon  and
+      Kalo, Jan-Christoph  and
+      Weikum, Gerhard",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2023",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-emnlp.426",
+    doi = "10.18653/v1/2023.findings-emnlp.426",
+    pages = "6432--6443",
+    abstract = "Structured knowledge bases (KBs) are an asset for search engines and other applications but are inevitably incomplete. Language models (LMs) have been proposed for unsupervised knowledge base completion (KBC), yet, their ability to do this at scale and with high accuracy remains an open question. Prior experimental studies mostly fall short because they only evaluate on popular subjects, or sample already existing facts from KBs. In this work, we perform a careful evaluation of GPT{'}s potential to complete the largest public KB: Wikidata. We find that, despite their size and capabilities, models like GPT-3, ChatGPT and GPT-4 do not achieve fully convincing results on this task. Nonetheless, it provides solid improvements over earlier approaches with smaller LMs. In particular, we show that it is feasible to extend Wikidata by 27M facts at 90{\%} precision.",
+}
+
 @INPROCEEDINGS{10411709,
   author={Dinh, Tu Anh and den Boef, Jeroen and Cornelisse, Joran and Groth, Paul},
   booktitle={2023 IEEE International Conference on Data Mining Workshops (ICDMW)}, 
