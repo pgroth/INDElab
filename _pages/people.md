@@ -187,7 +187,7 @@ description: lab members
 <ul>
 <li><a href="https://dfdazac.github.io">Daniel Daza</a> (Postdoc at UMC)</li>
 <li><a href="https://ssc.io">Prof. Sebastian Schelter</a> (Professor TU Berlin)</li>
-<a href="https://www.uva.nl/profiel/s/a/j.a.c.sandberg/j.a.c.sandberg.html">Dr. Jacobijn Sandberg</a> (Retired) </li>
+<li><a href="https://www.uva.nl/profiel/s/a/j.a.c.sandberg/j.a.c.sandberg.html">Dr. Jacobijn Sandberg</a> (Retired) </li>
 <li><a href="https://madelonhulsebos.github.io">Dr. Madelon Hulsebos</a> (Postdoctoral fellow at UC Berkeley) </li>
 <li><a href="https://davidetalon.github.io/" >Dr. Davide Talon</a> (Italian Institute of Technology) </li>
 <li><a href="https://profiles.uts.edu.au/SalvatoreFlavio.Pileggi" >Dr. Flavio Pileggi</a> (University of Technology Sydney) </li>
