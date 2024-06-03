@@ -51,6 +51,10 @@ description: lab members
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px" src="../assets/people/hazar.jpg"/><br>
         <a class="caption" href="https://hazourahh.github.io/">Dr. Hazar Harmouch <br> Assistant Professor</a>
         </td>
+        <td style="border: none; background: none;">
+            <img style="padding-top: 5px; padding-bottom: 5px; width: 100px" src="../assets/people/daphne.jpg"/><br>
+        <a class="caption" href="https://daphnemiedema.nl//">Dr. Daphne Miedema <br> Assistant Professor</a>
+        </td>
     </tr>
     <tr style="border: none; background: none;">
         <td style="border: none; background: none;">
