@@ -122,7 +122,7 @@ description: lab members
         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
             height: 100px;" src="../assets/people/danru.jpg"/><br>
-            <a class="caption" href="https://danruxu.wordpress.com/danru-xu">Danru Xu</a>
+            <a class="caption" href="https://danrux.github.io/">Danru Xu</a>
         </td>
     </tr>
     <tr style="border: none; background: none;">
