@@ -9,7 +9,7 @@ description: lab members
 
 <table style="border: none; background: none; margin-top: 0;">
     <tr style="border: none; background: none;">
-        <td style="border: none; background: none;">
+        <td colspan="3" style="border: none; background: none;">
         Faculty & Staff
         </td>
     </tr>
@@ -27,8 +27,8 @@ description: lab members
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px" src="../assets/people/viktoriya.jpg"/><br>
         <a class="caption" href="https://vdegeler.com">Dr. Victoria Degeler  <br> Assistant Professor</a>
         </td>
-        </tr>
-        <tr style="border: none; background: none;"> 
+    </tr>
+    <tr style="border: none; background: none;"> 
         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px" src="../assets/people/hazar.jpg"/><br>
         <a class="caption" href="https://hazourahh.github.io/">Dr. Hazar Harmouch <br> Assistant Professor</a>
@@ -53,7 +53,7 @@ description: lab members
         </td>
     </tr>
     <tr style="border: none; background: none;">
-        <td style="border: none; background: none;">
+        <td colspan="3" style="border: none; background: none;">
         PhD Students
         </td>
     </tr>
@@ -143,10 +143,10 @@ description: lab members
         </td>
     </tr>
     <tr style="border: none; background: none;">
-         <td style="border: none; background: none;">
+        <td colspan="3" style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
-            height: 100px;" src="../assets/people/david.jpg"/><br>
-            <a class="caption" href="https://davidjackson99.github.io/">David Jackson</a>
+        height: 100px;" src="../assets/people/david.jpg"/><br>
+             <a class="caption" href="https://davidjackson99.github.io/">David Jackson</a>
         </td>
     </tr>
     <tr style="border: none; background: none;">
@@ -155,12 +155,7 @@ description: lab members
         </td>
     </tr>
     <tr style="border: none; background: none;">
-        <td style="border: none; background: none;">
-            <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
-            height: auto;" src="../assets/people/fanfeng.jpg"/><br>
-            <a class="caption" href="https://www.linkedin.com/in/fan-feng-473b9120b/">Fan Feng</a>
-        </td>
-        <td style="border: none; background: none;">
+         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
             height: auto;" src="../assets/people/hartmut.jpg"/><br>
             <a class="caption" href="http://hartmutkoenitz.com">Dr. Hartmut Koenitz</a>
@@ -170,19 +165,19 @@ description: lab members
             height: auto;" src="../assets/people/till.jpg"/><br>
             <a class="caption" href="https://tdoehmen.github.io" >Till Döhmen</a>
         </td>
-        <td style="border: none; background: none; width:100px"></td>
-    </tr>
-    <tr style="border: none; background: none;">
-        <td style="border: none; background: none;">
-            <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
-            height: auto;" src="../assets/people/majid.png"/><br>
-            <a class="caption" href="https://bit.ly/MajidLotfianDelouee">Majid Lotfian Delouee</a>
-        </td>
         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
             height: auto;" src="../assets/people/klim.jpg"/><br>
             <a class="caption" href="https://klimzaporojets.github.io/ ">Klim Zaporojets</a>
         </td>
+    </tr>
+    <tr style="border: none; background: none;">
+        <td colspan="3" style="border: none; background: none;">
+            <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
+            height: auto;" src="../assets/people/majid.png"/><br>
+            <a class="caption" href="https://bit.ly/MajidLotfianDelouee">Majid Lotfian Delouee</a>
+        </td>
+        
     </tr>
 </table>
 
@@ -192,6 +187,7 @@ description: lab members
 <br>
  Previous Members & Guests
 <ul>
+<li><a href="https://www.linkedin.com/in/fan-feng-473b9120b/">Fan Feng</a> (City University of Hong Kong)</li>
 <li><a href="https://dfdazac.github.io">Daniel Daza</a> (Postdoc at UMC)</li>
 <li><a href="https://ssc.io">Prof. Sebastian Schelter</a> (Professor TU Berlin)</li>
 <li><a href="https://www.uva.nl/profiel/s/a/j.a.c.sandberg/j.a.c.sandberg.html">Dr. Jacobijn Sandberg</a> (Retired) </li>
