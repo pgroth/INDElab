@@ -171,14 +171,6 @@ description: lab members
             <a class="caption" href="https://klimzaporojets.github.io/ ">Klim Zaporojets</a>
         </td>
     </tr>
-    <tr style="border: none; background: none;">
-        <td colspan="3" style="border: none; background: none;">
-            <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
-            height: auto;" src="../assets/people/majid.png"/><br>
-            <a class="caption" href="https://bit.ly/MajidLotfianDelouee">Majid Lotfian Delouee</a>
-        </td>
-        
-    </tr>
 </table>
 
 </div>
@@ -187,6 +179,7 @@ description: lab members
 <br>
  Previous Members & Guests
 <ul>
+<li><a href="https://bit.ly/MajidLotfianDelouee">Majid Lotfian Delouee</a> (Postdoc at UMC)</li>
 <li><a href="https://www.linkedin.com/in/fan-feng-473b9120b/">Fan Feng</a> (City University of Hong Kong)</li>
 <li><a href="https://dfdazac.github.io">Daniel Daza</a> (Postdoc at UMC)</li>
 <li><a href="https://ssc.io">Prof. Sebastian Schelter</a> (Professor TU Berlin)</li>
