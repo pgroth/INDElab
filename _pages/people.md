@@ -58,27 +58,10 @@ description: lab members
         </td>
     </tr>
     <tr style="border: none; background: none;">
-        <td style="border: none; background: none;">
-            <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
-        height: auto;" src="../assets/people/thiviyan.png"/><br>
-        <a class="caption" href="https://thiviyansingam.com">Thiviyan <br> Thanapalasingam</a>
-        </td>
-         <td style="border: none; background: none;">
-            <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
-        height: auto;" src="../assets/people/stian.jpg"/><br>
-        <a class="caption" href="http://soiland-reyes.com/stian/about/">Stian Soiland-Reyes</a>
-        </td>
-        <td style="border: none; background: none;">
+     <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
         height: auto;" src="../assets/people/corey.jpg"/><br>
         <a class="caption" href="https://twitter.com/chrpr">Corey Harper</a>
-        </td> 
-    </tr>
-    <tr style="border: none; background: none;">
-        <td style="border: none; background: none;">
-            <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
-        height: auto;" src="../assets/people/james.jpg"/><br>
-        <a class="caption" href="https://www.linkedin.com/in/james-nevin-4b844b153/">James Nevin</a>
         </td>
         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
@@ -175,6 +158,13 @@ description: lab members
             <a class="caption" href="https://klimzaporojets.github.io/ ">Klim Zaporojets</a>
         </td>
     </tr>
+    <tr style="border: none; background: none;">
+        <td style="border: none; background: none;">
+            <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
+        height: auto;" src="../assets/people/thiviyan.png"/><br>
+        <a class="caption" href="https://thiviyansingam.com">Thiviyan <br> Thanapalasingam</a>
+        </td>
+    </tr>
 </table>
 
 </div>
@@ -183,9 +173,11 @@ description: lab members
 <br>
  Previous Members & Guests
 <ul>
-<li><a href="https://bit.ly/MajidLotfianDelouee">Majid Lotfian Delouee</a> (Postdoc at UMC)</li>
+<li><a href="https://www.linkedin.com/in/james-nevin-4b844b153/">James Nevin</a></li>
+<li><a href="http://soiland-reyes.com/stian/about/">Stian Soiland-Reyes</a> (Senior Lecturer - University of Manchester)</li> 
+<li><a href="https://bit.ly/MajidLotfianDelouee">Majid Lotfian Delouee</a> (Postdoc at Amsterdam UMC)</li>
 <li><a href="https://www.linkedin.com/in/fan-feng-473b9120b/">Fan Feng</a> (City University of Hong Kong)</li>
-<li><a href="https://dfdazac.github.io">Daniel Daza</a> (Postdoc at UMC)</li>
+<li><a href="https://dfdazac.github.io">Daniel Daza</a> (Postdoc at Amsterdam UMC)</li>
 <li><a href="https://ssc.io">Prof. Sebastian Schelter</a> (Professor TU Berlin)</li>
 <li><a href="https://www.uva.nl/profiel/s/a/j.a.c.sandberg/j.a.c.sandberg.html">Dr. Jacobijn Sandberg</a> (Retired) </li>
 <li><a href="https://madelonhulsebos.github.io">Dr. Madelon Hulsebos</a> (Postdoctoral fellow at UC Berkeley) </li>
