@@ -135,6 +135,10 @@ description: lab members
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px" src="../assets/people/lucas.jpg"/><br>
              <a class="caption" href="https://www.linkedin.com/in/lucas-lageweg-5022ba19b/">Lucas Lageweg</a>
         </td>
+         <td style="border: none; background: none;">
+            <img style="padding-top: 5px; padding-bottom: 5px; width: 100px" src="../assets/people/antonis.png"/><br>
+             <a class="caption" href="https://www.linkedin.com/in/antonis-georgakopoulos-401925190">Antonis <br> Georgakopoulos</a>
+        </td>
     </tr>
     <tr style="border: none; background: none;">
         <td colspan="3" style="border: none; background: none;">
@@ -173,7 +177,7 @@ description: lab members
 <br>
  Previous Members & Guests
 <ul>
-<li><a href="https://www.linkedin.com/in/james-nevin-4b844b153/">James Nevin</a></li>
+<li><a href="https://www.linkedin.com/in/james-nevin-4b844b153/">James Nevin</a> (Postdoc Ichise Laboratory, Tokyo Institute of Technology)</li>
 <li><a href="http://soiland-reyes.com/stian/about/">Stian Soiland-Reyes</a> (Senior Lecturer - University of Manchester)</li> 
 <li><a href="https://bit.ly/MajidLotfianDelouee">Majid Lotfian Delouee</a> (Postdoc at Amsterdam UMC)</li>
 <li><a href="https://www.linkedin.com/in/fan-feng-473b9120b/">Fan Feng</a> (City University of Hong Kong)</li>
