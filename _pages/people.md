@@ -45,7 +45,7 @@ description: lab members
     <tr style="border: none; background: none;">
         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px" src="../assets/people/jckalo.jpg"/><br>
-        <a class="caption" href="https://www.linkedin.com/in/jan-christoph-kalo-560283aa/">Dr. Jan-Christoph Kalo  <br> Assistant Professor</a>
+        <a class="caption" href="https://www.linkedin.com/in/jan-christoph-kalo-560283aa/">Dr. Jan-Christoph <br> Kalo  <br> Assistant Professor</a>
         </td>
          <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px" src="../assets/people/shubha.jpeg"/><br>
@@ -138,6 +138,12 @@ description: lab members
          <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px" src="../assets/people/antonis.png"/><br>
              <a class="caption" href="https://www.linkedin.com/in/antonis-georgakopoulos-401925190">Antonis <br> Georgakopoulos</a>
+        </td>
+    </tr>
+      <tr style="border: none; background: none;">
+         <td style="border: none; background: none;">
+            <img style="padding-top: 5px; padding-bottom: 5px; width: 100px" src="../assets/people/imane.jpg"/><br>
+             <a class="caption" href="https://imaneelghabi.github.io">Imane El Ghabi</a>
         </td>
     </tr>
     <tr style="border: none; background: none;">
