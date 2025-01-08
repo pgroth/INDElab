@@ -183,11 +183,11 @@ description: lab members
 <br>
  Previous Members & Guests
 <ul>
-<li><a href="https://www.linkedin.com/in/james-nevin-4b844b153/">James Nevin</a> (Postdoc Ichise Laboratory, Tokyo Institute of Technology)</li>
+<li><a href="https://www.linkedin.com/in/james-nevin-4b844b153/">Dr. James Nevin</a> (Postdoc Ichise Laboratory, Tokyo Institute of Technology)</li>
 <li><a href="http://soiland-reyes.com/stian/about/">Stian Soiland-Reyes</a> (Senior Lecturer - University of Manchester)</li> 
-<li><a href="https://bit.ly/MajidLotfianDelouee">Majid Lotfian Delouee</a> (Postdoc at Amsterdam UMC)</li>
+<li><a href="https://bit.ly/MajidLotfianDelouee">Dr. Majid Lotfian Delouee</a> (Postdoc at Amsterdam UMC)</li>
 <li><a href="https://www.linkedin.com/in/fan-feng-473b9120b/">Fan Feng</a> (City University of Hong Kong)</li>
-<li><a href="https://dfdazac.github.io">Daniel Daza</a> (Postdoc at Amsterdam UMC)</li>
+<li><a href="https://dfdazac.github.io">Dr. Daniel Daza</a> (Postdoc at Amsterdam UMC)</li>
 <li><a href="https://ssc.io">Prof. Sebastian Schelter</a> (Professor TU Berlin)</li>
 <li><a href="https://www.uva.nl/profiel/s/a/j.a.c.sandberg/j.a.c.sandberg.html">Dr. Jacobijn Sandberg</a> (Retired) </li>
 <li><a href="https://madelonhulsebos.github.io">Dr. Madelon Hulsebos</a> (Postdoctoral fellow at UC Berkeley) </li>
