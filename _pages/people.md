@@ -188,7 +188,7 @@ description: lab members
  Previous Members & Guests
 <ul>
 <li><a href="https://www.linkedin.com/in/james-nevin-4b844b153/">Dr. James Nevin</a> (Postdoc Ichise Laboratory, Tokyo Institute of Technology)</li>
-<li><a href="http://soiland-reyes.com/stian/about/">Stian Soiland-Reyes</a> (Senior Lecturer - University of Manchester)</li> 
+<li><a href="http://soiland-reyes.com/stian/about/">Dr. Stian Soiland-Reyes</a> (Senior Lecturer - University of Manchester)</li> 
 <li><a href="https://bit.ly/MajidLotfianDelouee">Dr. Majid Lotfian Delouee</a> (Postdoc at Amsterdam UMC)</li>
 <li><a href="https://www.linkedin.com/in/fan-feng-473b9120b/">Fan Feng</a> (City University of Hong Kong)</li>
 <li><a href="https://dfdazac.github.io">Dr. Daniel Daza</a> (Postdoc at Amsterdam UMC)</li>
