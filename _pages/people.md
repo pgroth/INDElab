@@ -57,6 +57,12 @@ description: lab members
         </td>
     </tr>
     <tr style="border: none; background: none;">
+        <td style="border: none; background: none;">
+            <img style="padding-top: 5px; padding-bottom: 5px; width: 100px" src="../assets/people/mina.jpg"/><br>
+             <a class="caption" href="https://minaghadimi.github.io/">Mina Ghadimi Atigh <br> Postdoctoral <br> Researcher</a>
+        </td>
+    </tr>
+    <tr style="border: none; background: none;">
         <td colspan="3" style="border: none; background: none;">
         PhD Students
         </td>
