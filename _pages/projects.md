@@ -7,7 +7,10 @@ title: projects
 Projects that INDELab is involved with. 
 
 _Current_
-
+* COST: [Global Network on Large-Scale, Cross-domain and Multilingual Open Knowledge Graphs (GOBLIN)](https://www.cost.eu/actions/CA23147/) (2025-2028)
+    * Roles: management committee, workgroup 1 co-lead
+* [Hybrid Intelligence](https://www.hybrid-intelligence-centre.nl/) (2025-2029)
+    * Roles: researcher
 * NWO: [DDTClean: Intelligent Wastewater Treatment: Distributed Digital Twin for Clean Water](https://www.uva.nl/en/shared-content/subsites/informatics-institute/en/news/2023/11/nwo-cas-green-water-processes-grant-for-victoria-degeler.html)(2023-2026)
     * Roles: partner lead, PhD Student
 * EU Hoizon Europe: [Efficient Explainable Learning on Knowledge Graphs (ENEXA)](http://enexa.eu) (2022-2025)
