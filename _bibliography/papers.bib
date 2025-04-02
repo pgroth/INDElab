@@ -2,6 +2,23 @@
 ---
 
 % 2025
+@article{10.7717/peerj-cs.2793,
+    title = {The effects of mismatched train and test data cleaning pipelines on regression models: lessons for practice},
+    author = {Nevin, James and Lees, Michael and Groth, Paul},
+    year = 2025,
+    month = apr,
+    keywords = {Data quality, Data cleaning, Regression models},
+    abstract = {
+    Data quality problems are present in all real-world, large-scale datasets. Each of these potential problems can be addressed in multiple ways through data cleaning. However, there is no single best data cleaning approach that always produces a perfect result, meaning that a choice needs to be made about which approach to use. At the same time, machine learning (ML) models are being trained and tested on these cleaned datasets, usually with one single data cleaning pipeline applied. In practice, however, data cleaning pipelines are updated regularly, often without retraining of production models. It is therefore common to apply different test (or production) data than the data on which the models were originally trained. The changes in these new test data and the data cleaning process applied can have potential ramifications for model performance. In this article, we show the impact that altering a data cleaning pipeline between the training and testing steps of an ML workflow can have. Through the fitting and evaluation of over 6,000 models, we find that mismatches between cleaning pipelines on training and test data can have a meaningful impact on regression model performance. Counter-intuitively, such mismatches can improve test set performance and potentially alter model selection choices.
+    },
+    volume = 11,
+    pages = {e2793},
+    journal = {PeerJ Computer Science},
+    issn = {2376-5992},
+    url = {https://doi.org/10.7717/peerj-cs.2793},
+    doi = {10.7717/peerj-cs.2793}
+}
+
 @inproceedings{10.1145/3703790.3703834,
     author = {Karabulut, Erkan and Groth, Paul and Degeler, Victoria},
     title = {3K: Knowledge-Enriched Digital Twin Framework},
