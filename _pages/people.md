@@ -41,7 +41,7 @@ description: lab members
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px" src="../assets/people/lise.png"/><br>
         <a class="caption" href="https://lisestork.github.io/">Dr. Lise Stork <br> Assistant Professor</a>
         </td>
-        </tr>
+    </tr>
     <tr style="border: none; background: none;">
         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px" src="../assets/people/jckalo.jpg"/><br>
@@ -80,16 +80,11 @@ description: lab members
         </td>
         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
-        height: auto;" src="../assets/people/effy.jpg"/><br>
-        <a class="caption" href="https://effyli.github.io">Effy Xue Li</a>
-        </td>
-    </tr>
-    <tr style="border: none; background: none;">
-        <td style="border: none; background: none;">
-            <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
         height: auto;" src="../assets/people/stefan.jpg"/><br>
         <a class="caption" href="https://stefan-grafberger.com/">Stefan Grafberger</a>
         </td>
+    </tr>
+    <tr style="border: none; background: none;">
         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
             height: auto;" src="../assets/people/pengyu.jpg"/><br>
@@ -100,13 +95,13 @@ description: lab members
             height: auto;" src="../assets/people/zeyu.png"/><br>
             <a class="caption" href="http://linkedin.com/in/zeyu-zhang-8b2416204">Zeyu Zhang</a>
         </td>
-    </tr>
-    <tr style="border: none; background: none;">
         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
             height: auto;" src="../assets/people/fina.png"/><br>
             <a class="caption" href="https://www.linkedin.com/in/finapolat/ ">Fina Polat</a>
         </td>
+    </tr>
+    <tr style="border: none; background: none;">
         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
             height: auto;" src="../assets/people/erkan.jpeg"/><br>
@@ -117,13 +112,13 @@ description: lab members
             height: 100px;" src="../assets/people/danru.jpg"/><br>
             <a class="caption" href="https://danrux.github.io/">Danru Xu</a>
         </td>
-    </tr>
-    <tr style="border: none; background: none;">
          <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
             height: 100px;" src="../assets/people/teresa.jpeg"/><br>
             <a class="caption" href="https://www.linkedin.com/in/teresa-liberatore-306755231/">Teresa Liberatore</a>
         </td>
+    </tr>
+    <tr style="border: none; background: none;">
         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px; 
             height: 100px;" src="../assets/people/yichun.png"/><br>
@@ -134,13 +129,13 @@ description: lab members
             height: auto;" src="../assets/people/brad.jpg"/><br>
             <a class="caption" href="https://www.bradleypallen.org" >Bradley Allen</a>
         </td>
-    </tr>
-    <tr style="border: none; background: none;">
-        <td style="border: none; background: none;">
+         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
         height: 100px;" src="../assets/people/david.jpg"/><br>
              <a class="caption" href="https://davidjackson99.github.io/">David Jackson</a>
         </td>
+    </tr>
+    <tr style="border: none; background: none;">
         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px" src="../assets/people/lucas.jpg"/><br>
              <a class="caption" href="https://www.linkedin.com/in/lucas-lageweg-5022ba19b/">Lucas Lageweg</a>
@@ -149,9 +144,7 @@ description: lab members
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px" src="../assets/people/antonis.png"/><br>
              <a class="caption" href="https://www.linkedin.com/in/antonis-georgakopoulos-401925190">Antonis <br> Georgakopoulos</a>
         </td>
-    </tr>
-      <tr style="border: none; background: none;">
-         <td style="border: none; background: none;">
+          <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px" src="../assets/people/imane.jpg"/><br>
              <a class="caption" href="https://imaneelghabi.github.io">Imane El Ghabi</a>
         </td>
@@ -193,6 +186,7 @@ description: lab members
 <br>
  Previous Members & Guests
 <ul>
+<li><a  href="https://effyli.github.io">Effy Xue Li</a> (Postdoc - Centrum Wiskunde & Informatica (CWI)) </li>
 <li><a href="https://www.linkedin.com/in/james-nevin-4b844b153/">Dr. James Nevin</a> (Postdoc Ichise Laboratory, Tokyo Institute of Technology)</li>
 <li><a href="http://soiland-reyes.com/stian/about/">Dr. Stian Soiland-Reyes</a> (Senior Lecturer - University of Manchester)</li> 
 <li><a href="https://bit.ly/MajidLotfianDelouee">Dr. Majid Lotfian Delouee</a> (Postdoc at Amsterdam UMC)</li>
