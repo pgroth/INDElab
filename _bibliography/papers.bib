@@ -2,6 +2,7 @@
 ---
 
 % 2025
+
 @article{10.7717/peerj-cs.2793,
     title = {The effects of mismatched train and test data cleaning pipelines on regression models: lessons for practice},
     author = {Nevin, James and Lees, Michael and Groth, Paul},
@@ -141,6 +142,43 @@ url={https://arxiv.org/pdf/2409.04073}
 }
 
 % 2024
+@inproceedings{allen_benchmark_2024,
+	address = {Baltimore, Maryland},
+	series = {{CEUR} {Workshop} {Proceedings}},
+	title = {A benchmark for the detection of metalinguistic disagreements between llms and knowledge graphs},
+	volume = {3953},
+	url = {https://ceur-ws.org/Vol-3953/#356},
+	language = {en},
+	urldate = {2025-04-29},
+	booktitle = {Proceedings of the {Special} {Session} on {Harmonising} {Generative} {AI} and {Semantic} {Web} {Technologies} ({HGAIS} 2024)},
+	publisher = {CEUR},
+	author = {Allen, Bradley and Groth, Paul},
+	editor = {Alharbi, Reham and Berardinis, Jacopo de and Groth, Paul and Peñuela, Albert Meroño and Simperl, Elena and Tamma, Valentina},
+	month = nov,
+	year = {2024},
+}
+
+@inproceedings{buchner-etal-2024-prompt,
+    title = "Prompt Tuned Embedding Classification for Industry Sector Allocation",
+    author = "Buchner, Valentin  and
+      Cao, Lele  and
+      Kalo, Jan-Christoph  and
+      Von Ehrenheim, Vilhelm",
+    editor = "Yang, Yi  and
+      Davani, Aida  and
+      Sil, Avi  and
+      Kumar, Anoop",
+    booktitle = "Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 6: Industry Track)",
+    month = jun,
+    year = "2024",
+    address = "Mexico City, Mexico",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.naacl-industry.10/",
+    doi = "10.18653/v1/2024.naacl-industry.10",
+    pages = "108--118",
+    abstract = "We introduce Prompt Tuned Embedding Classification (PTEC) for classifying companies within an investment firm`s proprietary industry taxonomy, supporting their thematic investment strategy. PTEC assigns companies to the sectors they primarily operate in, conceptualizing this process as a multi-label text classification task. Prompt Tuning, usually deployed as a text-to-text (T2T) classification approach, ensures low computational cost while maintaining high task performance. However, T2T classification has limitations on multi-label tasks due to the generation of non-existing labels, permutation invariance of the label sequence, and a lack of confidence scores. PTEC addresses these limitations by utilizing a classification head in place of the Large Language Models (LLMs) language head. PTEC surpasses both baselines and human performance while lowering computational demands. This indicates the continuing need to adapt state-of-the-art methods to domain-specific tasks, even in the era of LLMs with strong generalization abilities."
+}
+
 @phdthesis{dazaphd,
     title = "Exploiting Subgraphs and Attributes for Representation Learning on Knowledge Graphs",
     abstract = "Knowledge graphs (KGs) are data structures that explicitly represent entities and the relations between them over some domain. They can be used to store information about people and their relatives or birth locations, about organizations and the countries where they are located, or about chemical compounds and their interactions with proteins in the human body. In this thesis, we investigate the problem of representation learning on knowledge graphs, which consists of learning vector representations of entities and relations that capture the information contained in the graph. These learned representations are useful for capturing patterns that occur in the graph but are not explicitly stated in it. Several methods for representation learning on KGs are based on predicting a link between a pair of entities in the graph. While efficient, this approach forgoes useful learning signals from other sources that exhibit patterns, such as subgraphs involving multiple entities, and attributes of entities. Examples of attributes are textual descriptions of people, or molecular structures of chemical compounds. The goal of this thesis is to explore such learning signals beyond pairwise interactions of entities. Our findings provide evidence that subgraphs and attributes are powerful signals from which we can learn representations in KGs. Not only do they yield improved representations, but they also broaden the range of tasks in which they can be applied. We hope that this serves as a motivation for learning from further sources of information that are already available in KGs, but whose potential is yet to be discovered.",
