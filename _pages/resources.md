@@ -16,3 +16,4 @@ _Software_
 * [BLP](https://github.com/dfdazac/blp) - a model for performing inductive link prediction and entity classification for knowledge graphs where entites have textual descriptions.
 * [BioBLP](https://github.com/elsevier-ai-lab/bioblp) -  a modular framework for learning on multimodal biomedical knowledge graphs
 * [conversationkg](https://github.com/INDElab/conversationkg) - package for turning email lists into knowledge graphs. 
+* [PyAerial](https://github.com/DiTEC-project/pyaerial) - a Python package for scalable association rule mining from tabular data.
