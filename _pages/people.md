@@ -53,7 +53,7 @@ description: lab members
         </td>
          <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px" src="../assets/people/nali.jpg"/><br>
-            <a class="caption" href="https://nali001.github.io/aboutme/">Na Li <br> Postdoctoral <br> Researcher </a>
+            <a class="caption" href="https://nali001.github.io/aboutme/">Dr. Na Li <br> Postdoctoral <br> Researcher </a>
         </td>
     </tr>
     <tr style="border: none; background: none;">
