@@ -93,7 +93,7 @@ description: lab members
         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
             height: auto;" src="../assets/people/zeyu.png"/><br>
-            <a class="caption" href="http://linkedin.com/in/zeyu-zhang-8b2416204">Zeyu Zhang</a>
+            <a class="caption" href="https://jantory.github.io/">Zeyu Zhang</a>
         </td>
         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
