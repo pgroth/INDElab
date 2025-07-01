@@ -88,7 +88,7 @@ description: lab members
         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
             height: auto;" src="../assets/people/pengyu.jpg"/><br>
-            <a class="caption" href="https://www.linkedin.com/in/pengyuzhang03/">Pengyu Zhang</a>
+            <a class="caption" href="https://pengyu-zhang.github.io/">Pengyu Zhang</a>
         </td>
         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
