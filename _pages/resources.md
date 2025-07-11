@@ -17,3 +17,4 @@ _Software_
 * [BioBLP](https://github.com/elsevier-ai-lab/bioblp) -  a modular framework for learning on multimodal biomedical knowledge graphs
 * [conversationkg](https://github.com/INDElab/conversationkg) - package for turning email lists into knowledge graphs. 
 * [PyAerial](https://github.com/DiTEC-project/pyaerial) - a Python package for scalable association rule mining from tabular data.
+* [wdn-knowledge-graph](https://github.com/DiTEC-project/wdn-knowledge-graph) - a Python package to create a knowledge graph for water distribution networks.
