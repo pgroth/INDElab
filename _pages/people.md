@@ -138,6 +138,11 @@ description: lab members
         height: auto;" src="../assets/people/corey.jpg"/><br>
         <a class="caption" href="https://twitter.com/chrpr">Corey Harper</a>
         </td>
+        <td style="border: none; background: none;">
+            <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
+        height: auto;" src="../assets/people/mitja.jpeg"/><br>
+        <a class="caption" href="https://www.linkedin.com/in/dmitrii-orlov/">Dmitrii Orlov</a>
+        </td>
     </tr>
     <tr style="border: none; background: none;">
         <td colspan="3" style="border: none; background: none;">
@@ -176,8 +181,8 @@ description: lab members
 <br>
  Previous Members & Guests
 <ul>
-<li> <a href="https://melika.xyz/">Melika Ayoughi</a> </li>
-<li> <a href="https://stefan-grafberger.com/">Stefan Grafberger</a> </li>
+<li> <a href="https://melika.xyz/">Melika Ayoughi</a> (UvA postdoc)</li>
+<li> <a href="https://stefan-grafberger.com/">Stefan Grafberger</a> (Snowflake)</li>
 <li><a  href="https://effyli.github.io">Effy Xue Li</a> (Postdoc - Centrum Wiskunde & Informatica (CWI)) </li>
 <li><a href="https://www.linkedin.com/in/james-nevin-4b844b153/">Dr. James Nevin</a> (Postdoc Ichise Laboratory, Tokyo Institute of Technology)</li>
 <li><a href="http://soiland-reyes.com/stian/about/">Dr. Stian Soiland-Reyes</a> (Senior Lecturer - University of Manchester)</li> 
