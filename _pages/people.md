@@ -61,6 +61,10 @@ description: lab members
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px" src="../assets/people/mina.jpg"/><br>
              <a class="caption" href="https://minaghadimi.github.io/">Mina Ghadimi Atigh <br> Postdoctoral <br> Researcher</a>
         </td>
+        <td style="border: none; background: none;">
+            <img style="padding-top: 5px; padding-bottom: 5px; width: 100px" src="../assets/people/francesco.jpg"/><br>
+             <a class="caption" href="https://www.linkedin.com/in/francesco-compagno-34b80829a/">Dr. Francesco <br> Compagno<br> Postdoctoral <br> Researcher</a>
+        </td>
     </tr>
     <tr style="border: none; background: none;">
         <td colspan="3" style="border: none; background: none;">
