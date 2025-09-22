@@ -119,7 +119,7 @@ description: lab members
          <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
         height: 100px;" src="../assets/people/david.jpg"/><br>
-             <a class="caption" href="https://davidjackson99.github.io/">David Jackson</a>
+             <a class="caption" href="https://www.linkedin.com/in/david-jackson-2a79a722a">David Jackson</a>
         </td>
     </tr>
     <tr style="border: none; background: none;">
