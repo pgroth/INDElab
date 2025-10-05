@@ -56,11 +56,7 @@ description: lab members
             <a class="caption" href="https://nali001.github.io/aboutme/">Dr. Na Li <br> Postdoctoral <br> Researcher </a>
         </td>
     </tr>
-    <tr style="border: none; background: none;">
-        <td style="border: none; background: none;">
-            <img style="padding-top: 5px; padding-bottom: 5px; width: 100px" src="../assets/people/mina.jpg"/><br>
-             <a class="caption" href="https://minaghadimi.github.io/">Mina Ghadimi Atigh <br> Postdoctoral <br> Researcher</a>
-        </td>
+    <tr style="border: none; background: none;">     
         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px" src="../assets/people/francesco.jpg"/><br>
              <a class="caption" href="https://www.linkedin.com/in/francesco-compagno-34b80829a/">Dr. Francesco <br> Compagno<br> Postdoctoral <br> Researcher</a>
@@ -147,6 +143,11 @@ description: lab members
         height: auto;" src="../assets/people/mitja.jpeg"/><br>
         <a class="caption" href="https://www.linkedin.com/in/dmitrii-orlov/">Dmitrii Orlov</a>
         </td>
+        <td style="border: none; background: none;">
+            <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
+        height: auto;" src="../assets/people/taguhi.jpg"/><br>
+        <a class="caption" href="https://www.linkedin.com/in/taguhi-mesropyan/">Taguhi Mesropyan</a>
+        </td>
     </tr>
     <tr style="border: none; background: none;">
         <td colspan="3" style="border: none; background: none;">
@@ -167,7 +168,7 @@ description: lab members
         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px;
             height: auto;" src="../assets/people/klim.jpg"/><br>
-            <a class="caption" href="https://klimzaporojets.github.io/ ">Klim Zaporojets</a>
+            <a class="caption" href="https://klimzaporojets.github.io/">Klim Zaporojets</a>
         </td>
     </tr>
     <tr style="border: none; background: none;">
@@ -185,6 +186,7 @@ description: lab members
 <br>
  Previous Members & Guests
 <ul>
+<li> <a href="https://minaghadimi.github.io/">Mina Ghadimi Atigh</a> (Postdoc at UvA MultiX group)</li>
 <li> <a href="https://melika.xyz/">Melika Ayoughi</a> (UvA postdoc)</li>
 <li> <a href="https://stefan-grafberger.com/">Dr. Stefan Grafberger</a> (Snowflake)</li>
 <li><a  href="https://effyli.github.io">Effy Xue Li</a> (Postdoc - Centrum Wiskunde & Informatica (CWI)) </li>
