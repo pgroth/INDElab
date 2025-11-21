@@ -7,13 +7,31 @@
     top:0px;
     width:100%;
     z-index: 50;
+
+    .wrapper {
+        background-color: transparent;
+
+        &:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    }
 }
 
 .site-title {
     font-size: 20px;
-    line-height: $nav-height;
+    line-height: 36px;
     letter-spacing: -1px;
     margin-bottom: 0;
+    margin-top: 10px;
+    float: left;
+
+    @include media-query($on-palm) {
+        line-height: 30px;
+        padding-left: 10px;
+        margin-top: 10px;
+    }
 }
 .site-nav {
     float: right;
@@ -79,12 +97,14 @@
 
         .page-link {
             display: block;
-            padding: 5px 10px;
+            padding: 10px 15px;
+            margin: 0;
+            text-align: left;
+            border-bottom: 1px solid #e8e8e8;
 
-            &:not(:last-child) {
-                margin-right: 0;
+            &:first-child {
+                border-top: 1px solid #e8e8e8;
             }
-            margin-left: 10px;
         }
     }
 }

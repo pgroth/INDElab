@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="interviewGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#43e97b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#38f9d7;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#interviewGrad)"/>
+  <ellipse cx="160" cy="110" rx="25" ry="30" fill="white" opacity="0.9"/>
+  <ellipse cx="240" cy="110" rx="25" ry="30" fill="white" opacity="0.9"/>
+  <path d="M 160 140 Q 200 170 240 140" fill="none" stroke="white" stroke-width="8" stroke-linecap="round" opacity="0.9"/>
+  <circle cx="175" cy="105" r="6" fill="#43e97b"/>
+  <circle cx="225" cy="105" r="6" fill="#43e97b"/>
+  <path d="M 185 120 Q 200 130 215 120" fill="none" stroke="#43e97b" stroke-width="4" stroke-linecap="round"/>
+</svg>

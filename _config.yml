@@ -7,7 +7,7 @@ description: The Intelligent Data Engineering Lab (INDE lab) at the University o
 footer_text:
 
 url: # the base hostname & protocol for your site
-baseurl:  # the subpath of your site, e.g. /blog/
+baseurl: # the subpath of your site, e.g. /blog/
 last_updated: # leave blank if you don't want to display last updated
 
 # -----------------------------------------------------------------------------
@@ -34,8 +34,14 @@ collections:
       layout: post
     output: true
     permalink: /news/:path/
+  media:
+    defaults:
+      layout: media
+    output: true
+    permalink: /media/:path/
 
 news_limit: 8
+media_limit: 20
 
 # -----------------------------------------------------------------------------
 # Jekyll settings

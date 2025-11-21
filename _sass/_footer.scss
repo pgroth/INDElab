@@ -19,9 +19,9 @@
 }
 
 footer {
-  background-color: $grey-color-dark;
-  border-top: $footer-border-top;
-  color: $footer-color;
+  background-color: #fff;
+  border-top: 1px solid #e8e8e8;
+  color: #424242;
   font-size: $footer-font-size;
   font-weight: $footer-font-weight;
   padding: $footer-padding;
@@ -30,6 +30,10 @@ footer {
     bottom: 0px;
   width: 100%;
 
-  a { color: #fff; }
-  a:hover { color: $theme-color; }
+  .wrapper {
+    background-color: transparent;
+  }
+
+  a { color: #1976d2; }
+  a:hover { color: #1565c0; }
 }

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="podcastGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f5576c;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#podcastGrad)"/>
+  <circle cx="200" cy="120" r="30" fill="none" stroke="white" stroke-width="6"/>
+  <path d="M 170 120 Q 170 160 200 180 Q 230 160 230 120" fill="none" stroke="white" stroke-width="6"/>
+  <circle cx="200" cy="120" r="12" fill="white"/>
+  <rect x="190" y="180" width="20" height="30" rx="2" fill="white"/>
+  <ellipse cx="200" cy="215" rx="35" ry="10" fill="white"/>
+</svg>

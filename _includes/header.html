@@ -1,12 +1,9 @@
 <header class="site-header">
 
-  <div class="wrapper">  
-    {% if page.layout != "about" %}
-    <span class="site-title">
-        {% assign name = site.name | split: ' ' %}
-        <strong>{{ name | first }}</strong> {{ name | last }}
-    </span>
-    {% endif %}
+  <div class="wrapper">
+    <a class="site-title" href="{{ site.baseurl | prepend: site.url }}/">
+      <strong>INDE</strong> lab
+    </a>
 
     <nav class="site-nav">
       <input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -36,6 +33,9 @@
 
         <!-- CV link -->
         <!-- <a class="page-link" href="{{ '/assets/pdf/CV.pdf' | prepend: site.baseurl | prepend: site.url }}">vitae</a> -->
+
+        <!-- Theme Toggle -->
+        {% include theme-toggle.html %}
 
       </div>
     </nav>

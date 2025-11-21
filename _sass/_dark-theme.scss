@@ -1,0 +1,473 @@
+// Dark Theme Styles
+// Based on Material Design Dark Theme guidelines
+
+// Mixin for dark theme styles to avoid repetition
+@mixin dark-theme-styles {
+  // Logo switching for dark mode
+  .logo-light {
+    display: none !important;
+  }
+
+  .logo-dark {
+    display: inline !important;
+  }
+
+  // Base colors
+  body {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+
+  // Links
+  a {
+    color: #90caf9;
+
+    &:hover {
+      color: #bbdefb;
+    }
+  }
+
+  // Paragraphs and main text
+  p, span, li {
+    color: #e0e0e0;
+  }
+
+  // Header
+  .site-header {
+    background-color: #1e1e1e;
+    border-bottom: 1px solid #373737;
+
+    .site-title {
+      color: #e8e8e8;
+
+      &:hover {
+        color: #90caf9;
+      }
+    }
+
+    .page-link {
+      color: #cccccc;
+
+      &:hover {
+        color: #e8e8e8;
+      }
+    }
+
+    .menu-icon > svg path {
+      fill: #e8e8e8;
+    }
+  }
+
+  // Mobile menu dropdown
+  .site-nav {
+    @media (max-width: 600px) {
+      background-color: #1e1e1e;
+      border-color: #424242;
+
+      .trigger {
+        background-color: #1e1e1e;
+      }
+
+      .page-link {
+        color: #d0d0d0;
+        border-bottom-color: #424242;
+
+        &:first-child {
+          border-top-color: #424242;
+        }
+
+        &:hover {
+          background-color: #2d2d2d;
+          color: #ffffff;
+        }
+      }
+
+      .theme-toggle-wrapper {
+        border-top-color: #424242;
+      }
+    }
+  }
+
+  // Footer
+  .site-footer, footer {
+    background-color: #1e1e1e;
+    border-top: 1px solid #373737;
+    color: #d0d0d0;
+
+    a {
+      color: #90caf9;
+
+      &:hover {
+        color: #bbdefb;
+      }
+    }
+  }
+
+  // Content wrapper
+  .page-content {
+    background-color: #121212;
+  }
+
+  .wrapper {
+    background-color: transparent;
+  }
+
+  // Header wrapper should match header background
+  .site-header .wrapper {
+    background-color: transparent;
+  }
+
+  // Footer wrapper should match footer background
+  .site-footer .wrapper,
+  footer .wrapper {
+    background-color: transparent;
+  }
+
+  // Post content
+  .post {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+
+  .post-title {
+    color: #eeeeee;
+  }
+
+  .post-meta, .post-description {
+    color: #c0c0c0;
+  }
+
+  .post-content {
+    color: #e0e0e0;
+  }
+
+  // News section
+  .news {
+    h2 {
+      color: #eeeeee;
+    }
+
+    table {
+      color: #e0e0e0;
+    }
+
+    .date {
+      color: #c0c0c0;
+    }
+
+    .announcement {
+      color: #e0e0e0;
+
+      a {
+        color: #90caf9;
+      }
+    }
+  }
+
+  // Social icons
+  .social {
+    a {
+      color: #b0b0b0;
+
+      &:hover {
+        color: #90caf9;
+      }
+    }
+  }
+
+  // Media Section - Dark Theme
+  .media-section-title {
+    color: #eeeeee;
+    border-bottom-color: #424242;
+  }
+
+  .media-card {
+    background: #1e1e1e;
+    border-color: #373737;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+
+    &:hover {
+      box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+      border-color: #90caf9;
+    }
+  }
+
+  .media-thumbnail {
+    background: #2d2d2d;
+  }
+
+  .media-type-badge {
+    background: rgba(30,30,30,0.95);
+    color: #e0e0e0;
+    border-color: rgba(255,255,255,0.1);
+  }
+
+  .media-card-content {
+    .media-title {
+      color: #eeeeee;
+    }
+
+    .media-meta {
+      color: #c0c0c0;
+    }
+
+    .media-org {
+      color: #90caf9;
+    }
+
+    .media-description {
+      color: #c0c0c0;
+    }
+  }
+
+  // Individual Media Detail Page
+  .media-detail-header {
+    border-bottom-color: #424242;
+
+    .media-type-indicator {
+      &.media-type-video {
+        background: #1a237e;
+        color: #90caf9;
+        border-color: #283593;
+      }
+
+      &.media-type-podcast {
+        background: #4a148c;
+        color: #f48fb1;
+        border-color: #6a1b9a;
+      }
+
+      &.media-type-press {
+        background: #01579b;
+        color: #81d4fa;
+        border-color: #0277bd;
+      }
+
+      &.media-type-interview {
+        background: #1b5e20;
+        color: #a5d6a7;
+        border-color: #2e7d32;
+      }
+    }
+
+    .media-detail-title {
+      color: #eeeeee;
+    }
+
+    .media-detail-meta {
+      color: #c0c0c0;
+
+      .media-person {
+        color: #e0e0e0;
+      }
+
+      .media-org {
+        color: #90caf9;
+      }
+    }
+  }
+
+  .media-detail-content {
+    .media-embed-container {
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+
+    .media-detail-thumbnail {
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+
+    .media-description {
+      background: #1e1e1e;
+      border-left-color: #90caf9;
+      color: #e0e0e0;
+    }
+
+    .media-extended-content {
+      color: #e0e0e0;
+    }
+
+    .media-actions {
+      border-top-color: #373737;
+
+      a.media-external-link {
+        background: #1976d2;
+        border-color: #1976d2;
+        color: #eeeeee;
+
+        &:hover {
+          background: #1565c0;
+          border-color: #1565c0;
+        }
+      }
+
+      a.media-back-link {
+        background: #2d2d2d;
+        color: #e0e0e0;
+        border-color: #424242;
+
+        &:hover {
+          background: #373737;
+          border-color: #616161;
+        }
+      }
+    }
+  }
+
+  // Homepage Recent Media
+  .recent-media {
+    h2 {
+      color: #eeeeee;
+    }
+
+    .see-more a {
+      color: #90caf9;
+    }
+  }
+
+  .media-card-small {
+    background: #1e1e1e;
+    border-color: #373737;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+
+    &:hover {
+      box-shadow: 0 3px 8px rgba(0,0,0,0.5);
+      border-color: #90caf9;
+    }
+  }
+
+  .media-thumbnail-small {
+    background: #2d2d2d;
+  }
+
+  .media-info-small {
+    .media-type-small {
+      background: #2d2d2d;
+      color: #e0e0e0;
+    }
+
+    h3 {
+      color: #eeeeee;
+    }
+
+    .media-meta-small {
+      color: #c0c0c0;
+    }
+  }
+
+  // Tables
+  table {
+    color: #e0e0e0;
+    border-color: #373737;
+
+    th, td {
+      border-color: #373737;
+      color: #e0e0e0;
+    }
+
+    tr:hover {
+      background-color: #1e1e1e;
+    }
+  }
+
+  // Code blocks
+  code {
+    background-color: #2d2d2d;
+    color: #e0e0e0;
+    border-color: #424242;
+  }
+
+  pre {
+    background-color: #1e1e1e;
+    border-color: #424242;
+    color: #e0e0e0;
+  }
+
+  // Blockquotes
+  blockquote {
+    color: #c0c0c0;
+    border-left-color: #424242;
+  }
+
+  // Forms
+  input, textarea, select {
+    background-color: #2d2d2d;
+    color: #e0e0e0;
+    border-color: #424242;
+
+    &:focus {
+      border-color: #90caf9;
+    }
+  }
+
+  // Buttons
+  button, .btn {
+    background-color: #1976d2;
+    color: #e0e0e0;
+    border-color: #1976d2;
+
+    &:hover {
+      background-color: #1565c0;
+      border-color: #1565c0;
+    }
+  }
+
+  // Publications
+  .publications {
+    .bibliography {
+      li {
+        color: #e0e0e0;
+        border-bottom-color: #373737;
+
+        .title {
+          color: #eeeeee;
+        }
+
+        .author {
+          color: #c0c0c0;
+
+          a {
+            color: #90caf9;
+          }
+        }
+
+        .periodical {
+          color: #c0c0c0;
+        }
+      }
+    }
+  }
+
+  // Profile
+  .profile {
+    img {
+      border-color: #424242;
+    }
+  }
+
+  // Horizontal rule
+  hr {
+    border-color: #373737;
+  }
+
+  // About page specific
+  .about {
+    color: #e0e0e0;
+  }
+
+  // Headers
+  h1, h2, h3, h4, h5, h6 {
+    color: #eeeeee;
+  }
+}
+
+// Apply dark theme when data-theme attribute is set to "dark" (manual toggle)
+[data-theme="dark"] {
+  @include dark-theme-styles;
+}
+
+// Also apply when system preference is dark (fallback if no manual selection)
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme="light"]) {
+    @include dark-theme-styles;
+  }
+}

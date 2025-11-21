@@ -1,0 +1,82 @@
+---
+layout: default
+---
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <h5 class="post-description">{{ page.description }}</h5>
+  </header>
+
+  <article class="post-content {{page.title}} clearfix">
+    {{ content }}
+
+    {% assign media_by_type = site.media | group_by: 'type' %}
+
+    {% comment %} Sort media types: videos first, then podcast, press, interview {% endcomment %}
+    {% assign type_order = "video,podcast,press,interview" | split: "," %}
+    {% assign sorted_media_groups = "" | split: "" %}
+
+    {% for type_name in type_order %}
+      {% for type_group in media_by_type %}
+        {% if type_group.name == type_name %}
+          {% assign sorted_media_groups = sorted_media_groups | push: type_group %}
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+
+    {% for type_group in sorted_media_groups %}
+      <h2 class="media-section-title">
+        {% if type_group.name == 'video' %}
+          <span class="media-icon">🎥</span> Videos & Talks
+        {% elsif type_group.name == 'podcast' %}
+          <span class="media-icon">🎙️</span> Podcasts
+        {% elsif type_group.name == 'press' %}
+          <span class="media-icon">📰</span> Press Coverage
+        {% elsif type_group.name == 'interview' %}
+          <span class="media-icon">💬</span> Interviews
+        {% else %}
+          {{ type_group.name | capitalize }}
+        {% endif %}
+      </h2>
+
+      <div class="media-grid">
+        {% assign sorted_items = type_group.items | sort: 'date' | reverse %}
+        {% for item in sorted_items %}
+          <div class="media-card">
+            <a href="{{ item.url | prepend: site.baseurl | prepend: site.url }}" class="media-card-link">
+              <div class="media-thumbnail">
+                {% if item.thumbnail %}
+                  <img src="{{ item.thumbnail | prepend: site.baseurl | prepend: site.url }}" alt="{{ item.title }}">
+                {% elsif item.type == 'video' and item.link contains 'youtube.com' %}
+                  {% assign youtube_id = item.link | split: 'v=' | last | split: '&' | first %}
+                  <img src="https://img.youtube.com/vi/{{ youtube_id }}/maxresdefault.jpg" alt="{{ item.title }}">
+                {% else %}
+                  {% assign default_thumbnail = '/assets/media/default-' | append: type_group.name | append: '.svg' %}
+                  <img src="{{ default_thumbnail | prepend: site.baseurl | prepend: site.url }}" alt="{{ item.title }}">
+                {% endif %}
+                <span class="media-type-badge">{{ type_group.name }}</span>
+              </div>
+              <div class="media-card-content">
+                <h3 class="media-title">{{ item.title }}</h3>
+                <div class="media-meta">
+                  <span class="media-date">{{ item.date | date: "%B %Y" }}</span>
+                  {% if item.person %}
+                    <span class="media-person">{{ item.person }}</span>
+                  {% endif %}
+                </div>
+                {% if item.organization %}
+                  <div class="media-org">{{ item.organization }}</div>
+                {% endif %}
+                {% if item.description %}
+                  <p class="media-description">{{ item.description }}</p>
+                {% endif %}
+              </div>
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+    {% endfor %}
+  </article>
+
+</div>
