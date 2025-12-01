@@ -48,7 +48,7 @@ layout: default
               <div class="media-thumbnail">
                 {% if item.thumbnail %}
                   <img src="{{ item.thumbnail | prepend: site.baseurl | prepend: site.url }}" alt="{{ item.title }}">
-                {% elsif item.type == 'video' and item.link contains 'youtube.com' %}
+                {% elsif item.link contains 'youtube.com' %}
                   {% assign youtube_id = item.link | split: 'v=' | last | split: '&' | first %}
                   <img src="https://img.youtube.com/vi/{{ youtube_id }}/maxresdefault.jpg" alt="{{ item.title }}">
                 {% else %}
