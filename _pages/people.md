@@ -25,7 +25,7 @@ description: lab members
         </td>
         <td style="border: none; background: none;">
             <img style="padding-top: 5px; padding-bottom: 5px; width: 100px" src="../assets/people/viktoriya.jpg"/><br>
-        <a class="caption" href="https://vdegeler.com">Dr. Victoria Degeler  <br> Assistant Professor</a>
+        <a class="caption" href="https://vdegeler.com">Dr. Victoria Degeler  <br> Associate Professor</a>
         </td>
     </tr>
     <tr style="border: none; background: none;"> 
