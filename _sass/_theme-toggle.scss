@@ -48,6 +48,25 @@
   }
 }
 
+// Mobile header theme toggle (outside nav)
+.header-theme-toggle {
+  .theme-toggle-wrapper {
+    margin-top: 2px;
+    margin-right: 10px;
+  }
+
+  .theme-toggle {
+    margin: 0;
+    width: 32px;
+    height: 32px;
+
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
 // Align with page links in header (desktop only)
 @media screen and (min-width: 601px) {
   .site-nav .trigger {
@@ -77,33 +96,6 @@
   }
 }
 
-// Responsive adjustments
-@media screen and (max-width: 600px) {
-  .theme-toggle-wrapper {
-    margin: 10px 10px 15px 10px;
-    display: block;
-    text-align: right;
-    padding-top: 10px;
-    border-top: 1px solid #e8e8e8;
-  }
-
-  .theme-toggle {
-    width: 32px;
-    height: 32px;
-    padding: 0;
-    margin: 0 10px 0 0;
-
-    svg {
-      width: 18px;
-      height: 18px;
-    }
-  }
-
-  // Ensure toggle appears in mobile menu
-  .site-nav input:checked ~ .trigger .theme-toggle-wrapper {
-    display: block;
-  }
-}
 
 // Alternative: Fixed position toggle (uncomment to use instead)
 /*
