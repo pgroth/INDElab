@@ -1,7 +1,6 @@
 .site-header {
     border-bottom: 1px solid $grey-color-light;
-    background-color: #fff;
-    opacity: 0.95;
+    background-color: rgba(255, 255, 255, 0.95);
     position:fixed;
     left:0px;
     top:0px;
@@ -29,6 +28,7 @@
 
     @include media-query($on-palm) {
         line-height: 35px;
+        color: $dark-gray;
     }
 }
 
@@ -69,6 +69,10 @@
         // Gaps between nav items, but not on the first one
         &:not(:first-child) {
             margin-left: 10px;
+        }
+
+        @include media-query($on-palm) {
+            color: $dark-gray;
         }
     }
 
@@ -164,10 +168,9 @@
 }
 
 .header-bar{
-    border-bottom: 1px solid $light-gray;
+    border-bottom: 1px solid $dark-gray;
     font-size: 20px;
     display: block;
-    opacity: 0.75;
     width: 100%;
     text-align: center;
     padding-top: 25px;

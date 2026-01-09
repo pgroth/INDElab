@@ -146,7 +146,7 @@ $nav-height: 56px;
 // Footer
 $footer-border-top: thin solid $grey-color-dark;
 $footer-padding: $space-1;
-$footer-color: $light-gray;
+$footer-color: $dark-gray;
 $footer-bg-color: $grey-color-dark;
 $footer-font-weight: 300;
 $footer-font-size: .75rem;
@@ -159,7 +159,7 @@ $footer-font-size: .75rem;
 $img_spacing: 5px;
 $img-height: 275px;
 $caption-font-size: 12px;
-$caption-color: #aaa;
+$caption-color: $dark-gray;
 
 /* add on-palm to be consistent with other jekyll theme media queries */
 $on-palm:  600px !default;
