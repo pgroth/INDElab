@@ -9,7 +9,7 @@ a {
     }
 }
 
-article a, .news a {
+article a:not(.media-card-link):not(.media-card-small a), .news a {
     color: $theme-color;
     -webkit-text-fill-color: $theme-color;
     font-weight: 400;
@@ -19,10 +19,17 @@ article a, .news a {
     }
 }
 
-.post-content a,
-.page-content a:not(.person-card a) {
+.post-content a:not(.media-card-link),
+.page-content a:not(.person-card a):not(.media-card-link) {
     color: $theme-color;
     -webkit-text-fill-color: $theme-color;
+}
+
+.media-card-small a,
+.media-card a {
+    color: inherit;
+    -webkit-text-fill-color: inherit;
+    font-weight: inherit;
 }
 
 .social a {

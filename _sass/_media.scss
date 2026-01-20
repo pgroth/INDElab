@@ -286,6 +286,7 @@
     font-weight: 600;
     margin: 0 0 10px 0;
     color: #212121;
+    -webkit-text-fill-color: #212121;
     line-height: 1.4;
   }
 
@@ -296,6 +297,7 @@
     margin-bottom: 8px;
     font-size: 0.85em;
     color: #757575;
+    -webkit-text-fill-color: #757575;
 
     .media-date {
       font-weight: 500;
@@ -311,6 +313,7 @@
 
   .media-org {
     color: #1976d2;
+    -webkit-text-fill-color: #1976d2;
     font-size: 0.85em;
     font-weight: 400;
     margin-bottom: 10px;
@@ -321,6 +324,7 @@
     font-size: 0.9em;
     line-height: 1.5;
     color: #616161;
+    -webkit-text-fill-color: #616161;
     margin: 0;
   }
 }
@@ -401,6 +405,7 @@
     display: inline-block;
     background: #e0e0e0;
     color: #424242;
+    -webkit-text-fill-color: #424242;
     padding: 3px 8px;
     border-radius: 2px;
     font-size: 0.7em;
@@ -415,12 +420,14 @@
     font-weight: 600;
     margin: 8px 0;
     color: #212121;
+    -webkit-text-fill-color: #212121;
     line-height: 1.3;
   }
 
   .media-meta-small {
     font-size: 0.8em;
     color: #757575;
+    -webkit-text-fill-color: #757575;
     margin: 5px 0 0 0;
   }
 }
