@@ -1,0 +1,85 @@
+.people-section {
+    margin-bottom: 2rem;
+}
+
+.people-section-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid $theme-color;
+}
+
+.people-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: flex-start;
+}
+
+.person-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 120px;
+}
+
+.person-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+}
+
+.person-card a {
+    font-size: 0.85rem;
+    line-height: 1.3;
+    color: $text-color;
+    text-decoration: none;
+}
+
+.person-card a:hover {
+    color: $theme-color;
+}
+
+.person-card .person-title {
+    font-size: 0.75rem;
+    color: $mid-gray;
+    margin-top: 0.25rem;
+}
+
+.previous-members {
+    margin-top: 2rem;
+}
+
+.previous-members h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid $theme-color;
+}
+
+.previous-members ul {
+    list-style: none;
+    padding: 0;
+    column-count: 2;
+    column-gap: 2rem;
+}
+
+.previous-members li {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+@media (max-width: $on-palm) {
+    .people-grid {
+        justify-content: center;
+    }
+
+    .previous-members ul {
+        column-count: 1;
+    }
+}
