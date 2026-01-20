@@ -1,6 +1,7 @@
 a {
     color: $text-color;
     text-decoration: none;
+    -webkit-text-fill-color: currentColor;
 
     &:hover {
         color: $theme-color;
@@ -10,11 +11,18 @@ a {
 
 article a, .news a {
     color: $theme-color;
+    -webkit-text-fill-color: $theme-color;
     font-weight: 400;
 
     &:hover {
         text-decoration: underline;
     }
+}
+
+.post-content a,
+.page-content a:not(.person-card a) {
+    color: $theme-color;
+    -webkit-text-fill-color: $theme-color;
 }
 
 .social a {
