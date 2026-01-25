@@ -49,11 +49,6 @@ description: lab members
             <span class="person-title">Research Engineer<br>& Data Steward</span>
         </div>
         <div class="person-card">
-            <img src="../assets/people/nali.jpg" alt="Na Li">
-            <a href="https://nali001.github.io/aboutme/">Dr. Na Li</a>
-            <span class="person-title">Postdoctoral Researcher</span>
-        </div>
-        <div class="person-card">
             <img src="../assets/people/francesco.jpg" alt="Francesco Compagno">
             <a href="https://www.linkedin.com/in/francesco-compagno-34b80829a/">Dr. Francesco Compagno</a>
             <span class="person-title">Postdoctoral Researcher</span>
@@ -152,6 +147,7 @@ description: lab members
 <div class="previous-members">
     <h3>Previous Members & Guests</h3>
     <ul>
+        <li><a href="https://nali001.github.io/aboutme/">Dr. Na Li</a></li>
         <li><a href="https://minaghadimi.github.io/">Mina Ghadimi Atigh</a> (Postdoc at UvA MultiX group)</li>
         <li><a href="https://melika.xyz/">Melika Ayoughi</a> (UvA postdoc)</li>
         <li><a href="https://stefan-grafberger.com/">Dr. Stefan Grafberger</a> (Snowflake)</li>
