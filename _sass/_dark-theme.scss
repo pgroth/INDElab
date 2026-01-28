@@ -14,7 +14,7 @@
 
   // Base colors
   body {
-    background-color: #121212;
+    background-color: #1e1e1e;
     color: #e0e0e0;
   }
 
@@ -34,8 +34,8 @@
 
   // Header
   .site-header {
-    background-color: #1e1e1e;
-    border-bottom: 1px solid #373737;
+    background-color: #141414;
+    border-bottom: 1px solid #2a2a2a;
 
     .site-title {
       color: #e8e8e8;
@@ -61,11 +61,11 @@
   // Mobile menu dropdown
   .site-nav {
     @media (max-width: 600px) {
-      background-color: #1e1e1e;
-      border-color: #424242;
+      background-color: #141414;
+      border-color: #353535;
 
       .trigger {
-        background-color: #1e1e1e;
+        background-color: #141414;
       }
 
       .page-link {
@@ -90,8 +90,8 @@
 
   // Footer
   .site-footer, footer {
-    background-color: #1e1e1e;
-    border-top: 1px solid #373737;
+    background-color: #141414;
+    border-top: 1px solid #2a2a2a;
     color: #dcdcdc;
 
     a {
@@ -105,7 +105,7 @@
 
   // Content wrapper
   .page-content {
-    background-color: #121212;
+    background-color: #1e1e1e;
   }
 
   .wrapper {
@@ -125,7 +125,7 @@
 
   // Post content
   .post {
-    background-color: #121212;
+    background-color: #1e1e1e;
     color: #e0e0e0;
   }
 
@@ -182,7 +182,7 @@
   }
 
   .media-card {
-    background: #1e1e1e;
+    background: #252525;
     border-color: #373737;
     box-shadow: 0 1px 3px rgba(0,0,0,0.3);
 
@@ -281,7 +281,7 @@
     }
 
     .media-description {
-      background: #1e1e1e;
+      background: #252525;
       border-left-color: #90caf9;
       color: #e0e0e0;
     }
@@ -329,7 +329,7 @@
   }
 
   .media-card-small {
-    background: #1e1e1e;
+    background: #252525;
     border-color: #373737;
     box-shadow: 0 1px 3px rgba(0,0,0,0.3);
 
@@ -372,7 +372,7 @@
     }
 
     tr:hover {
-      background-color: #1e1e1e;
+      background-color: #252525;
     }
   }
 
@@ -384,7 +384,7 @@
   }
 
   pre {
-    background-color: #1e1e1e;
+    background-color: #252525;
     border-color: #424242;
     color: #e0e0e0;
   }
@@ -516,7 +516,7 @@
     }
 
     a:active {
-      background: #1e1e1e;
+      background: #252525;
     }
 
     .pagination-meta {
