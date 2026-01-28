@@ -72,7 +72,7 @@ description: lab members
             <a href="https://www.linkedin.com/in/finapolat/">Fina Polat</a>
         </div>
         <div class="person-card">
-            <img src="../assets/people/erkan.jpeg" alt="Erkan Karabulut">
+            <img src="../assets/people/erkan.png" alt="Erkan Karabulut">
             <a href="https://erkankarabulut.github.io/">Erkan Karabulut</a>
         </div>
         <div class="person-card">
@@ -80,7 +80,7 @@ description: lab members
             <a href="https://danrux.github.io/">Danru Xu</a>
         </div>
         <div class="person-card">
-            <img src="../assets/people/teresa.jpeg" alt="Teresa Liberatore">
+            <img src="../assets/people/teresa.png" alt="Teresa Liberatore">
             <a href="https://www.linkedin.com/in/teresa-liberatore-306755231/">Teresa Liberatore</a>
         </div>
         <div class="person-card">
@@ -112,11 +112,11 @@ description: lab members
             <a href="https://twitter.com/chrpr">Corey Harper</a>
         </div>
         <div class="person-card">
-            <img src="../assets/people/mitja.jpeg" alt="Dmitrii Orlov">
+            <img src="../assets/people/mitja.png" alt="Dmitrii Orlov">
             <a href="https://www.linkedin.com/in/dmitrii-orlov/">Dmitrii Orlov</a>
         </div>
         <div class="person-card">
-            <img src="../assets/people/taguhi.jpg" alt="Taguhi Mesropyan">
+            <img src="../assets/people/taguhi.png" alt="Taguhi Mesropyan">
             <a href="https://www.linkedin.com/in/taguhi-mesropyan/">Taguhi Mesropyan</a>
         </div>
     </div>

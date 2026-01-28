@@ -46,10 +46,10 @@
     }
 
     .page-link {
-      color: #cccccc;
+      color: #d8d8d8;
 
       &:hover {
-        color: #e8e8e8;
+        color: #f0f0f0;
       }
     }
 
@@ -69,7 +69,7 @@
       }
 
       .page-link {
-        color: #d0d0d0;
+        color: #dcdcdc;
         border-bottom-color: #424242;
 
         &:first-child {
@@ -92,7 +92,7 @@
   .site-footer, footer {
     background-color: #1e1e1e;
     border-top: 1px solid #373737;
-    color: #d0d0d0;
+    color: #dcdcdc;
 
     a {
       color: #90caf9;
@@ -134,7 +134,7 @@
   }
 
   .post-meta, .post-description {
-    color: #c0c0c0;
+    color: #d0d0d0;
   }
 
   .post-content {
@@ -152,7 +152,7 @@
     }
 
     .date {
-      color: #c0c0c0;
+      color: #d0d0d0;
     }
 
     .announcement {
@@ -167,7 +167,7 @@
   // Social icons
   .social {
     a {
-      color: #b0b0b0;
+      color: #c8c8c8;
 
       &:hover {
         color: #90caf9;
@@ -209,15 +209,18 @@
     }
 
     .media-meta {
-      color: #c0c0c0;
+      color: #d0d0d0;
+      -webkit-text-fill-color: #d0d0d0;
     }
 
     .media-org {
       color: #90caf9;
+      -webkit-text-fill-color: #90caf9;
     }
 
     .media-description {
-      color: #c0c0c0;
+      color: #d0d0d0;
+      -webkit-text-fill-color: #d0d0d0;
     }
   }
 
@@ -256,7 +259,7 @@
     }
 
     .media-detail-meta {
-      color: #c0c0c0;
+      color: #d0d0d0;
 
       .media-person {
         color: #e0e0e0;
@@ -344,6 +347,7 @@
     .media-type-small {
       background: #2d2d2d;
       color: #e0e0e0;
+      -webkit-text-fill-color: #e0e0e0;
     }
 
     h3 {
@@ -352,7 +356,8 @@
     }
 
     .media-meta-small {
-      color: #c0c0c0;
+      color: #d0d0d0;
+      -webkit-text-fill-color: #d0d0d0;
     }
   }
 
@@ -386,7 +391,7 @@
 
   // Blockquotes
   blockquote {
-    color: #c0c0c0;
+    color: #d0d0d0;
     border-left-color: #424242;
   }
 
@@ -425,7 +430,7 @@
         }
 
         .author {
-          color: #c0c0c0;
+          color: #d0d0d0;
 
           a {
             color: #90caf9;
@@ -433,7 +438,7 @@
         }
 
         .periodical {
-          color: #c0c0c0;
+          color: #d0d0d0;
         }
       }
     }
@@ -459,6 +464,115 @@
   // Headers
   h1, h2, h3, h4, h5, h6 {
     color: #eeeeee;
+  }
+
+  // People section
+  .person-card {
+    a {
+      color: #e0e0e0;
+
+      &:hover {
+        color: #90caf9;
+      }
+    }
+
+    .person-title {
+      color: #d0d0d0;
+    }
+  }
+
+  .people-section-title {
+    color: #eeeeee;
+    border-bottom-color: #90caf9;
+  }
+
+  .previous-members h3 {
+    color: #eeeeee;
+    border-bottom-color: #90caf9;
+  }
+
+  // Publication years
+  .year {
+    color: #d0d0d0;
+    border-top-color: #424242;
+  }
+
+  // Publication abstract border
+  .bibliography li span.abstract.hidden.open {
+    border-color: #616161;
+  }
+
+  // Pagination
+  .pagination {
+    a, .disabled {
+      background: #2d2d2d;
+      border-color: #424242;
+      color: #e0e0e0;
+    }
+
+    a:hover, a:focus {
+      background: #373737;
+      color: #90caf9;
+    }
+
+    a:active {
+      background: #1e1e1e;
+    }
+
+    .pagination-meta {
+      color: #d0d0d0;
+    }
+  }
+
+  .button-disabled {
+    background-color: #424242;
+    color: #909090;
+
+    &:hover, &:active, &:focus {
+      background-color: #424242;
+    }
+  }
+
+  // Blockquote footer
+  blockquote footer {
+    background-color: transparent;
+    color: #d0d0d0;
+  }
+
+  // Code line numbers
+  pre a::before {
+    color: #808080;
+  }
+
+  // Header bar
+  .header-bar {
+    border-bottom-color: #424242;
+
+    h1 {
+      color: #f44336;
+    }
+  }
+
+  // Post list border
+  .post-list > li {
+    border-bottom-color: #424242;
+  }
+
+  // Basscss utility class overrides for dark mode
+  .dark-gray {
+    color: #e0e0e0;
+  }
+
+  .mid-gray {
+    color: #d0d0d0;
+  }
+
+  .light-gray {
+    color: #b8b8b8;
+  }
+
+  .lighter-gray {
+    color: #909090;
   }
 }
 
