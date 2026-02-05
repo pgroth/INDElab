@@ -151,7 +151,7 @@ description: lab members
         <li><a href="https://minaghadimi.github.io/">Mina Ghadimi Atigh</a> (Postdoc at UvA MultiX group)</li>
         <li><a href="https://melika.xyz/">Melika Ayoughi</a> (UvA postdoc)</li>
         <li><a href="https://stefan-grafberger.com/">Dr. Stefan Grafberger</a> (Snowflake)</li>
-        <li><a href="https://effyli.github.io">Effy Xue Li</a> (Postdoc - Centrum Wiskunde & Informatica)</li>
+        <li><a href="https://effyli.github.io">Dr. Effy Xue Li</a> (Postdoc - Centrum Wiskunde & Informatica)</li>
         <li><a href="https://www.linkedin.com/in/james-nevin-4b844b153/">Dr. James Nevin</a> (Postdoc Ichise Laboratory, Tokyo Institute of Technology)</li>
         <li><a href="http://soiland-reyes.com/stian/about/">Dr. Stian Soiland-Reyes</a> (Senior Lecturer - University of Manchester)</li>
         <li><a href="https://bit.ly/MajidLotfianDelouee">Dr. Majid Lotfian Delouee</a> (Postdoc at Amsterdam UMC)</li>
