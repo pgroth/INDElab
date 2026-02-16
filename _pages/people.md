@@ -119,6 +119,10 @@ description: lab members
             <img src="../assets/people/taguhi.png" alt="Taguhi Mesropyan">
             <a href="https://www.linkedin.com/in/taguhi-mesropyan/">Taguhi Mesropyan</a>
         </div>
+         <div class="person-card">
+            <img src="../assets/people/trevor.jpg" alt="Trevor Pearce">
+            <a href="https://www.linkedin.com/in/trevor-pearce-5b9b0399/">Trevor Pearce</a>
+        </div>
     </div>
 </div>
 
