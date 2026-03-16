@@ -53,6 +53,11 @@ description: lab members
             <a href="https://www.linkedin.com/in/francesco-compagno-34b80829a/">Dr. Francesco Compagno</a>
             <span class="person-title">Postdoctoral Researcher</span>
         </div>
+         <div class="person-card">
+            <img src="../assets/people/blankpersonb.png">
+            <a href="https://d-gcc.github.io">Dr. David Campos</a>
+            <span class="person-title">Postdoctoral Researcher</span>
+        </div>
     </div>
 </div>
 
