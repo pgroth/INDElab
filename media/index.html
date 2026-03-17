@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="color-scheme" content="light">
+
+  <title>INDE lab | media</title>
+  <meta name="description" content="The Intelligent Data Engineering Lab (INDE lab) at the University of Amsterdam">
+
+  <link rel="shortcut icon" href="/assets/img/favicon.ico">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="canonical" href="/media/">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+    <a class="site-title" href="/">
+      <strong>INDE</strong> lab
+    </a>
+
+    <!-- Theme Toggle (always visible, outside nav) -->
+    <div class="header-theme-toggle">
+      <div class="theme-toggle-wrapper">
+  <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+    </svg>
+  </button>
+</div>
+
+<script>
+(function() {
+  const themeToggle = document.getElementById('theme-toggle');
+  const html = document.documentElement;
+
+  // Check for saved theme preference or default to system preference
+  function getThemePreference() {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+      return savedTheme;
+    }
+
+    // Check system preference
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      return 'dark';
+    }
+
+    return 'light';
+  }
+
+  // Apply theme
+  function applyTheme(theme) {
+    html.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+    updateToggleButton(theme);
+  }
+
+  // Update button icon
+  function updateToggleButton(theme) {
+    const sunIcon = themeToggle.querySelector('.sun-icon');
+    const moonIcon = themeToggle.querySelector('.moon-icon');
+
+    if (theme === 'dark') {
+      sunIcon.style.display = 'block';
+      moonIcon.style.display = 'none';
+    } else {
+      sunIcon.style.display = 'none';
+      moonIcon.style.display = 'block';
+    }
+  }
+
+  // Toggle theme
+  function toggleTheme() {
+    const currentTheme = html.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    applyTheme(newTheme);
+  }
+
+  // Initialize theme
+  const initialTheme = getThemePreference();
+  applyTheme(initialTheme);
+
+  // Add click listener
+  themeToggle.addEventListener('click', toggleTheme);
+
+  // Listen for system preference changes
+  if (window.matchMedia) {
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+      // Only update if user hasn't manually set a preference
+      if (!localStorage.getItem('theme')) {
+        applyTheme(e.matches ? 'dark' : 'light');
+      }
+    });
+  }
+})();
+</script>
+
+    </div>
+
+    <nav class="site-nav">
+      <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+      <div class="trigger">
+        <!-- About -->
+        <a class="page-link" href="/">about</a>
+
+        <!-- Blog
+        <a class="page-link" href="/blog/">blog</a>  -->
+
+        <!-- Pages -->
+        
+          
+        
+          
+        
+          
+            <a class="page-link" href="/media/">media</a>
+          
+        
+          
+            <a class="page-link" href="/news/">news</a>
+          
+        
+          
+            <a class="page-link" href="/people/">people</a>
+          
+        
+          
+            <a class="page-link" href="/projects/">projects</a>
+          
+        
+          
+            <a class="page-link" href="/publications/">publications</a>
+          
+        
+          
+            <a class="page-link" href="/resources/">data & software</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+
+        <!-- CV link -->
+        <!-- <a class="page-link" href="/assets/pdf/CV.pdf">vitae</a> -->
+
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">media</h1>
+    <h5 class="post-description"></h5>
+  </header>
+
+  <article class="post-content media clearfix">
+    <p>INDE lab in the media - talks, podcasts, interviews, and press coverage highlighting our research and public engagement.</p>
+
+
+    
+
+    
+    
+    
+
+    
+
+    
+      <h2 class="media-section-title">
+        
+          <span class="media-icon">🎥</span> Videos & Talks
+        
+      </h2>
+
+      <div class="media-grid">
+        
+        
+          <div class="media-card">
+            <a href="/media/2026-01-26-goblin-lecture/" class="media-card-link">
+              <div class="media-thumbnail">
+                
+                  
+                  <img src="https://img.youtube.com/vi/ARlyMvY40lg/hqdefault.jpg" alt="Data Taste: Foregrounding Choices in Knowledge Graph Construction">
+                
+                <span class="media-type-badge">video</span>
+              </div>
+              <div class="media-card-content">
+                <h3 class="media-title">Data Taste: Foregrounding Choices in Knowledge Graph Construction</h3>
+                <div class="media-meta">
+                  <span class="media-date">January 2026</span>
+                  
+                    <span class="media-person">Paul Groth</span>
+                  
+                </div>
+                
+                  <div class="media-org">GOBLIN Cost Action</div>
+                
+                
+                  <p class="media-description">With the increasing power of LLMs, Paul discusses the need to focus on taste and choice in knowledge graph construction.</p>
+                
+              </div>
+            </a>
+          </div>
+        
+          <div class="media-card">
+            <a href="/media/2026-01-trl-seminar/" class="media-card-link">
+              <div class="media-thumbnail">
+                
+                  
+                  <img src="https://img.youtube.com/vi/Ef2V-rlebHo/hqdefault.jpg" alt="Scalable Neurosymbolic Knowledge Discovery from Tabular Data">
+                
+                <span class="media-type-badge">video</span>
+              </div>
+              <div class="media-card-content">
+                <h3 class="media-title">Scalable Neurosymbolic Knowledge Discovery from Tabular Data</h3>
+                <div class="media-meta">
+                  <span class="media-date">January 2026</span>
+                  
+                    <span class="media-person">Erkan Karabulut</span>
+                  
+                </div>
+                
+                  <div class="media-org">Table Representation Learning (TRL) Seminars - CWI</div>
+                
+                
+                  <p class="media-description">Erkan introduces various scalable methods on learning rules from tabular data for knowledge discovery and interpretable inference.</p>
+                
+              </div>
+            </a>
+          </div>
+        
+          <div class="media-card">
+            <a href="/media/2025-10-endorse-keynote/" class="media-card-link">
+              <div class="media-thumbnail">
+                
+                  
+                  <img src="https://img.youtube.com/vi/HPKpVXAep1Q/hqdefault.jpg" alt="AI, Data and Agreement">
+                
+                <span class="media-type-badge">video</span>
+              </div>
+              <div class="media-card-content">
+                <h3 class="media-title">AI, Data and Agreement</h3>
+                <div class="media-meta">
+                  <span class="media-date">October 2025</span>
+                  
+                    <span class="media-person">Paul Groth</span>
+                  
+                </div>
+                
+                  <div class="media-org">ENDORSE 2025</div>
+                
+                
+                  <p class="media-description">Paul discusses how Generative AI shifts the focus from tasks such as knowledge acquisition from content to other knowledge engineering tasks.</p>
+                
+              </div>
+            </a>
+          </div>
+        
+          <div class="media-card">
+            <a href="/media/2025-06-summersoc-keynote/" class="media-card-link">
+              <div class="media-thumbnail">
+                
+                  
+                  <img src="https://img.youtube.com/vi/WUxcv29KkMA/hqdefault.jpg" alt="Engineering Digital Twins of Critical Infrastructures">
+                
+                <span class="media-type-badge">video</span>
+              </div>
+              <div class="media-card-content">
+                <h3 class="media-title">Engineering Digital Twins of Critical Infrastructures</h3>
+                <div class="media-meta">
+                  <span class="media-date">June 2025</span>
+                  
+                    <span class="media-person">Victoria Degeler</span>
+                  
+                </div>
+                
+                  <div class="media-org">SummerSOC 2025</div>
+                
+                
+                  <p class="media-description">Victoria presents her work on engineering digital twins</p>
+                
+              </div>
+            </a>
+          </div>
+        
+          <div class="media-card">
+            <a href="/media/2025-06-eswc-talk/" class="media-card-link">
+              <div class="media-thumbnail">
+                
+                  
+                  <img src="/assets/media/default-video.svg" alt="Designing Hierarchies for Optimal Hyperbolic Embedding">
+                
+                <span class="media-type-badge">video</span>
+              </div>
+              <div class="media-card-content">
+                <h3 class="media-title">Designing Hierarchies for Optimal Hyperbolic Embedding</h3>
+                <div class="media-meta">
+                  <span class="media-date">June 2025</span>
+                  
+                    <span class="media-person">Melika Ayoughi</span>
+                  
+                </div>
+                
+                  <div class="media-org">ESWC 2025</div>
+                
+                
+                  <p class="media-description">Melika presents her work at ESWC 2025</p>
+                
+              </div>
+            </a>
+          </div>
+        
+          <div class="media-card">
+            <a href="/media/2024-05-eswc-talk/" class="media-card-link">
+              <div class="media-thumbnail">
+                
+                  
+                  <img src="/assets/media/default-video.svg" alt="Evaluating Class Membership Relations in Knowledge Graphs using Large Language Models">
+                
+                <span class="media-type-badge">video</span>
+              </div>
+              <div class="media-card-content">
+                <h3 class="media-title">Evaluating Class Membership Relations in Knowledge Graphs using Large Language Models</h3>
+                <div class="media-meta">
+                  <span class="media-date">May 2024</span>
+                  
+                    <span class="media-person">Paul Groth</span>
+                  
+                </div>
+                
+                  <div class="media-org">ESWC 2024</div>
+                
+                
+                  <p class="media-description">Paul presenting Brad's work on evaluating class membership relations in KGs.</p>
+                
+              </div>
+            </a>
+          </div>
+        
+          <div class="media-card">
+            <a href="/media/2024-05b-eswc-talk/" class="media-card-link">
+              <div class="media-thumbnail">
+                
+                  
+                  <img src="/assets/media/default-video.svg" alt="Enabling Social Demography Research using Semantic Technologies">
+                
+                <span class="media-type-badge">video</span>
+              </div>
+              <div class="media-card-content">
+                <h3 class="media-title">Enabling Social Demography Research using Semantic Technologies</h3>
+                <div class="media-meta">
+                  <span class="media-date">May 2024</span>
+                  
+                    <span class="media-person">Paul Groth</span>
+                  
+                </div>
+                
+                  <div class="media-org">ESWC 2024</div>
+                
+                
+                  <p class="media-description">A new semantic resource for social demograph</p>
+                
+              </div>
+            </a>
+          </div>
+        
+          <div class="media-card">
+            <a href="/media/2021-11-causalscience-keynote/" class="media-card-link">
+              <div class="media-thumbnail">
+                
+                  
+                  <img src="https://img.youtube.com/vi/U0dY1aEM5bk/hqdefault.jpg" alt="Keynote at Causal Science Meeting 2021">
+                
+                <span class="media-type-badge">video</span>
+              </div>
+              <div class="media-card-content">
+                <h3 class="media-title">Keynote at Causal Science Meeting 2021</h3>
+                <div class="media-meta">
+                  <span class="media-date">December 2021</span>
+                  
+                    <span class="media-person">Sara Magliacane</span>
+                  
+                </div>
+                
+                  <div class="media-org">Causal Science</div>
+                
+                
+                  <p class="media-description">Sara gave a keynote at the 2021 Causal Science meeting alongside recent Nobel prize winner Guido Imbens.</p>
+                
+              </div>
+            </a>
+          </div>
+        
+          <div class="media-card">
+            <a href="/media/2021-11-datacentric-keynote/" class="media-card-link">
+              <div class="media-thumbnail">
+                
+                  
+                  <img src="https://img.youtube.com/vi/kvLUm-npTLU/hqdefault.jpg" alt="Keynote at Data Centric AI Workshop">
+                
+                <span class="media-type-badge">video</span>
+              </div>
+              <div class="media-card-content">
+                <h3 class="media-title">Keynote at Data Centric AI Workshop</h3>
+                <div class="media-meta">
+                  <span class="media-date">November 2021</span>
+                  
+                    <span class="media-person">Sebastian Schelter</span>
+                  
+                </div>
+                
+                  <div class="media-org">Stanford HAI & ETH AI Center</div>
+                
+                
+                  <p class="media-description">Keynote presentation on data-centric approaches to AI.</p>
+                
+              </div>
+            </a>
+          </div>
+        
+          <div class="media-card">
+            <a href="/media/2021-04-webconf-talk/" class="media-card-link">
+              <div class="media-thumbnail">
+                
+                  
+                  <img src="https://img.youtube.com/vi/YqstNhVFdc8/hqdefault.jpg" alt="Inductive Entity Representations from Text via Link Prediction">
+                
+                <span class="media-type-badge">video</span>
+              </div>
+              <div class="media-card-content">
+                <h3 class="media-title">Inductive Entity Representations from Text via Link Prediction</h3>
+                <div class="media-meta">
+                  <span class="media-date">April 2021</span>
+                  
+                    <span class="media-person">Daniel Daza</span>
+                  
+                </div>
+                
+                  <div class="media-org">Web Conference 2021</div>
+                
+                
+                  <p class="media-description">Daniel presents his work from 2021 Web Conference</p>
+                
+              </div>
+            </a>
+          </div>
+        
+      </div>
+    
+      <h2 class="media-section-title">
+        
+          <span class="media-icon">🎙️</span> Podcasts
+        
+      </h2>
+
+      <div class="media-grid">
+        
+        
+          <div class="media-card">
+            <a href="/media/2025-08-dataeng-podcast/" class="media-card-link">
+              <div class="media-thumbnail">
+                
+                  
+                  <img src="https://img.youtube.com/vi/iEEHfmrh32U/hqdefault.jpg" alt="From Academia to Industry: Bridging Data Engineering Challenges">
+                
+                <span class="media-type-badge">podcast</span>
+              </div>
+              <div class="media-card-content">
+                <h3 class="media-title">From Academia to Industry: Bridging Data Engineering Challenges</h3>
+                <div class="media-meta">
+                  <span class="media-date">August 2025</span>
+                  
+                    <span class="media-person">Paul Groth</span>
+                  
+                </div>
+                
+                  <div class="media-org">Data Engineering Podcast</div>
+                
+                
+                  <p class="media-description">Paul shares his background in AI and data management, discussing the evolution of data provenance and lineage, as well as the challenges of data integration. He explores the impact of large language models (LLMs) on data engineering,</p>
+                
+              </div>
+            </a>
+          </div>
+        
+          <div class="media-card">
+            <a href="/media/2023-12-weaviate-podcast/" class="media-card-link">
+              <div class="media-thumbnail">
+                
+                  
+                  <img src="https://img.youtube.com/vi/3ET69F7smk8/hqdefault.jpg" alt="Structure in Data & AI Native Databases">
+                
+                <span class="media-type-badge">podcast</span>
+              </div>
+              <div class="media-card-content">
+                <h3 class="media-title">Structure in Data & AI Native Databases</h3>
+                <div class="media-meta">
+                  <span class="media-date">December 2023</span>
+                  
+                    <span class="media-person">Paul Groth</span>
+                  
+                </div>
+                
+                  <div class="media-org">Weaviate Podcast</div>
+                
+                
+                  <p class="media-description">Paul discusses LLMs for Knowledge Graphs and using LLMs as Knowledge bases.</p>
+                
+              </div>
+            </a>
+          </div>
+        
+          <div class="media-card">
+            <a href="/media/2021-11-techlab-podcast/" class="media-card-link">
+              <div class="media-thumbnail">
+                
+                  
+                  <img src="/assets/media/default-podcast.svg" alt="AI for Retail Lab on Recommendations">
+                
+                <span class="media-type-badge">podcast</span>
+              </div>
+              <div class="media-card-content">
+                <h3 class="media-title">AI for Retail Lab on Recommendations</h3>
+                <div class="media-meta">
+                  <span class="media-date">November 2021</span>
+                  
+                    <span class="media-person">Sebastian Schelter</span>
+                  
+                </div>
+                
+                  <div class="media-org">bol.com Techlab</div>
+                
+                
+                  <p class="media-description">Sebastian discusses the AIRlab and recommendations systems.</p>
+                
+              </div>
+            </a>
+          </div>
+        
+      </div>
+    
+  </article>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer>
+
+  <div class="wrapper">
+    &copy; Copyright 2026 INDE lab.
+    
+    
+
+  </div>
+
+</footer>
+
+
+    <!-- Load jQuery -->
+<script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+
+
+
+
+<!-- Include custom icon fonts -->
+<link rel="stylesheet" href="/assets/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="/assets/css/academicons.min.css">
+
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', '', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+  </body>
+
+</html>
