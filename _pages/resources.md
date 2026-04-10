@@ -14,6 +14,7 @@ _Data_
 
 
 _Software_
+* [FAIRWorkflows](https://github.com/lisestork/FAIRWorkflows) - a self-contained, browser-based annotation tool for capturing workflows from academic papers.
 * [PyAerial](https://github.com/DiTEC-project/pyaerial) - a Python package for scalable association rule mining from tabular data.
 * [wdn-knowledge-graph](https://github.com/DiTEC-project/wdn-knowledge-graph) - a Python package to create a knowledge graph for water distribution networks.
 * [mlinspect](https://github.com/stefan-grafberger/mlinspect) - analyze and inspect python machine learning pipelines to check for common issues.
