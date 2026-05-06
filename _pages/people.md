@@ -93,10 +93,6 @@ description: lab members
             <a href="https://www.linkedin.com/in/yichun-wang-astrid/">Yichun Wang</a>
         </div>
         <div class="person-card">
-            <img src="../assets/people/brad.jpg" alt="Bradley Allen">
-            <a href="https://www.bradleypallen.org">Bradley Allen</a>
-        </div>
-        <div class="person-card">
             <img src="../assets/people/david.jpg" alt="David Jackson">
             <a href="https://www.linkedin.com/in/david-jackson-2a79a722a">David Jackson</a>
         </div>
@@ -135,20 +131,20 @@ description: lab members
     <div class="people-section-title">Guest Researchers</div>
     <div class="people-grid">
         <div class="person-card">
+            <img src="../assets/people/brad.jpg" alt="Bradley Allen">
+            <a href="https://www.bradleypallen.org">Dr. Bradley Allen</a>
+        </div>
+        <div class="person-card">
             <img src="../assets/people/hartmut.jpg" alt="Hartmut Koenitz">
             <a href="http://hartmutkoenitz.com">Dr. Hartmut Koenitz</a>
+        </div>
+         <div class="person-card">
+            <img src="../assets/people/klim.jpg" alt="Klim Zaporojets">
+            <a href="https://klimzaporojets.github.io/">Dr. Klim Zaporojets</a>
         </div>
         <div class="person-card">
             <img src="../assets/people/till.jpg" alt="Till Döhmen">
             <a href="https://tdoehmen.github.io">Till Döhmen</a>
-        </div>
-        <div class="person-card">
-            <img src="../assets/people/klim.jpg" alt="Klim Zaporojets">
-            <a href="https://klimzaporojets.github.io/">Klim Zaporojets</a>
-        </div>
-        <div class="person-card">
-            <img src="../assets/people/thiviyan.png" alt="Thiviyan Thanapalasingam">
-            <a href="https://thiviyansingam.com">Thiviyan Thanapalasingam</a>
         </div>
     </div>
 </div>
@@ -156,7 +152,8 @@ description: lab members
 <div class="previous-members">
     <h3>Previous Members & Guests</h3>
     <ul>
-        <li><a href="https://nali001.github.io/aboutme/">Dr. Na Li</a></li>
+        <li><a href="https://thiviyansingam.com">Thiviyan Thanapalasingam</a></li>
+        <li><a href="https://nali001.github.io/">Dr. Na Li</a> (Solution Engineer at SURF)</li>
         <li><a href="https://minaghadimi.github.io/">Mina Ghadimi Atigh</a> (Postdoc at UvA MultiX group)</li>
         <li><a href="https://melika.xyz/">Melika Ayoughi</a> (UvA postdoc)</li>
         <li><a href="https://stefan-grafberger.com/">Dr. Stefan Grafberger</a> (Snowflake)</li>
