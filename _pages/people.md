@@ -146,6 +146,10 @@ description: lab members
             <img src="../assets/people/till.jpg" alt="Till Döhmen">
             <a href="https://tdoehmen.github.io">Till Döhmen</a>
         </div>
+        <div class="person-card">
+            <img src="../assets/people/gully.jpeg" alt="Dr. Gully Burns">
+            <a href="https://gullys.website">Dr. Gully Burns</a>
+        </div>
     </div>
 </div>
 
