@@ -2,6 +2,56 @@
 ---
 
 % 2026
+@inproceedings{iferroudjene-etal-2026-wikidata,
+  title = {A Wikidata-Based Framework to Measure Cross-Lingual Bias in Multilingual Large Language Models },
+  author = {Iferroudjene, Mouloud and Poggel, Lisa and Schimmenti, Andrea and Yang, Duo and Shivashankar, Kanchan and Kalo, Jan-Christoph and Boscariol, Marta},
+  booktitle = {Proceedings of the Knowledge Graphs and Large Language Models Workshop (KG-LLM) @ LREC26},
+  month = {May},
+  year = {2026},
+  pages = {190--209},
+  address = {Palma, Mallorca, Spain},
+  publisher = {European Language Resources Association (ELRA)},
+  editor = {Sérasset, Gilles and Gkirtzou, Katerina and Cochez, Michael and Kalo, Jan-Christoph},
+  doi = {10.63317/29b354pejyrt},
+  abstract = {Multilingual large language models (LLMs) are increasingly used for factual question answering, yet their accuracy varies across languages in ways that are difficult to interpret. A central challenge is that many multilingual probing benchmarks conflate multiple factors: the language used to ask the question, the cultural-linguistic context of the entities being queried, and the popularity skew of entities. In our paper, we disentangle these factors by asking: (i) how strongly does the Language of the Question (LoQ) affect factual recall, (ii) does matching LoQ to an entity-associated Language of the Entity (LoE) improve performance, and (iii) do these effects persist when entity popularity is controlled. To this end, we introduce WILA-PopQA, a new Wikidata-grounded benchmark spanning 9 languages with matched popularity profiles, and probe 12 open-weight models of varying sizes and architectures under aligned and misaligned LoQ–LoE conditions. We evaluate models’ answers to 4 types of questions about entity biographical properties in all selected languages. Results show that LoQ is the dominant source of variation. LoQ–LoE alignment does not consistently yield the highest accuracy, and performance depends on the property being asked. These results suggest that prompt language is an actionable experimental factor for multilingual factual evaluation.}
+}
+
+@inproceedings{
+xu2026identifying,
+title={Identifying dependent components from multi-domain linear mixtures},
+author={Danru Xu and Lauri Parkkonen and Sara Magliacane and Aapo Hyvarinen},
+booktitle={Forty-third International Conference on Machine Learning},
+year={2026},
+url={https://openreview.net/forum?id=OIhwTkpkS1}
+}
+
+@inproceedings{wonnink-etal-2026-improving,
+  title = {Improving Completeness in Deep Research Agents through Targeted Enrichment },
+  author = {Wonnink, Jesse and Zavrel, Jakub and Groth, Paul},
+  booktitle = {Proceedings of Natural Scientific Language Processing (NSLP) @ LREC 2026},
+  month = {May},
+  year = {2026},
+  pages = {193--205},
+  address = {Palma, Mallorca, Spain},
+  publisher = {European Language Resources Association (ELRA)},
+  editor = {Rehm, Georg and Dietze, Stefan and Dessi, Danilo and Maynard, Diana and Schimmler, Sonja},
+  doi = {10.63317/5pjfdths5wey},
+  abstract = {Deep research agents, AI systems that autonomously gather, synthesize, and report on complex topics, represent a significant advance in information synthesis, yet ensuring the completeness of their outputs remains an open challenge. A key bottleneck is query generation: current systems decompose research questions into subqueries via prompt engineering alone, offering no formal guarantees on diversity or coverage, which leads to redundant retrieval and gaps in the resulting reports. This paper presents HERO (High Enrichment Retrieval Orchestrator), a hierarchical deep research architecture that addresses this limitation through two complementary mechanisms. First, submodular optimization via a facility location objective provides mathematically grounded control over the relevance–diversity trade-off during query selection, replacing ad-hoc generation with provably diverse query sets. Second, a hierarchical enrichment stage independently analyzes each subquery pipeline’s intermediate synthesis for information gaps and issues targeted follow-up queries, enabling adaptive depth without cross-pipeline interference. We evaluate HERO across academic (ScholarQABench) and general-domain (DeepResearchGym) benchmarks. HERO achieves state-of-the-art coverage (Key Point Recall: 67.63), grounding (Citation F1: 91.57), and presentation quality on DeepResearchGym, and the highest scores on multi-paper synthesis tasks in ScholarQABench.}
+}
+
+@inproceedings{cao-etal-2026-graph,
+  title = {Graph-TempCZ: A Graph Representation of Software Mentions for Predicting Software Usage in Scientific Publications},
+  author = {Cao, Congfeng and Zhang, Pengyu and Bloem, Jelke},
+  booktitle = {Proceedings of the Fifteenth Language Resources and Evaluation Conference (LREC 2026)},
+  month = {May},
+  year = {2026},
+  pages = {7791--7803},
+  address = {Palma, Mallorca, Spain},
+  publisher = {European Language Resources Association (ELRA)},
+  editor = {Piperidis, Stelios and Bel, Núria and van den Heuvel, Henk and Ide, Nancy and Krek, Simon and Toral, Antonio},
+  doi = {10.63317/2jopizgg4dzo},
+  abstract = {Predicting how software is used, shared, and evolves across publications is essential to studying scientific progress. Existing methods for representing software usage in publications rely mainly on tabular or textual formats, which limit their structural expressiveness and consequently their ability to predict software usage. We address these gaps by representing software mentions and citations as a graph and formulating software usage prediction as a link prediction task. To support this study, we construct the first large-scale graph dataset of publication and software mentions, Graph-TempCZ, covering 1959-2022 with over six million mention relationships. Experiments using both traditional machine learning and Graph Neural Network (GNN) show that graph-based models substantially outperform feature-based baselines, achieving a 5.98% improvement in test accuracy. Temporal experiments further reveal that models trained on one year generalize effectively to nearby years but show gradual performance decay as the temporal gap increases. This work provides the first comprehensive foundation for analyzing software usage through a temporal graph representation.}
+}
 
 @inproceedings{georgakopoulos_ranking-guided_2026,
 	address = {Dubrovnik, Croatia},
@@ -181,18 +231,23 @@ series = {CHI '26}
 }
 
 
-@inproceedings{15a5fbb0c69146389e8b21214a26b148,
-title = "GNN-Based State Estimation for Urban Wastewater Digital Twins",
-abstract = "Urban wastewater systems are critical infrastructures whose monitoring is complicated by sparse sensing, stochastic inflows, and complex hydraulic behavior. Physics-based hydraulic models provide accurate simulations but are computationally demanding and unsuitable for real-time operation. We adapt a graph neural network surrogate model GATRes to wastewater networks and train it on synthetic data generated from calibrated hydraulic simulations. The approach is evaluated on two wastewater systems: a municipal network in the Netherlands and the open Shunqing stormwater dataset from China. In the Dutch network, the model achieves estimation errors within 20-50 cm across multiple rainfall scenarios, which aligns with the precision expected by water domain experts. Results demonstrate strong overall accuracy under sparse sensing and across unseen rainfall scenarios, while highlighting challenges near hydraulic structures such as pumps and outfalls, where errors are higher but remain within acceptable ranges. These findings show that GNN surrogates can provide an accurate and scalable approach for state estimation in wastewater networks, contributing to monitoring and operational decision-making in smart cities.",
-author = "Imane El Ghabi and Revin Naufal Alief and Dilek Dustegor and Guy Heckens and Alexander Lazovik and Victoriya Degeler",
-year = "2026",
-month = jan,
-doi = "10.1145/3748522.3779823",
-language = "English",
-booktitle = "Proceedings of th 41st ACM/SIGAPP Symposium on Applied Computing",
-url="https://vdegeler.com/files/26_SAC_DDTClean.pdf"
+@inproceedings{10.1145/3748522.3779823,
+author = {El Ghabi, Imane and Naufal Alief, Revin and Dustegor, Dilek and Henckens, Guy and Lazovik, Alexander and Degeler, Victoria},
+title = {GNN-Based State Estimation for Urban Wastewater Digital Twins},
+year = {2026},
+isbn = {9798400722943},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3748522.3779823},
+doi = {10.1145/3748522.3779823},
+abstract = {Urban wastewater systems are critical infrastructures whose monitoring is complicated by sparse sensing, stochastic inflows, and complex hydraulic behavior. Physics-based hydraulic models provide accurate simulations but are computationally demanding and unsuitable for real-time operation. We adapt a graph neural network surrogate model GATRes to wastewater networks and train it on synthetic data generated from calibrated hydraulic simulations. The approach is evaluated on two wastewater systems: a municipal network in the Netherlands and the open Shunqing stormwater dataset from China. In the Dutch network, the model achieves estimation errors within 20–50 cm across multiple rainfall scenarios, which aligns with the precision expected by water domain experts. Results demonstrate strong overall accuracy under sparse sensing and across unseen rainfall scenarios, while highlighting challenges near hydraulic structures such as pumps and outfalls, where errors are higher but remain within acceptable ranges. These findings show that GNN surrogates can provide an accurate and scalable approach for state estimation in wastewater networks, contributing to monitoring and operational decision-making in smart cities.},
+booktitle = {Proceedings of the 41st ACM/SIGAPP Symposium on Applied Computing},
+pages = {1584–1592},
+numpages = {9},
+keywords = {graph neural networks, surrogate modeling, wastewater networks, state estimation, smart cities, digital twin},
+location = {Grand Hotel Palace, Thessaloniki, Greece},
+series = {SAC '26}
 }
-
 
 @article{10.14778/3785297.3785308,
 author = {Jackson, David and Groth, Paul and Harmouch, Hazar},
