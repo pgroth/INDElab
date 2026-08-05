@@ -14,11 +14,6 @@ description: lab members
             <span class="person-title">Group Head<br>Full Professor</span>
         </div>
         <div class="person-card">
-            <img src="../assets/people/nack.png" alt="Frank Nack">
-            <a href="https://fnack.wordpress.com/about/">Dr. Frank Nack</a>
-            <span class="person-title">Senior Lecturer</span>
-        </div>
-        <div class="person-card">
             <img src="../assets/people/viktoriya.jpg" alt="Victoria Degeler">
             <a href="https://vdegeler.com">Dr. Victoria Degeler</a>
             <span class="person-title">Associate Professor</span>
@@ -156,6 +151,7 @@ description: lab members
 <div class="previous-members">
     <h3>Previous Members & Guests</h3>
     <ul>
+        <li><a href="https://ivi.uva.nl/content/news/2026/07/in-memoriam-frank-nack.html">Dr. Frank Nack</a> (Frank was a wonderful member of our group and is greatly missed. <a href="https://ivi.uva.nl/content/news/2026/07/in-memoriam-frank-nack.html">In memoriam.</a>) </li>
         <li><a href="https://thiviyansingam.com">Thiviyan Thanapalasingam</a></li>
         <li><a href="https://nali001.github.io/">Dr. Na Li</a> (Solution Engineer at SURF)</li>
         <li><a href="https://minaghadimi.github.io/">Mina Ghadimi Atigh</a> (Postdoc at UvA MultiX group)</li>
