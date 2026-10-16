@@ -152,7 +152,7 @@ description: lab members
     <h3>Previous Members & Guests</h3>
     <ul>
         <li><a href="https://ivi.uva.nl/content/news/2026/07/in-memoriam-frank-nack.html">Dr. Frank Nack</a> (Frank was a wonderful member of our group and is greatly missed. <a href="https://ivi.uva.nl/content/news/2026/07/in-memoriam-frank-nack.html">In memoriam.</a>) </li>
-        <li><a href="https://thiviyansingam.com">Thiviyan Thanapalasingam</a></li>
+        <li><a href="https://thiviyansingam.com">Dr. Thiviyan Thanapalasingam</a></li>
         <li><a href="https://nali001.github.io/">Dr. Na Li</a> (Solution Engineer at SURF)</li>
         <li><a href="https://minaghadimi.github.io/">Mina Ghadimi Atigh</a> (Postdoc at UvA MultiX group)</li>
         <li><a href="https://melika.xyz/">Dr. Melika Ayoughi</a> (UvA postdoc)</li>
