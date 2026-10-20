@@ -2,13 +2,14 @@
 ---
 
 % 2026
-@article{2026modelagnosticrulelearning,
-    author = {Karabulut, Erkan and Daniel Daza and Paul Groth and Martijn C. Schut and Victoria Degeler},
-    title = {Model-Agnostic Association Rule Learning with Tabular Foundation Models},
-    journal = {Transactions on Machine Learning Research},
-    year = {2026},
+@article{karabulut2026modelagnostic,
+    title={Model-Agnostic Association Rule Learning with Tabular Foundation Models},
+    author={Erkan Karabulut and Daniel Daza and Paul Groth and M.C. Schut and Victoria Degeler},
+    journal={Transactions on Machine Learning Research},
+    issn={2835-8856},
+    year={2026},
     month = {October},
-    url = {https://openreview.net/forum?id=Y70lnNnA6T},
+    url={https://openreview.net/pdf?id=Y70lnNnA6T},
     code = {https://github.com/DiTEC-project/tabprobe},
     abstract = {Association Rule Mining (ARM) is a fundamental data mining technique for knowledge discovery in tabular data and is widely used in high-stakes decision-making. Existing approaches suffer from two limitations: reliance on frequent itemset mining leading to rule explosion in classical methods, and failure in low-data regimes in recent neural approaches. We reframe ARM as a conditional probability estimation problem and introduce a model-agnostic rule learning framework that extracts association rules from any conditional probabilistic model, decoupling rule extraction from frequent itemset mining. We introduce TabProbe, a probing-based algorithm that instantiates this framework, and demonstrate its generality across multiple model classes ranging from tree-based models to large pretrained foundation models. As a particularly powerful instantiation, we leverage tabular foundation models (TFMs), large models pretrained on diverse tabular data with strong in-context generalization, which can be applied out-of-the-box without task-specific training. Evaluation on 10 datasets of varying sizes shows that many framework instantiations achieve practically full data coverage with substantially fewer rules than state-of-the-art rule miners, and the best-performing instantiations achieve up to 15% higher association strength. Furthermore, TFM-learned rules have better predictive performance on unseen data and remain robust in low-data settings. Source code is available at https://github.com/DiTEC-project/tabprobe.},
 }
