@@ -145,6 +145,10 @@ description: lab members
             <img src="../assets/people/gully.jpeg" alt="Dr. Gully Burns">
             <a href="https://gullys.website">Dr. Gully Burns</a>
         </div>
+        <div class="person-card">
+            <img src="../assets/people/jaime.jpg" alt="Jaime Collado-Montañez">
+            <a href="https://scholar.google.com/citations?user=m38bwLgAAAAJ&hl=es">Jaime Collado-Montañez</a>
+        </div>
     </div>
 </div>
 
