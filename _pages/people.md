@@ -53,6 +53,11 @@ description: lab members
             <a href="https://d-gcc.github.io">Dr. David Campos</a>
             <span class="person-title">Postdoctoral Researcher</span>
         </div>
+        <div class="person-card">
+            <img src="../assets/people/monoshiz.jpg">
+            <a href="https://monoshizmk.com">Dr. Monoshiz Khan</a>
+            <span class="person-title">Postdoctoral Researcher</span>
+        </div>
     </div>
 </div>
 
